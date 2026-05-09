@@ -77,6 +77,8 @@ export interface ClaimWithEntity {
   upvotes: number;
   downvotes: number;
   is_bulkbot: boolean;
+  created_by: string | null;
+  submitter_at_name: string | null;   // joined from profiles
   other_entity_id: string;
   other_entity_name: string;
   other_entity_slug: string;

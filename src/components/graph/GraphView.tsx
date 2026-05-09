@@ -120,7 +120,22 @@ function layoutNodes(center: Entity, connections: ClaimWithEntity[], existingNod
 
 const FILTER_ALL = 'all';
 
-export function GraphView({ showNumerologyOverride }: { showNumerologyOverride?: boolean } = {}) {
+interface GraphViewProps {
+  showNumerologyOverride?: boolean;
+  /** Entity IDs to pre-load on mount (used by topic tabs) */
+  initialEntityIds?: string[];
+  /** Called whenever the set of entity IDs in the graph changes */
+  onEntityIdsChange?: (ids: string[]) => void;
+  /** Entity slugs to pre-load via slug lookup (used by URL deep links) */
+  initialSlugs?: string[];
+}
+
+export function GraphView({
+  showNumerologyOverride,
+  initialEntityIds,
+  onEntityIdsChange,
+  initialSlugs,
+}: GraphViewProps = {}) {
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [search, setSearch] = useState('');
@@ -133,6 +148,7 @@ export function GraphView({ showNumerologyOverride }: { showNumerologyOverride?:
   const [pathLoading, setPathLoading] = useState(false);
   const [starLoading, setStarLoading] = useState(false);
   const [showNumerology, setShowNumerology] = useState(true);
+  const [initialised, setInitialised] = useState(false);
   const history = useRef<{ nodes: Node[]; edges: Edge[] }[]>([]);
   const searchTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
@@ -199,6 +215,43 @@ export function GraphView({ showNumerologyOverride }: { showNumerologyOverride?:
       setLoadingId(null);
     }
   }, [nodes, edges, filterType, loadingId, saveHistory, setNodes, setEdges]);
+
+  // Load initial entities from props (topic tab config or URL slugs)
+  useEffect(() => {
+    if (initialised) return;
+    setInitialised(true);
+    const ids = initialEntityIds ?? [];
+    const slugs = initialSlugs ?? [];
+    if (ids.length === 0 && slugs.length === 0) return;
+
+    (async () => {
+      const sb = createClient();
+      let entities: Entity[] = [];
+
+      if (ids.length > 0) {
+        const { data } = await sb.from('entities').select('*').in('id', ids);
+        entities = (data ?? []) as Entity[];
+      }
+      if (slugs.length > 0) {
+        const { data } = await sb.from('entities').select('*').in('slug', slugs);
+        const extra = (data ?? []) as Entity[];
+        const existingIds = new Set(entities.map(e => e.id));
+        entities = [...entities, ...extra.filter(e => !existingIds.has(e.id))];
+      }
+
+      for (const entity of entities) {
+        await expandEntity(entity.id);
+      }
+    })();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Notify parent when node set changes (for topic tab config persistence)
+  useEffect(() => {
+    if (!onEntityIdsChange || !initialised) return;
+    const ids = nodes.map(n => n.id);
+    onEntityIdsChange(ids);
+  }, [nodes, onEntityIdsChange, initialised]);
 
   // Entity search
   useEffect(() => {

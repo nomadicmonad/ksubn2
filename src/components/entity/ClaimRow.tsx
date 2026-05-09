@@ -119,8 +119,17 @@ export function ClaimRow({ claim, currentEntityId, userVote = 0, hasReported = f
             {claim.source_domain ?? 'source'}
           </a>
           <span className="text-[11px]" style={{ color: 'var(--color-text-muted)' }}>
-            added {new Date(claim.created_at).toLocaleDateString('en-GB')}
-            {claim.updated_at !== claim.created_at ? ` · updated ${new Date(claim.updated_at).toLocaleDateString('en-GB')}` : ''}
+            {claim.is_bulkbot ? (
+              <span>bulkbot</span>
+            ) : claim.submitter_at_name ? (
+              <Link href={`/user/${encodeURIComponent(claim.submitter_at_name)}`}
+                className="hover:underline"
+                style={{ color: 'var(--color-accent)' }}>
+                {claim.submitter_at_name}
+              </Link>
+            ) : null}
+            {' · '}
+            {new Date(claim.created_at).toLocaleDateString('en-GB')}
           </span>
           <StarToggleButton kind="claim" targetId={claim.claim_id} initialStarred={isStarred} size="sm" label={false} />
         </div>

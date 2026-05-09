@@ -1,7 +1,23 @@
+'use client';
+
 import { Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { GraphView } from '@/components/graph/GraphView';
 
-export const metadata = { title: 'Graph Explorer' };
+function GraphWithParams() {
+  const params = useSearchParams();
+  // Support ?entities=slug1,slug2 and ?focus=slug (entity profile → graph link)
+  const entitySlugs = [
+    ...(params.get('entities')?.split(',').filter(Boolean) ?? []),
+    ...(params.get('focus') ? [params.get('focus')!] : []),
+  ];
+
+  return (
+    <GraphView
+      initialSlugs={entitySlugs.length > 0 ? entitySlugs : undefined}
+    />
+  );
+}
 
 export default function GraphPage() {
   return (
@@ -11,7 +27,7 @@ export default function GraphPage() {
           <div className="text-sm" style={{ color: 'var(--color-text-muted)' }}>Loading graph…</div>
         </div>
       }>
-        <GraphView />
+        <GraphWithParams />
       </Suspense>
     </div>
   );

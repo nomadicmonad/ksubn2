@@ -634,3 +634,46 @@ BEGIN
   WHERE id = user_uuid;
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
+
+-- ============================================================
+-- Updated entity_claims to include submitter at_name
+-- (Re-run to replace the old version)
+-- ============================================================
+
+CREATE OR REPLACE FUNCTION public.entity_claims(entity_uuid UUID, limit_n INT DEFAULT 50)
+RETURNS TABLE (
+  claim_id UUID, relation_type relation_type, description TEXT,
+  source_url TEXT, source_domain TEXT, date_start DATE, date_end DATE,
+  upvotes INT, downvotes INT, is_bulkbot BOOLEAN,
+  created_by UUID, submitter_at_name TEXT,
+  other_entity_id UUID, other_entity_name TEXT, other_entity_slug TEXT,
+  other_entity_type entity_type, other_entity_image TEXT,
+  created_at TIMESTAMPTZ, updated_at TIMESTAMPTZ,
+  direction TEXT
+) AS $$
+  SELECT c.id, c.relation_type, c.description,
+         c.source_url, c.source_domain, c.date_start, c.date_end,
+         c.upvotes, c.downvotes, c.is_bulkbot,
+         c.created_by, p.at_name,
+         e.id, e.name, e.slug, e.type, e.image_url,
+         c.created_at, c.updated_at,
+         'outgoing'::TEXT
+  FROM public.claims c
+  JOIN public.entities e ON e.id = c.to_entity
+  LEFT JOIN public.profiles p ON p.id = c.created_by
+  WHERE c.from_entity = entity_uuid AND c.is_public AND NOT c.is_hidden
+  UNION ALL
+  SELECT c.id, c.relation_type, c.description,
+         c.source_url, c.source_domain, c.date_start, c.date_end,
+         c.upvotes, c.downvotes, c.is_bulkbot,
+         c.created_by, p.at_name,
+         e.id, e.name, e.slug, e.type, e.image_url,
+         c.created_at, c.updated_at,
+         'incoming'::TEXT
+  FROM public.claims c
+  JOIN public.entities e ON e.id = c.from_entity
+  LEFT JOIN public.profiles p ON p.id = c.created_by
+  WHERE c.to_entity = entity_uuid AND c.is_public AND NOT c.is_hidden
+  ORDER BY upvotes DESC
+  LIMIT limit_n;
+$$ LANGUAGE sql STABLE;

@@ -407,7 +407,23 @@ export default function TopicPage() {
         )}
         {currentTab?.view_type === 'graph' && (
           <div className="-mx-4 sm:-mx-6" style={{ height: '70vh' }}>
-            <GraphView />
+            <GraphView
+              initialEntityIds={
+                Array.isArray(currentTab.config?.entity_ids) ? currentTab.config.entity_ids as string[] : []
+              }
+              onEntityIdsChange={isOwner ? async (ids) => {
+                // Debounce-save entity_ids back to tab config
+                const sb = createClient();
+                await sb.from('topic_tabs')
+                  .update({ config: { ...currentTab.config, entity_ids: ids } })
+                  .eq('id', currentTab.id);
+                setTabs(prev => prev.map(t =>
+                  t.id === currentTab.id
+                    ? { ...t, config: { ...t.config, entity_ids: ids } }
+                    : t
+                ));
+              } : undefined}
+            />
           </div>
         )}
         {currentTab?.view_type === 'timeline' && currentTab && <TimelineTab tab={currentTab} />}

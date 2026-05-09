@@ -711,19 +711,21 @@ export function GraphView({
         )}
 
         {showNumerology && numericCoincidences.length > 0 && (
-          <Panel position="bottom-right">
-            <div className="rounded-xl p-3 space-y-2 max-w-[320px]" style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)' }}>
-              <p className="text-[11px] uppercase tracking-wider font-semibold" style={{ color: 'var(--color-text-muted)' }}>
-                Numeric coincidences
-              </p>
-              {numericCoincidences.map((item) => (
-                <div key={item.value} className="rounded-lg px-2 py-1.5 text-xs" style={{ background: 'var(--color-bg-hover)' }}>
-                  <span style={{ color: 'var(--color-text-primary)' }}>#{item.value}</span>
-                  <span style={{ color: 'var(--color-text-muted)' }}> · {item.entities.join(', ')}</span>
-                </div>
-              ))}
-            </div>
-          </Panel>
+          <div className="hidden sm:block">
+            <Panel position="bottom-right">
+              <div className="rounded-xl p-3 space-y-2 max-w-[320px]" style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)' }}>
+                <p className="text-[11px] uppercase tracking-wider font-semibold" style={{ color: 'var(--color-text-muted)' }}>
+                  Numeric coincidences
+                </p>
+                {numericCoincidences.map((item) => (
+                  <div key={item.value} className="rounded-lg px-2 py-1.5 text-xs" style={{ background: 'var(--color-bg-hover)' }}>
+                    <span style={{ color: 'var(--color-text-primary)' }}>#{item.value}</span>
+                    <span style={{ color: 'var(--color-text-muted)' }}> · {item.entities.join(', ')}</span>
+                  </div>
+                ))}
+              </div>
+            </Panel>
+          </div>
         )}
       </ReactFlow>
 

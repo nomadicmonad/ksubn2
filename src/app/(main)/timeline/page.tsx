@@ -234,11 +234,24 @@ export default function TimelinePage() {
 
             {years.map(year => {
               const yearEvents = allEvents.filter(e => e.year === year);
+              const N = entities.length;
+
+              // Collect unique cross-entity connections for this year
+              const connLines: { a: number; b: number; color: string }[] = [];
+              const seen = new Set<string>();
+              for (const ev of yearEvents) {
+                if (ev.otherEntityIndex === null || ev.otherEntityIndex === ev.entityIndex) continue;
+                const a = Math.min(ev.entityIndex, ev.otherEntityIndex);
+                const b = Math.max(ev.entityIndex, ev.otherEntityIndex);
+                const key = `${a}-${b}`;
+                if (!seen.has(key)) { seen.add(key); connLines.push({ a, b, color: entities[a].color }); }
+              }
+
               return (
                 <div
                   key={year}
-                  className="grid"
-                  style={{ gridTemplateColumns: `60px repeat(${entities.length}, 1fr)`, borderBottom: '1px solid var(--color-bg-border)' }}
+                  className="grid relative"
+                  style={{ gridTemplateColumns: `60px repeat(${N}, 1fr)`, borderBottom: '1px solid var(--color-bg-border)' }}
                 >
                   {/* Year label */}
                   <div className="flex items-start justify-center pt-3 pb-2">
@@ -250,16 +263,15 @@ export default function TimelinePage() {
                     const colEvents = yearEvents.filter(e => e.entityIndex === colIdx);
                     return (
                       <div key={entity.id} className="px-2 py-2 space-y-1.5 relative" style={{ borderLeft: '1px solid var(--color-bg-border)' }}>
-                        {/* Vertical line */}
+                        {/* Vertical spine */}
                         <div className="absolute left-1/2 inset-y-0 w-px -translate-x-1/2 opacity-20" style={{ background: color }} />
 
                         {colEvents.map((ev, i) => {
                           const meta = RELATION_META[ev.claim.relation_type as RelationType];
-                          const hasLink = ev.otherEntityIndex !== null && ev.otherEntityIndex !== colIdx;
                           return (
                             <div
                               key={`${ev.claim.claim_id}-${i}`}
-                              className="relative rounded-lg px-2 py-1.5 text-xs"
+                              className="relative rounded-lg px-2 py-1.5 text-xs z-10"
                               style={{ background: `${color}15`, border: `1px solid ${color}25` }}
                               title={ev.claim.description}
                             >
@@ -267,29 +279,36 @@ export default function TimelinePage() {
                                 <span>{meta.icon}</span>
                                 <span className="truncate" style={{ color }}>{ev.claim.other_entity_name}</span>
                               </div>
-
-                              {/* Connection line to other entity column */}
-                              {hasLink && (
-                                <div
-                                  className="absolute top-1/2 -translate-y-1/2 h-px opacity-60"
-                                  style={{
-                                    background: color,
-                                    right: colIdx < ev.otherEntityIndex! ? 0 : 'auto',
-                                    left: colIdx > ev.otherEntityIndex! ? 0 : 'auto',
-                                    width: `${Math.abs(colIdx - ev.otherEntityIndex!) * 100}%`,
-                                  }}
-                                />
-                              )}
                             </div>
                           );
                         })}
 
-                        {colEvents.length === 0 && (
-                          <div className="h-4" /> // spacer
-                        )}
+                        {colEvents.length === 0 && <div className="h-4" />}
                       </div>
                     );
                   })}
+
+                  {/* Horizontal connectors spanning across columns — rendered at row level */}
+                  {connLines.map(({ a, b, color }) => (
+                    <div
+                      key={`${a}-${b}`}
+                      style={{
+                        position: 'absolute',
+                        top: '50%',
+                        transform: 'translateY(-50%)',
+                        // 60px year col + a columns + half a column → center of column a
+                        left: `calc(60px + (${a} + 0.5) / ${N} * (100% - 60px))`,
+                        // span from center of a to center of b
+                        width: `calc(${b - a} / ${N} * (100% - 60px))`,
+                        height: 2,
+                        background: `linear-gradient(90deg, ${entities[a].color}, ${entities[b].color})`,
+                        opacity: 0.55,
+                        pointerEvents: 'none',
+                        zIndex: 5,
+                        borderRadius: 1,
+                      }}
+                    />
+                  ))}
                 </div>
               );
             })}

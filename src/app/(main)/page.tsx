@@ -88,13 +88,13 @@ export default async function HomePage() {
         {/* Stats */}
         <div className="flex items-center justify-center gap-8">
           {[
-            { value: stats.entities.toLocaleString(), label: 'entities' },
-            { value: stats.claims.toLocaleString(), label: 'connections' },
-          ].map(({ value, label }) => (
-            <div key={label} className="text-center">
-              <div className="text-2xl font-bold" style={{ color: 'var(--color-text-primary)' }}>{value}</div>
+            { value: stats.entities.toLocaleString(), label: 'entities', href: '/search' },
+            { value: stats.claims.toLocaleString(), label: 'connections', href: '/recent' },
+          ].map(({ value, label, href }) => (
+            <Link key={label} href={href} className="text-center group">
+              <div className="text-2xl font-bold group-hover:text-[var(--color-accent)] transition-colors" style={{ color: 'var(--color-text-primary)' }}>{value}</div>
               <div className="text-sm" style={{ color: 'var(--color-text-muted)' }}>{label}</div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

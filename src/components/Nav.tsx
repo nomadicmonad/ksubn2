@@ -6,16 +6,17 @@ import { useState } from 'react';
 import {
   Network, Search, GitBranch, Clock, Globe, BookMarked,
   PlusCircle, Star, Settings, LogIn, Menu, X, LogOut,
-  ChevronDown,
+  ChevronDown, Activity,
 } from 'lucide-react';
 import type { Profile } from '@/types';
 
 const NAV_LINKS = [
-  { href: '/search',      label: 'Explore',      icon: Search },
-  { href: '/graph',       label: 'Graph',         icon: Network },
-  { href: '/paths',       label: 'Paths',         icon: GitBranch },
-  { href: '/timeline',    label: 'Timeline',      icon: Clock },
-  { href: '/topics',      label: 'Topics',        icon: Globe },
+  { href: '/search',   label: 'Explore',  icon: Search },
+  { href: '/graph',    label: 'Graph',    icon: Network },
+  { href: '/paths',    label: 'Paths',    icon: GitBranch },
+  { href: '/timeline', label: 'Timeline', icon: Clock },
+  { href: '/topics',   label: 'Topics',   icon: Globe },
+  { href: '/recent',   label: 'Recent',   icon: Activity },
 ];
 
 interface NavProps { profile: Profile | null }

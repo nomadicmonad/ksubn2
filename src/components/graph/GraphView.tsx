@@ -26,8 +26,8 @@ import { gematria } from '@/lib/numerology';
 import { ClaimEdge, type ClaimEdgeData } from './ClaimEdge';
 
 // ── Custom node ──────────────────────────────────────────────
-function EntityNode({ data }: { data: { entity: Entity; onExpand: (id: string) => void; onDelete?: (id: string) => void } }) {
-  const { entity, onExpand, onDelete } = data;
+function EntityNode({ data }: { data: { entity: Entity; onExpand: (id: string) => void; onDelete?: (id: string) => void; onSelect?: (e: Entity) => void } }) {
+  const { entity, onExpand, onDelete, onSelect } = data;
   const typeColor = entity.type === 'person' ? '#6366f1' : entity.type === 'organization' ? '#a855f7' : '#f59e0b';
 
   return (
@@ -62,7 +62,7 @@ function EntityNode({ data }: { data: { entity: Entity; onExpand: (id: string) =
           title="Remove from view"
         >×</button>
 
-        <div className="flex items-center gap-2" onClick={() => onExpand(entity.id)}>
+        <div className="flex items-center gap-2" onClick={() => { onSelect?.(entity); onExpand(entity.id); }}>
           <div
             style={{
               width: 28, height: 28, borderRadius: '50%',
@@ -117,7 +117,7 @@ function layoutNodes(center: Entity, connections: ClaimWithEntity[], existingNod
             id: eid, slug: conn.other_entity_slug, name: conn.other_entity_name,
             type: conn.other_entity_type, image_url: conn.other_entity_image,
           } as Entity,
-          onExpand: () => {}, onDelete: () => {},
+          onExpand: () => {}, onDelete: () => {}, onSelect: () => {},
         },
       });
       existing.add(eid);
@@ -180,7 +180,9 @@ export function GraphView({
   const [pathLoading, setPathLoading] = useState(false);
   const [starLoading, setStarLoading] = useState(false);
   const [selectedClaim, setSelectedClaim] = useState<ClaimEdgeData | null>(null);
+  const [selectedEntity, setSelectedEntity] = useState<Entity | null>(null);
   const [showPathPanel, setShowPathPanel] = useState(false);
+  const [numerologyOpen, setNumerologyOpen] = useState(false);
   const [showNumerology, setShowNumerology] = useState(true);
   const [initialised, setInitialised] = useState(false);
   const history = useRef<{ nodes: Node[]; edges: Edge[] }[]>([]);
@@ -245,7 +247,7 @@ export function GraphView({
       // Inject onExpand + onDelete into all new nodes
       const withExpand = newNodes.map(n => ({
         ...n,
-        data: { ...n.data, onExpand: expandEntity, onDelete: deleteNode },
+        data: { ...n.data, onExpand: expandEntity, onDelete: deleteNode, onSelect: setSelectedEntity },
       }));
 
       setNodes(prev => {
@@ -346,7 +348,7 @@ export function GraphView({
         id: entity.id,
         type: 'entity',
         position: { x: Math.random() * 400 - 200, y: Math.random() * 400 - 200 },
-        data: { entity, onExpand: expandEntity, onDelete: deleteNode },
+        data: { entity, onExpand: expandEntity, onDelete: deleteNode, onSelect: setSelectedEntity },
       }];
     });
     await expandEntity(entity.id);
@@ -372,7 +374,7 @@ export function GraphView({
             id: entity.id,
             type: 'entity',
             position: { x: Math.random() * 500 - 250, y: Math.random() * 400 - 200 },
-            data: { entity, onExpand: expandEntity, onDelete: deleteNode },
+            data: { entity, onExpand: expandEntity, onDelete: deleteNode, onSelect: setSelectedEntity },
           }];
         });
       }
@@ -417,7 +419,7 @@ export function GraphView({
           newNodes.push({
             id, type: 'entity',
             position: { x: stepIdx * 260, y: pathIdx * 180 },
-            data: { entity, onExpand: expandEntity, onDelete: deleteNode },
+            data: { entity, onExpand: expandEntity, onDelete: deleteNode, onSelect: setSelectedEntity },
           } as Node);
         });
       });
@@ -709,7 +711,7 @@ export function GraphView({
         )}
 
         {showNumerology && numericCoincidences.length > 0 && (
-          <Panel position="top-right">
+          <Panel position="bottom-right">
             <div className="rounded-xl p-3 space-y-2 max-w-[320px]" style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)' }}>
               <p className="text-[11px] uppercase tracking-wider font-semibold" style={{ color: 'var(--color-text-muted)' }}>
                 Numeric coincidences
@@ -757,22 +759,74 @@ export function GraphView({
               {selectedClaim.source_url && (
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: 'var(--color-text-muted)' }}>Source</p>
-                  <a
-                    href={selectedClaim.source_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-sm hover:underline"
-                    style={{ color: 'var(--color-accent)' }}
-                  >
+                  <a href={selectedClaim.source_url} target="_blank" rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 text-sm hover:underline" style={{ color: 'var(--color-accent)' }}>
                     <ExternalLink size={12} />
                     {selectedClaim.source_domain ?? selectedClaim.source_url}
                   </a>
                 </div>
               )}
+              <button
+                onClick={() => { if (selectedClaim.claim_id) deleteEdge(selectedClaim.claim_id); setSelectedClaim(null); }}
+                className="w-full mt-2 text-xs py-2 rounded-lg transition-colors"
+                style={{ background: 'rgba(239,68,68,0.1)', color: 'var(--color-danger)', border: '1px solid rgba(239,68,68,0.2)' }}
+              >
+                Remove from view
+              </button>
             </div>
           </div>
         );
       })()}
+
+      {/* Entity detail sidebar */}
+      {selectedEntity && !selectedClaim && (
+        <div style={{ position: 'absolute', top: 0, right: 0, bottom: 0, width: 'min(300px, 100vw)', zIndex: 20, background: 'var(--color-bg-card)', borderLeft: '1px solid var(--color-bg-border)', display: 'flex', flexDirection: 'column' }}>
+          <div className="flex items-center justify-between p-4" style={{ borderBottom: '1px solid var(--color-bg-border)' }}>
+            <div className="flex items-center gap-2 min-w-0">
+              <div style={{ width: 10, height: 10, borderRadius: '50%', flexShrink: 0, background: selectedEntity.type === 'person' ? '#6366f1' : selectedEntity.type === 'organization' ? '#a855f7' : '#f59e0b' }} />
+              <span className="text-sm font-semibold truncate" style={{ color: 'var(--color-text-primary)' }}>{selectedEntity.name}</span>
+            </div>
+            <button onClick={() => setSelectedEntity(null)} style={{ color: 'var(--color-text-muted)', flexShrink: 0 }}><X size={16} /></button>
+          </div>
+          <div className="p-4 flex-1 overflow-y-auto space-y-4">
+            <p className="text-xs capitalize" style={{ color: 'var(--color-text-muted)' }}>{selectedEntity.type}</p>
+            {selectedEntity.description && (
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text-primary)' }}>{selectedEntity.description}</p>
+            )}
+            {selectedEntity.country && (
+              <p className="text-xs" style={{ color: 'var(--color-text-muted)' }}>📍 {selectedEntity.country}</p>
+            )}
+            <a href={`/entity/${selectedEntity.slug}`} target="_blank" rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-sm hover:underline" style={{ color: 'var(--color-accent)' }}>
+              <ExternalLink size={12} /> Open full profile
+            </a>
+          </div>
+        </div>
+      )}
+
+      {/* Mobile numerology side tab */}
+      {showNumerology && numericCoincidences.length > 0 && (
+        <div className="sm:hidden" style={{ position: 'absolute', right: 0, top: '50%', transform: 'translateY(-50%)', zIndex: 20, display: 'flex', alignItems: 'stretch' }}>
+          {numerologyOpen && (
+            <div style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)', borderRight: 'none', borderRadius: '8px 0 0 8px', padding: '12px', maxWidth: 200, maxHeight: 300, overflowY: 'auto' }}>
+              <p className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: 'var(--color-text-muted)' }}>Numerology</p>
+              {numericCoincidences.map(item => (
+                <p key={item.value} className="text-xs mb-1" style={{ color: 'var(--color-text-secondary)' }}>
+                  <span style={{ color: 'var(--color-text-primary)' }}>#{item.value}</span> · {item.entities.join(' ↔ ')}
+                </p>
+              ))}
+            </div>
+          )}
+          <button
+            onClick={() => setNumerologyOpen(v => !v)}
+            style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)', borderRight: 'none', borderRadius: numerologyOpen ? '0' : '8px 0 0 8px', padding: '8px 6px', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+          >
+            <span style={{ writingMode: 'vertical-rl', textOrientation: 'mixed', transform: 'rotate(180deg)', fontSize: 11, fontWeight: 600, color: 'var(--color-accent)', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>
+              Numerology
+            </span>
+          </button>
+        </div>
+      )}
     </div>
   );
 }

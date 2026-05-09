@@ -289,26 +289,32 @@ export default function TimelinePage() {
                   })}
 
                   {/* Horizontal connectors spanning across columns — rendered at row level */}
-                  {connLines.map(({ a, b, color }) => (
-                    <div
-                      key={`${a}-${b}`}
-                      style={{
-                        position: 'absolute',
-                        top: '50%',
-                        transform: 'translateY(-50%)',
-                        // 60px year col + a columns + half a column → center of column a
-                        left: `calc(60px + (${a} + 0.5) / ${N} * (100% - 60px))`,
-                        // span from center of a to center of b
-                        width: `calc(${b - a} / ${N} * (100% - 60px))`,
-                        height: 2,
-                        background: `linear-gradient(90deg, ${entities[a].color}, ${entities[b].color})`,
-                        opacity: 0.55,
-                        pointerEvents: 'none',
-                        zIndex: 5,
-                        borderRadius: 1,
-                      }}
-                    />
-                  ))}
+                  {connLines.map(({ a, b, color }) => {
+                    const leftPct = `calc(60px + (${a} + 0.5) / ${N} * (100% - 60px))`;
+                    const widthPct = `calc(${b - a} / ${N} * (100% - 60px))`;
+                    return (
+                      <div key={`${a}-${b}`} style={{ position: 'absolute', top: 1, left: leftPct, width: widthPct, pointerEvents: 'none', zIndex: 5 }}>
+                        {/* Line */}
+                        <div style={{
+                          width: '100%', height: 3,
+                          background: `linear-gradient(90deg, ${entities[a].color}, ${entities[b].color})`,
+                          opacity: 0.8, borderRadius: 2,
+                        }} />
+                        {/* Left dot */}
+                        <div style={{
+                          position: 'absolute', left: -4, top: '50%', transform: 'translateY(-50%)',
+                          width: 7, height: 7, borderRadius: '50%',
+                          background: entities[a].color, border: '2px solid var(--color-bg-base)',
+                        }} />
+                        {/* Right dot */}
+                        <div style={{
+                          position: 'absolute', right: -4, top: '50%', transform: 'translateY(-50%)',
+                          width: 7, height: 7, borderRadius: '50%',
+                          background: entities[b].color, border: '2px solid var(--color-bg-base)',
+                        }} />
+                      </div>
+                    );
+                  })}
                 </div>
               );
             })}

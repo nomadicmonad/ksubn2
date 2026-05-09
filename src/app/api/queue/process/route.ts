@@ -78,24 +78,74 @@ async function fetchWikidata(qid: string): Promise<WikidataEntity | null> {
   return data.entities?.[qid] ?? null;
 }
 
-async function fetchWikipediaSummary(title: string): Promise<string | null> {
-  const encoded = encodeURIComponent(title.replace(/ /g, '_'));
-  const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encoded}`;
-  const res = await fetchWithTimeout(url, { next: { revalidate: 0 } }, 12000);
-  if (!res.ok) return null;
-  const data = await res.json();
-  return data.extract ?? null;
+interface WikipediaSummary {
+  extract: string | null;
+  thumbnail?: { source: string; width: number; height: number };
+  originalimage?: { source: string };
 }
 
-async function generateSilhouette(name: string, entityType: string): Promise<string | null> {
+async function fetchWikipediaSummary(title: string): Promise<WikipediaSummary | null> {
+  const encoded = encodeURIComponent(title.replace(/ /g, '_'));
+  const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encoded}`;
+  const res = await fetchWithTimeout(url, {}, 12000);
+  if (!res.ok) return null;
+  return res.json();
+}
+
+/** Try to get the Wikipedia thumbnail for this entity. Falls back to null. */
+async function getWikipediaImage(title: string): Promise<string | null> {
+  const summary = await fetchWikipediaSummary(title);
+  // Prefer original, fall back to thumbnail (min 200px wide)
+  const img = summary?.originalimage?.source ?? summary?.thumbnail?.source;
+  if (!img) return null;
+  // Check it's not a placeholder/icon (they're usually <50px)
+  if (summary?.thumbnail && summary.thumbnail.width < 80) return null;
+  return img;
+}
+
+/** Generate an AI silhouette/portrait using OpenAI DALL-E 3 */
+async function generateDallE3Image(name: string, entityType: string, description: string): Promise<string | null> {
+  const apiKey = process.env.OPENAI_API_KEY;
+  if (!apiKey) return null;
+
+  const prompt = entityType === 'person'
+    ? `Dark noir silhouette portrait. Subject: ${name}. ${description ? `Context: ${description}.` : ''} Style: dramatic black background, high-contrast noir silhouette, cinematic, mysterious. NOT a photograph. Square format.`
+    : entityType === 'organization'
+    ? `Dark minimalist logo/symbol for ${name}. ${description ? `Context: ${description}.` : ''} Style: stark black background, geometric icon, corporate noir aesthetic. Square format.`
+    : `Dark dramatic scene representing the event: ${name}. ${description ? `Context: ${description}.` : ''} Style: noir cinematic, symbolic, black background. Square format.`;
+
+  const res = await fetchWithTimeout('https://api.openai.com/v1/images/generations', {
+    method: 'POST',
+    headers: { 'Authorization': `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      model: 'dall-e-3',
+      prompt,
+      n: 1,
+      size: '1024x1024',
+      quality: 'standard',
+      response_format: 'url',
+    }),
+  }, 60000);
+
+  if (!res.ok) {
+    const err = await res.text();
+    console.error('DALL-E 3 error:', err.slice(0, 200));
+    return null;
+  }
+  const data = await res.json();
+  return data.data?.[0]?.url ?? null;
+}
+
+/** Generate using Replicate FLUX as secondary fallback */
+async function generateFluxImage(name: string, entityType: string): Promise<string | null> {
   const apiToken = process.env.REPLICATE_API_TOKEN;
   if (!apiToken) return null;
 
   const prompt = entityType === 'person'
-    ? `Dramatic dark silhouette portrait of a person named ${name}, stark black background, noir style, high contrast, professional headshot silhouette, cinematic lighting, deep shadow`
+    ? `Dramatic dark silhouette portrait, ${name}, stark black background, noir style, high contrast, cinematic`
     : entityType === 'organization'
-    ? `Abstract dark logo silhouette representing an organization called ${name}, minimalist icon, black background, geometric shapes, corporate symbol`
-    : `Abstract dark silhouette representing the event "${name}", dramatic scene, black background, symbolic imagery, cinematic`;
+    ? `Dark minimalist icon symbol for ${name}, black background, geometric shapes, corporate`
+    : `Dark cinematic scene representing ${name}, black background, symbolic, dramatic`;
 
   const res = await fetchWithTimeout('https://api.replicate.com/v1/models/black-forest-labs/flux-schnell/predictions', {
     method: 'POST',
@@ -107,8 +157,6 @@ async function generateSilhouette(name: string, entityType: string): Promise<str
 
   if (!res.ok) return null;
   const prediction = await res.json();
-
-  // Poll for completion (max 30s)
   const pollUrl = prediction.urls?.get;
   if (!pollUrl) return null;
 
@@ -116,12 +164,36 @@ async function generateSilhouette(name: string, entityType: string): Promise<str
     await new Promise(r => setTimeout(r, 2000));
     const poll = await fetchWithTimeout(pollUrl, { headers: { 'Authorization': `Token ${apiToken}` } }, 10000);
     const result = await poll.json();
-    if (result.status === 'succeeded' && result.output?.[0]) {
-      return result.output[0] as string;
-    }
+    if (result.status === 'succeeded' && result.output?.[0]) return result.output[0] as string;
     if (result.status === 'failed') return null;
   }
   return null;
+}
+
+/**
+ * Image strategy:
+ * 1. Wikipedia thumbnail (real photo, free, accurate)
+ * 2. DALL-E 3 noir silhouette (OpenAI API)
+ * 3. Replicate FLUX (fallback)
+ */
+async function getEntityImage(
+  name: string,
+  entityType: string,
+  description: string,
+  wikipediaTitle: string | null,
+): Promise<string | null> {
+  // 1. Try Wikipedia image first (real photo for known figures)
+  if (wikipediaTitle) {
+    const wpImage = await getWikipediaImage(wikipediaTitle);
+    if (wpImage) return wpImage;
+  }
+
+  // 2. DALL-E 3 noir silhouette
+  const dalle = await generateDallE3Image(name, entityType, description);
+  if (dalle) return dalle;
+
+  // 3. Replicate FLUX
+  return generateFluxImage(name, entityType);
 }
 
 async function uploadImageToStorage(imageUrl: string, entityId: string): Promise<string | null> {
@@ -223,13 +295,16 @@ export async function POST(request: Request) {
         }
       }
 
-      // Fetch Wikipedia summary for longer description
+      // Fetch Wikipedia summary (and thumbnail) for longer description
+      let wpTitle: string | null = null;
       if (wikipediaUrl) {
-        const wpTitle = decodeURIComponent(wikipediaUrl.split('/wiki/').pop() ?? '');
-        const wpSummary = await fetchWikipediaSummary(wpTitle);
-        if (wpSummary) {
-          summary = wpSummary.slice(0, 600);
-          if (!description) description = wpSummary.slice(0, 150);
+        wpTitle = decodeURIComponent(wikipediaUrl.split('/wiki/').pop() ?? '');
+        const wpData = await fetchWikipediaSummary(wpTitle);
+        if (wpData) {
+          if (wpData.extract) {
+            summary = wpData.extract.slice(0, 600);
+            if (!description) description = wpData.extract.slice(0, 150);
+          }
         }
       }
 
@@ -269,10 +344,19 @@ export async function POST(request: Request) {
         entityId = newEntity!.id;
       }
 
-      // Generate and upload silhouette image
-      const replicateUrl = await generateSilhouette(name, item.entity_type ?? 'person');
-      if (replicateUrl && entityId) {
-        const storedUrl = await uploadImageToStorage(replicateUrl, entityId);
+      // Generate image: Wikipedia → DALL-E 3 → FLUX fallback
+      const imageUrl = await getEntityImage(
+        name,
+        item.entity_type ?? 'person',
+        description,
+        wpTitle,
+      );
+      if (imageUrl && entityId) {
+        // If it's a Wikipedia URL, store directly (already public + permanent)
+        const isWikipediaImage = imageUrl.includes('wikimedia.org') || imageUrl.includes('wikipedia.org');
+        const storedUrl = isWikipediaImage
+          ? imageUrl
+          : await uploadImageToStorage(imageUrl, entityId);
         if (storedUrl) {
           await sb.from('entities').update({ image_url: storedUrl }).eq('id', entityId);
         }

@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Users, Building2, Calendar, Link2 } from 'lucide-react';
 import type { Entity, EntityType } from '@/types';
+import { getEntityPrimaryDates } from '@/lib/entity-dates';
+import { formatDate } from '@/lib/utils';
 
 const TYPE_ICON: Record<EntityType, React.ComponentType<{ size: number; style?: React.CSSProperties }>> = {
   person:       Users,
@@ -23,6 +25,7 @@ interface EntityCardProps {
 export function EntityCard({ entity, compact }: EntityCardProps) {
   const Icon = TYPE_ICON[entity.type];
   const color = TYPE_COLOR[entity.type];
+  const primaryDate = getEntityPrimaryDates(entity);
 
   return (
     <Link
@@ -81,6 +84,12 @@ export function EntityCard({ entity, compact }: EntityCardProps) {
 
         {!compact && (
           <div className="flex items-center gap-3 mt-2">
+            {primaryDate.start && (
+              <span className="flex items-center gap-1 text-xs" style={{ color: 'var(--color-text-muted)' }}>
+                <Calendar size={10} />
+                {formatDate(primaryDate.start)}
+              </span>
+            )}
             <span
               className="flex items-center gap-1 text-xs"
               style={{ color: 'var(--color-text-muted)' }}

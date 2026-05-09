@@ -8,6 +8,7 @@ import { RELATION_META } from '@/types';
 import { EntityPill } from './EntityCard';
 import { createClient } from '@/lib/supabase/client';
 import { formatDate as fmtDate } from '@/lib/utils';
+import { StarToggleButton } from './StarToggleButton';
 
 const RM = RELATION_META;
 
@@ -16,9 +17,10 @@ interface ClaimRowProps {
   currentEntityId?: string;
   userVote?: -1 | 0 | 1;
   hasReported?: boolean;
+  isStarred?: boolean;
 }
 
-export function ClaimRow({ claim, currentEntityId, userVote = 0, hasReported = false }: ClaimRowProps) {
+export function ClaimRow({ claim, currentEntityId, userVote = 0, hasReported = false, isStarred = false }: ClaimRowProps) {
   const [vote, setVote] = useState<-1 | 0 | 1>(userVote);
   const [upvotes, setUpvotes] = useState(claim.upvotes);
   const [downvotes, setDownvotes] = useState(claim.downvotes);
@@ -105,16 +107,23 @@ export function ClaimRow({ claim, currentEntityId, userVote = 0, hasReported = f
       {/* Footer: source + voting */}
       <div className="flex items-center justify-between mt-3 pt-3" style={{ borderTop: '1px solid var(--color-bg-border)' }}>
         {/* Source link */}
-        <a
-          href={claim.source_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-1 text-xs hover:underline"
-          style={{ color: 'var(--color-text-muted)' }}
-        >
-          <ExternalLink size={11} />
-          {claim.source_domain ?? 'source'}
-        </a>
+        <div className="flex items-center gap-2">
+          <a
+            href={claim.source_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 text-xs hover:underline"
+            style={{ color: 'var(--color-text-muted)' }}
+          >
+            <ExternalLink size={11} />
+            {claim.source_domain ?? 'source'}
+          </a>
+          <span className="text-[11px]" style={{ color: 'var(--color-text-muted)' }}>
+            added {new Date(claim.created_at).toLocaleDateString('en-GB')}
+            {claim.updated_at !== claim.created_at ? ` · updated ${new Date(claim.updated_at).toLocaleDateString('en-GB')}` : ''}
+          </span>
+          <StarToggleButton kind="claim" targetId={claim.claim_id} initialStarred={isStarred} size="sm" label={false} />
+        </div>
 
         {/* Voting + report */}
         <div className="flex items-center gap-1">

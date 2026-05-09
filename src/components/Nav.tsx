@@ -5,11 +5,10 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import {
   Network, Search, GitBranch, Clock, Globe, BookMarked,
-  PlusCircle, Star, Settings, LogIn, Menu, X, User, LogOut,
+  PlusCircle, Star, Settings, LogIn, Menu, X, LogOut,
   ChevronDown,
 } from 'lucide-react';
 import type { Profile } from '@/types';
-import { createClient } from '@/lib/supabase/client';
 
 const NAV_LINKS = [
   { href: '/search',      label: 'Explore',      icon: Search },
@@ -27,12 +26,6 @@ export function Nav({ profile }: NavProps) {
   const [userMenuOpen, setUserMenuOpen] = useState(false);
 
   const isActive = (href: string) => pathname.startsWith(href);
-
-  async function signOut() {
-    const sb = createClient();
-    await sb.auth.signOut();
-    window.location.href = '/';
-  }
 
   return (
     <header
@@ -74,14 +67,25 @@ export function Nav({ profile }: NavProps) {
           <div className="flex items-center gap-2">
             {profile ? (
               <>
-                <Link
-                  href="/submit"
-                  className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors"
-                  style={{ background: 'var(--color-accent)', color: 'white' }}
-                >
-                  <PlusCircle size={14} />
-                  Submit
-                </Link>
+                {profile.is_banned ? (
+                  <span
+                    className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium"
+                    style={{ background: 'rgba(239,68,68,0.14)', color: 'var(--color-danger)', border: '1px solid rgba(239,68,68,0.24)' }}
+                    title="Restricted account"
+                  >
+                    <PlusCircle size={14} />
+                    Restricted
+                  </span>
+                ) : (
+                  <Link
+                    href="/submit"
+                    className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors"
+                    style={{ background: 'var(--color-accent)', color: 'white' }}
+                  >
+                    <PlusCircle size={14} />
+                    Submit
+                  </Link>
+                )}
 
                 {/* User menu */}
                 <div className="relative">
@@ -128,14 +132,15 @@ export function Nav({ profile }: NavProps) {
                         </Link>
                       ))}
                       <div className="border-t mt-1 pt-1" style={{ borderColor: 'var(--color-bg-border)' }}>
-                        <button
-                          onClick={signOut}
+                        <Link
+                          href="/auth/logout"
+                          onClick={() => setUserMenuOpen(false)}
                           className="flex items-center gap-2 w-full text-left px-3 py-2 text-sm transition-colors hover:bg-[var(--color-bg-hover)]"
                           style={{ color: 'var(--color-danger)' }}
                         >
                           <LogOut size={13} />
                           Sign out
-                        </button>
+                        </Link>
                       </div>
                     </div>
                   )}
@@ -185,7 +190,7 @@ export function Nav({ profile }: NavProps) {
                 {label}
               </Link>
             ))}
-            {profile && (
+            {profile && !profile.is_banned && (
               <Link
                 href="/submit"
                 onClick={() => setOpen(false)}

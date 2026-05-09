@@ -1,11 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Search, GitBranch, ArrowRight, ExternalLink, AlertCircle } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
 import { EntityPill } from '@/components/entity/EntityCard';
 import { RELATION_META } from '@/types';
-import type { Entity, DerivedPath, PathStep, RelationType } from '@/types';
+import type { Entity, PathStep, RelationType } from '@/types';
+import { gematria, numerologyValuesForEntity } from '@/lib/numerology';
 
 interface PathWithEntities {
   hops: number;
@@ -18,6 +19,28 @@ interface PathWithEntities {
       source_domain: string;
     };
   }>;
+}
+
+interface VisibilityPrefs {
+  blacklistedDomains: Set<string>;
+  whitelistedDomains: Set<string>;
+  blacklistedUsers: Set<string>;
+  whitelistedUsers: Set<string>;
+}
+
+async function loadVisibilityPrefs(sb: ReturnType<typeof createClient>): Promise<VisibilityPrefs | null> {
+  const { data: { user } } = await sb.auth.getUser();
+  if (!user) return null;
+  const [{ data: sitePrefs }, { data: userPrefs }] = await Promise.all([
+    sb.from('site_preferences').select('domain, is_blacklisted, is_whitelisted').eq('user_id', user.id),
+    sb.from('user_preferences').select('target_user_id, is_blacklisted, is_whitelisted').eq('user_id', user.id),
+  ]);
+  return {
+    blacklistedDomains: new Set((sitePrefs ?? []).filter(s => s.is_blacklisted && !s.is_whitelisted).map(s => s.domain)),
+    whitelistedDomains: new Set((sitePrefs ?? []).filter(s => s.is_whitelisted).map(s => s.domain)),
+    blacklistedUsers: new Set((userPrefs ?? []).filter(s => s.is_blacklisted && !s.is_whitelisted).map(s => s.target_user_id)),
+    whitelistedUsers: new Set((userPrefs ?? []).filter(s => s.is_whitelisted).map(s => s.target_user_id)),
+  };
 }
 
 function EntitySearch({ label, onSelect }: { label: string; onSelect: (e: Entity) => void }) {
@@ -78,6 +101,17 @@ export default function PathsPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [computing, setComputing] = useState(false);
+  const [showNumerology, setShowNumerology] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      const sb = createClient();
+      const { data: { user } } = await sb.auth.getUser();
+      if (!user) return;
+      const { data: profile } = await sb.from('profiles').select('*').eq('id', user.id).single();
+      if (profile && 'show_numerology' in profile && profile.show_numerology === false) setShowNumerology(false);
+    })();
+  }, []);
 
   async function findPath() {
     if (!fromEntity || !toEntity) return;
@@ -86,29 +120,20 @@ export default function PathsPage() {
     setPath(null);
 
     try {
+      // Use server-side BFS API (persists results + faster)
+      setComputing(true);
+      const res = await fetch('/api/paths/compute', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ from_entity: fromEntity.id, to_entity: toEntity.id }),
+      });
+      setComputing(false);
+      const json = await res.json();
       const sb = createClient();
-
-      // Check pre-computed paths first
-      const { data: stored } = await sb
-        .from('derived_paths')
-        .select('*')
-        .or(`and(from_entity.eq.${fromEntity.id},to_entity.eq.${toEntity.id}),and(from_entity.eq.${toEntity.id},to_entity.eq.${fromEntity.id})`)
-        .order('hops')
-        .limit(1)
-        .single();
-
-      if (stored) {
-        await buildPathDisplay(stored as any, sb);
+      if (json.path) {
+        await buildPathDisplay(json.path, sb);
       } else {
-        // BFS up to 4 hops
-        setComputing(true);
-        const result = await bfsPath(fromEntity.id, toEntity.id, sb);
-        setComputing(false);
-        if (result) {
-          await buildPathDisplay(result, sb);
-        } else {
-          setError('No path found within 4 hops. These entities may not be connected in the current dataset.');
-        }
+        setError('No path found within 4 hops. These entities may not be connected in the current dataset.');
       }
     } catch (err: any) {
       setError(err.message ?? 'Something went wrong');
@@ -118,66 +143,59 @@ export default function PathsPage() {
     }
   }
 
-  async function bfsPath(fromId: string, toId: string, sb: ReturnType<typeof createClient>) {
-    // Simple BFS using database queries
-    const visited = new Map<string, { path: PathStep[]; parentId: string | null }>();
-    visited.set(fromId, { path: [], parentId: null });
-    const queue: string[] = [fromId];
-    const MAX_HOPS = 4;
-
-    for (let hop = 0; hop < MAX_HOPS && queue.length > 0; hop++) {
-      const current = [...queue];
-      queue.length = 0;
-
-      const { data: claims } = await sb
-        .from('claims')
-        .select('id, from_entity, to_entity, relation_type')
-        .or(`from_entity.in.(${current.join(',')}),to_entity.in.(${current.join(',')})`)
-        .eq('is_public', true)
-        .eq('is_hidden', false);
-
-      for (const claim of (claims ?? [])) {
-        const neighbours = [
-          { id: claim.to_entity, claimId: claim.id, viaSource: claim.from_entity },
-          { id: claim.from_entity, claimId: claim.id, viaSource: claim.to_entity },
-        ];
-
-        for (const { id, claimId, viaSource } of neighbours) {
-          if (visited.has(id)) continue;
-          const parentPath = visited.get(viaSource)?.path ?? [];
-          const newPath: PathStep[] = [...parentPath, { entity_id: viaSource, claim_id: claimId }];
-          visited.set(id, { path: newPath, parentId: viaSource });
-          queue.push(id);
-
-          if (id === toId) {
-            const finalPath = [...newPath, { entity_id: toId, claim_id: claimId }];
-            return { from_entity: fromId, to_entity: toId, hops: hop + 1, path: finalPath };
-          }
-        }
-      }
-    }
-    return null;
-  }
-
   async function buildPathDisplay(result: { from_entity: string; to_entity: string; hops: number; path: PathStep[] }, sb: ReturnType<typeof createClient>) {
     const entityIds = [...new Set(result.path.map(s => s.entity_id))];
     const claimIds = [...new Set(result.path.map(s => s.claim_id).filter(Boolean))];
 
-    const [{ data: entities }, { data: claims }] = await Promise.all([
+    const [{ data: entities }, { data: claims }, visibilityPrefs] = await Promise.all([
       sb.from('entities').select('*').in('id', entityIds),
-      sb.from('claims').select('id, relation_type, description, source_url, source_domain').in('id', claimIds),
+      sb.from('claims').select('id, relation_type, description, source_url, source_domain, created_by').in('id', claimIds),
+      loadVisibilityPrefs(sb),
     ]);
 
     const entityMap = Object.fromEntries((entities ?? []).map(e => [e.id, e as Entity]));
-    const claimMap = Object.fromEntries((claims ?? []).map(c => [c.id, c]));
+    const claimMap = Object.fromEntries(
+      (claims ?? [])
+        .filter((claim) => {
+          if (!visibilityPrefs) return true;
+          if (claim.source_domain && visibilityPrefs.blacklistedDomains.has(claim.source_domain) && !visibilityPrefs.whitelistedDomains.has(claim.source_domain)) return false;
+          if (claim.created_by && visibilityPrefs.blacklistedUsers.has(claim.created_by) && !visibilityPrefs.whitelistedUsers.has(claim.created_by)) return false;
+          return true;
+        })
+        .map(c => [c.id, c]),
+    );
 
     const steps = result.path.map((step, i) => ({
       entity: entityMap[step.entity_id],
       claim: i < result.path.length - 1 ? claimMap[step.claim_id] : undefined,
     })).filter(s => s.entity);
 
+    if (steps.some((step, index) => index < steps.length - 1 && !step.claim)) {
+      setError('A path exists, but one or more connecting claims are hidden by your preferences.');
+      setPath(null);
+      return;
+    }
+
     setPath({ hops: result.hops, steps });
   }
+
+  const pathCoincidences = useMemo(() => {
+    if (!showNumerology || !path) return [] as Array<{ value: number; entities: string[] }>;
+    const buckets = new Map<number, string[]>();
+    for (const step of path.steps) {
+      const values = [...Object.values(gematria(step.entity.name)), ...numerologyValuesForEntity(step.entity)];
+      for (const value of values) {
+        const current = buckets.get(value) ?? [];
+        if (!current.includes(step.entity.name)) current.push(step.entity.name);
+        buckets.set(value, current);
+      }
+    }
+    return [...buckets.entries()]
+      .filter(([, names]) => names.length >= 2)
+      .sort((a, b) => b[1].length - a[1].length)
+      .slice(0, 10)
+      .map(([value, entities]) => ({ value, entities }));
+  }, [path, showNumerology]);
 
   return (
     <div className="max-w-2xl mx-auto space-y-8">
@@ -264,6 +282,21 @@ export default function PathsPage() {
               </div>
             ))}
           </div>
+
+          {showNumerology && pathCoincidences.length > 0 && (
+            <div className="card p-4">
+              <h3 className="text-sm font-semibold mb-2" style={{ color: 'var(--color-text-primary)' }}>
+                Numeric coincidences on this path
+              </h3>
+              <div className="space-y-1.5">
+                {pathCoincidences.map((item) => (
+                  <div key={item.value} className="text-xs rounded px-2 py-1.5" style={{ background: 'var(--color-bg-hover)', color: 'var(--color-text-secondary)' }}>
+                    <span style={{ color: 'var(--color-text-primary)' }}>#{item.value}</span> · {item.entities.join(' ↔ ')}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       )}
     </div>

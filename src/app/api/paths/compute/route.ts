@@ -6,17 +6,69 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 
-const sb = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!,
-  { auth: { autoRefreshToken: false, persistSession: false } }
-);
-
 interface PathStep { entity_id: string; claim_id: string }
 
 interface PathRequest { from_entity: string; to_entity: string; max_hops?: number }
 
+function getAdminClient() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !key || url.includes('your_supabase_project_url') || key.includes('your_service_role_key')) {
+    throw new Error('Supabase admin env vars are not configured.');
+  }
+  return createClient(url, key, { auth: { autoRefreshToken: false, persistSession: false } });
+}
+
+async function bfsPath(
+  sb: any,
+  fromEntity: string,
+  toEntity: string,
+  maxHops: number,
+): Promise<PathStep[] | null> {
+  const visited = new Map<string, PathStep[]>();
+  visited.set(fromEntity, []);
+  const queue: string[] = [fromEntity];
+
+  let found: PathStep[] | null = null;
+  outer:
+  for (let hop = 0; hop < maxHops && queue.length > 0; hop++) {
+    const level = [...queue];
+    queue.length = 0;
+    const levelSet = new Set(level);
+
+    const { data: claims } = await sb
+      .from('claims')
+      .select('id, from_entity, to_entity')
+      .or(`from_entity.in.(${level.join(',')}),to_entity.in.(${level.join(',')})`)
+      .eq('is_public', true)
+      .eq('is_hidden', false);
+
+    for (const claim of (claims ?? []) as any[]) {
+      for (const [here, next] of [
+        [claim.from_entity, claim.to_entity],
+        [claim.to_entity, claim.from_entity],
+      ] as [string, string][]) {
+        if (!levelSet.has(here)) continue;
+        if (visited.has(next)) continue;
+
+        const parentPath = visited.get(here)!;
+        const newPath: PathStep[] = [...parentPath, { entity_id: here, claim_id: claim.id }];
+        visited.set(next, newPath);
+        queue.push(next);
+
+        if (next === toEntity) {
+          found = [...newPath, { entity_id: toEntity, claim_id: claim.id }];
+          break outer;
+        }
+      }
+    }
+  }
+
+  return found;
+}
+
 export async function POST(request: Request) {
+  const sb = getAdminClient();
   const body: PathRequest = await request.json();
   const { from_entity, to_entity, max_hops = 4 } = body;
 
@@ -38,53 +90,13 @@ export async function POST(request: Request) {
 
   if (cached) return NextResponse.json({ path: cached, cached: true });
 
-  // BFS
-  // visited: entity_id → { path: PathStep[], via: { claim_id, source_entity } }
-  const visited = new Map<string, PathStep[]>();
-  visited.set(from_entity, []);
-  const queue: string[] = [from_entity];
-
-  let found: PathStep[] | null = null;
-
-  outer:
-  for (let hop = 0; hop < max_hops && queue.length > 0; hop++) {
-    const level = [...queue];
-    queue.length = 0;
-
-    // Batch-fetch all edges touching any node in this level
-    const { data: claims } = await sb
-      .from('claims')
-      .select('id, from_entity, to_entity')
-      .or(`from_entity.in.(${level.join(',')}),to_entity.in.(${level.join(',')})`)
-      .eq('is_public', true)
-      .eq('is_hidden', false);
-
-    for (const claim of (claims ?? [])) {
-      for (const [here, next] of [
-        [claim.from_entity, claim.to_entity],
-        [claim.to_entity, claim.from_entity],
-      ] as [string, string][]) {
-        if (!level.includes(here)) continue;
-        if (visited.has(next)) continue;
-
-        const parentPath = visited.get(here)!;
-        const newPath: PathStep[] = [...parentPath, { entity_id: here, claim_id: claim.id }];
-        visited.set(next, newPath);
-        queue.push(next);
-
-        if (next === to_entity) {
-          found = [...newPath, { entity_id: to_entity, claim_id: claim.id }];
-          break outer;
-        }
-      }
-    }
-  }
+  const found = await bfsPath(sb, from_entity, to_entity, max_hops);
 
   if (!found) {
     return NextResponse.json({ path: null, message: 'No path found within limit' });
   }
 
-  const hops = Math.ceil((found.length - 1) / 2) || 1;
+  const hops = Math.max(1, found.length - 1);
 
   // Persist
   await sb.from('derived_paths').upsert({

@@ -1,15 +1,29 @@
 'use client';
 
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
-import { Network } from 'lucide-react';
+
+function safeNextPath(input: string | null | undefined) {
+  if (!input || !input.startsWith('/')) return '/';
+  if (input.startsWith('//')) return '/';
+  return input;
+}
 
 export default function LoginPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen" style={{ background: 'var(--color-bg-base)' }} />}>
+      <LoginView />
+    </Suspense>
+  );
+}
+
+function LoginView() {
   const params = useSearchParams();
-  const next = params.get('next') ?? '/';
+  const next = safeNextPath(params.get('next'));
+  const authError = params.get('error');
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState(authError === 'auth_failed' ? 'Authentication failed. Please try again.' : '');
 
   async function signInWithGoogle() {
     setLoading(true);

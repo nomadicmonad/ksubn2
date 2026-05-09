@@ -40,6 +40,8 @@ CREATE TABLE public.profiles (
   at_name           TEXT        UNIQUE NOT NULL,   -- e.g. "niklas#1"
   avatar_url        TEXT,
   bio               TEXT,
+  onboarding_completed BOOLEAN DEFAULT FALSE,
+  show_numerology BOOLEAN DEFAULT TRUE,
   created_at        TIMESTAMPTZ DEFAULT NOW(),
 
   -- Rate limiting counters, reset daily
@@ -152,6 +154,20 @@ CREATE TABLE public.claims (
 CREATE INDEX claims_from ON public.claims (from_entity);
 CREATE INDEX claims_to   ON public.claims (to_entity);
 CREATE INDEX claims_type ON public.claims (relation_type);
+
+-- Keep claim updated_at current whenever claim/source fields are edited
+CREATE OR REPLACE FUNCTION public.touch_claim_updated_at()
+RETURNS TRIGGER AS $$
+BEGIN
+  NEW.updated_at = NOW();
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+DROP TRIGGER IF EXISTS claims_touch_updated_at ON public.claims;
+CREATE TRIGGER claims_touch_updated_at
+  BEFORE UPDATE ON public.claims
+  FOR EACH ROW EXECUTE PROCEDURE public.touch_claim_updated_at();
 
 -- Trigger: keep entity.direct_claim_count in sync
 CREATE OR REPLACE FUNCTION public.update_entity_claim_count()
@@ -348,11 +364,23 @@ CREATE TABLE public.entity_queue (
   entity_type    entity_type,
   submitted_by   UUID REFERENCES public.profiles(id),
   status         queue_status DEFAULT 'pending',
+  attempts       INT DEFAULT 0,
+  next_attempt_at TIMESTAMPTZ,
+  last_error_code TEXT,
   created_at     TIMESTAMPTZ DEFAULT NOW(),
   processed_at   TIMESTAMPTZ,
   result_entity  UUID REFERENCES public.entities(id),
   error          TEXT
 );
+
+CREATE INDEX entity_queue_status_next_attempt_idx
+  ON public.entity_queue(status, next_attempt_at, created_at);
+
+-- Backfill for existing projects.
+ALTER TABLE public.entity_queue ADD COLUMN IF NOT EXISTS attempts INT DEFAULT 0;
+ALTER TABLE public.entity_queue ADD COLUMN IF NOT EXISTS next_attempt_at TIMESTAMPTZ;
+ALTER TABLE public.entity_queue ADD COLUMN IF NOT EXISTS last_error_code TEXT;
+ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS show_numerology BOOLEAN DEFAULT TRUE;
 
 -- ============================================================
 -- ROW LEVEL SECURITY
@@ -374,6 +402,9 @@ ALTER TABLE public.entity_queue   ENABLE ROW LEVEL SECURITY;
 -- Profiles: users can read all, update only own
 CREATE POLICY "profiles_select_all"  ON public.profiles FOR SELECT USING (true);
 CREATE POLICY "profiles_update_own"  ON public.profiles FOR UPDATE USING (auth.uid() = id);
+
+-- If this is applied on an existing project, keep current users unblocked.
+UPDATE public.profiles SET onboarding_completed = TRUE WHERE onboarding_completed IS NOT TRUE;
 
 -- Entities: public readable, authenticated can insert
 CREATE POLICY "entities_select_public" ON public.entities FOR SELECT USING (is_public = true OR auth.uid() = created_by);
@@ -460,6 +491,7 @@ CREATE OR REPLACE FUNCTION public.entity_claims(entity_uuid UUID, limit_n INT DE
 RETURNS TABLE (
   claim_id UUID, relation_type relation_type, description TEXT,
   source_url TEXT, source_domain TEXT, date_start DATE, date_end DATE,
+  created_at TIMESTAMPTZ, updated_at TIMESTAMPTZ,
   upvotes INT, downvotes INT, is_bulkbot BOOLEAN,
   other_entity_id UUID, other_entity_name TEXT, other_entity_slug TEXT,
   other_entity_type entity_type, other_entity_image TEXT,
@@ -467,6 +499,7 @@ RETURNS TABLE (
 ) AS $$
   SELECT c.id, c.relation_type, c.description,
          c.source_url, c.source_domain, c.date_start, c.date_end,
+         c.created_at, c.updated_at,
          c.upvotes, c.downvotes, c.is_bulkbot,
          e.id, e.name, e.slug, e.type, e.image_url,
          'outgoing'::TEXT
@@ -476,6 +509,7 @@ RETURNS TABLE (
   UNION ALL
   SELECT c.id, c.relation_type, c.description,
          c.source_url, c.source_domain, c.date_start, c.date_end,
+         c.created_at, c.updated_at,
          c.upvotes, c.downvotes, c.is_bulkbot,
          e.id, e.name, e.slug, e.type, e.image_url,
          'incoming'::TEXT

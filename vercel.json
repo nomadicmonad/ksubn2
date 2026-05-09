@@ -3,6 +3,10 @@
     {
       "path": "/api/queue/process",
       "schedule": "*/5 * * * *"
+    },
+    {
+      "path": "/api/paths/precompute",
+      "schedule": "*/30 * * * *"
     }
   ],
   "headers": [

@@ -6,11 +6,14 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 
-const sb = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!,
-  { auth: { autoRefreshToken: false, persistSession: false } }
-);
+function getAdminClient() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !key || url.includes('your_supabase_project_url') || key.includes('your_service_role_key')) {
+    throw new Error('Supabase admin env vars are not configured.');
+  }
+  return createClient(url, key, { auth: { autoRefreshToken: false, persistSession: false } });
+}
 
 function isAdmin(request: Request) {
   const secret = request.headers.get('x-admin-secret');
@@ -18,6 +21,7 @@ function isAdmin(request: Request) {
 }
 
 export async function POST(request: Request) {
+  const sb = getAdminClient();
   if (!isAdmin(request)) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }

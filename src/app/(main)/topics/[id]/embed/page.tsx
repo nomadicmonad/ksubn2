@@ -28,7 +28,14 @@ export default async function EmbedPage({ params }: Props) {
     .eq('topic_id', topic.id)
     .order('position');
 
-  return <EmbedClient topic={topic as Topic} tabs={(tabs ?? []) as TopicTab[]} />;
+  const { data: ownerProfile } = await supabase
+    .from('profiles')
+    .select('*')
+    .eq('id', topic.user_id)
+    .single();
+  const showNumerology = !(ownerProfile && 'show_numerology' in ownerProfile && ownerProfile.show_numerology === false);
+
+  return <EmbedClient topic={topic as Topic} tabs={(tabs ?? []) as TopicTab[]} showNumerology={showNumerology} />;
 }
 
 export async function generateMetadata({ params }: Props) {

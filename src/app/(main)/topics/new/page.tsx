@@ -22,6 +22,12 @@ export default function NewTopicPage() {
     const sb = createClient();
     const { data: { user } } = await sb.auth.getUser();
     if (!user) { router.push('/login?next=/topics/new'); return; }
+    const { data: profile } = await sb.from('profiles').select('is_banned').eq('id', user.id).single();
+    if (profile?.is_banned) {
+      setError('Your account is currently restricted and cannot create new topics.');
+      setLoading(false);
+      return;
+    }
 
     const { data, error: err } = await sb
       .from('topics')

@@ -72,6 +72,8 @@ export interface ClaimWithEntity {
   source_domain: string | null;
   date_start: string | null;
   date_end: string | null;
+  created_at: string;
+  updated_at: string;
   upvotes: number;
   downvotes: number;
   is_bulkbot: boolean;
@@ -90,9 +92,12 @@ export interface Profile {
   at_name: string;
   avatar_url: string | null;
   bio: string | null;
+  onboarding_completed: boolean;
+  show_numerology: boolean;
   created_at: string;
   submissions_today: number;
   entities_today: number;
+  last_reset_date: string;
   claims_total: number;
   entities_total: number;
   tier: string;

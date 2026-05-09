@@ -18,8 +18,9 @@ import ReactFlow, {
 import 'reactflow/dist/style.css';
 import { Search, Undo2, Filter, ZoomIn, X, Plus } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
-import type { Entity, ClaimWithEntity, RelationType } from '@/types';
+import type { Entity, ClaimWithEntity, PathStep, RelationType } from '@/types';
 import { RELATION_META } from '@/types';
+import { gematria } from '@/lib/numerology';
 
 // ── Custom node ──────────────────────────────────────────────
 function EntityNode({ data }: { data: { entity: Entity; onExpand: (id: string) => void } }) {
@@ -119,7 +120,7 @@ function layoutNodes(center: Entity, connections: ClaimWithEntity[], existingNod
 
 const FILTER_ALL = 'all';
 
-export function GraphView() {
+export function GraphView({ showNumerologyOverride }: { showNumerologyOverride?: boolean } = {}) {
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [search, setSearch] = useState('');
@@ -127,8 +128,27 @@ export function GraphView() {
   const [loadingId, setLoadingId] = useState<string | null>(null);
   const [filterType, setFilterType] = useState<string>(FILTER_ALL);
   const [showFilters, setShowFilters] = useState(false);
+  const [pathFrom, setPathFrom] = useState<Entity | null>(null);
+  const [pathTo, setPathTo] = useState<Entity | null>(null);
+  const [pathLoading, setPathLoading] = useState(false);
+  const [starLoading, setStarLoading] = useState(false);
+  const [showNumerology, setShowNumerology] = useState(true);
   const history = useRef<{ nodes: Node[]; edges: Edge[] }[]>([]);
   const searchTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+
+  useEffect(() => {
+    if (typeof showNumerologyOverride === 'boolean') {
+      setShowNumerology(showNumerologyOverride);
+      return;
+    }
+    (async () => {
+      const sb = createClient();
+      const { data: { user } } = await sb.auth.getUser();
+      if (!user) return;
+      const { data: profile } = await sb.from('profiles').select('*').eq('id', user.id).single();
+      if (profile && 'show_numerology' in profile && profile.show_numerology === false) setShowNumerology(false);
+    })();
+  }, [showNumerologyOverride]);
 
   const saveHistory = useCallback(() => {
     history.current.push({ nodes: [...nodes], edges: [...edges] });
@@ -209,9 +229,134 @@ export function GraphView() {
     await expandEntity(entity.id);
   }
 
+  async function importStarredEntities() {
+    if (starLoading) return;
+    setStarLoading(true);
+    saveHistory();
+    try {
+      const sb = createClient();
+      const { data: { user } } = await sb.auth.getUser();
+      if (!user) return;
+      const { data: stars } = await sb.from('stars').select('entity_id').eq('user_id', user.id).not('entity_id', 'is', null).limit(20);
+      const entityIds = [...new Set((stars ?? []).map(s => s.entity_id).filter(Boolean) as string[])];
+      if (entityIds.length === 0) return;
+      const { data: entitiesData } = await sb.from('entities').select('*').in('id', entityIds).eq('is_public', true);
+      const entities = (entitiesData ?? []) as Entity[];
+      for (const entity of entities.slice(0, 8)) {
+        setNodes(prev => {
+          if (prev.find(n => n.id === entity.id)) return prev;
+          return [...prev, {
+            id: entity.id,
+            type: 'entity',
+            position: { x: Math.random() * 500 - 250, y: Math.random() * 400 - 200 },
+            data: { entity, onExpand: expandEntity },
+          }];
+        });
+      }
+      for (const entity of entities.slice(0, 8)) {
+        await expandEntity(entity.id);
+      }
+    } finally {
+      setStarLoading(false);
+    }
+  }
+
+  async function importPathBetweenEntities() {
+    if (!pathFrom || !pathTo) return;
+    setPathLoading(true);
+    saveHistory();
+    try {
+      const res = await fetch('/api/paths/compute', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ from_entity: pathFrom.id, to_entity: pathTo.id, max_hops: 4 }),
+      });
+      const json = await res.json();
+      if (!json.path?.path) return;
+      const pathSteps = json.path.path as PathStep[];
+      const entityIds = [...new Set(pathSteps.map(s => s.entity_id))];
+      const claimIds = [...new Set(pathSteps.map(s => s.claim_id).filter(Boolean))];
+      const sb = createClient();
+      const [{ data: entitiesData }, { data: claimsData }] = await Promise.all([
+        sb.from('entities').select('*').in('id', entityIds),
+        sb.from('claims').select('id, relation_type, description').in('id', claimIds),
+      ]);
+      const entityMap = Object.fromEntries((entitiesData ?? []).map(e => [e.id, e as Entity]));
+      const claimMap = Object.fromEntries((claimsData ?? []).map(c => [c.id, c]));
+
+      const pathEntityOrder = pathSteps.map(step => step.entity_id);
+      const uniqueInOrder = pathEntityOrder.filter((id, idx) => pathEntityOrder.indexOf(id) === idx);
+
+      const newNodes: Node[] = uniqueInOrder
+        .map((id, i) => {
+          const entity = entityMap[id];
+          if (!entity) return null;
+          return {
+            id,
+            type: 'entity',
+            position: { x: i * 220, y: 0 },
+            data: { entity, onExpand: expandEntity },
+          } as Node;
+        })
+        .filter(Boolean) as Node[];
+
+      const newEdges: Edge[] = [];
+      for (let i = 0; i < pathSteps.length - 1; i++) {
+        const sourceId = pathSteps[i].entity_id;
+        const targetId = pathSteps[i + 1].entity_id;
+        const claim = claimMap[pathSteps[i].claim_id];
+        if (!claim) continue;
+        const meta = RELATION_META[claim.relation_type as RelationType];
+        newEdges.push({
+          id: `${sourceId}-${targetId}-${pathSteps[i].claim_id}`,
+          source: sourceId,
+          target: targetId,
+          type: 'smoothstep',
+          label: meta.icon,
+          labelStyle: { fontSize: 14 },
+          style: { stroke: meta.color, strokeWidth: 2, opacity: 0.8 },
+          markerEnd: { type: MarkerType.ArrowClosed, color: meta.color, width: 12, height: 12 },
+          data: { relation_type: claim.relation_type, claim_id: pathSteps[i].claim_id },
+        });
+      }
+
+      setNodes(prev => {
+        const map = new Map(prev.map(n => [n.id, n]));
+        for (const n of newNodes) map.set(n.id, map.has(n.id) ? map.get(n.id)! : n);
+        return [...map.values()];
+      });
+      setEdges(prev => {
+        const map = new Map(prev.map(e => [e.id, e]));
+        for (const e of newEdges) map.set(e.id, e);
+        return [...map.values()];
+      });
+    } finally {
+      setPathLoading(false);
+    }
+  }
+
   const visibleEdges = filterType === FILTER_ALL
     ? edges
     : edges.filter(e => e.data?.relation_type === filterType);
+
+  const numericCoincidences = (() => {
+    if (!showNumerology || nodes.length < 2) return [] as Array<{ value: number; entities: string[] }>;
+    const buckets = new Map<number, string[]>();
+    for (const node of nodes) {
+      const entity = node.data?.entity as Entity | undefined;
+      if (!entity?.name) continue;
+      for (const value of Object.values(gematria(entity.name))) {
+        const names = buckets.get(value) ?? [];
+        if (!names.includes(entity.name)) names.push(entity.name);
+        buckets.set(value, names);
+      }
+    }
+    return [...buckets.entries()]
+      .filter(([, names]) => names.length >= 2)
+      .sort((a, b) => b[1].length - a[1].length)
+      .slice(0, 8)
+      .map(([value, entities]) => ({ value, entities }));
+  })();
 
   return (
     <div style={{ height: 'calc(100vh - 56px)', position: 'relative', background: 'var(--color-bg-base)' }}>
@@ -275,6 +420,48 @@ export function GraphView() {
               )}
             </div>
 
+            {/* Source -> target path import */}
+            <div className="rounded-xl p-2 space-y-2" style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)', minWidth: '260px' }}>
+              <p className="text-[11px] uppercase tracking-wider font-semibold" style={{ color: 'var(--color-text-muted)' }}>
+                Import graph between two entities
+              </p>
+              <div className="relative">
+                <input
+                  value={pathFrom?.name ?? ''}
+                  onChange={async (e) => {
+                    const q = e.target.value;
+                    if (!q.trim()) { setPathFrom(null); return; }
+                    const sb = createClient();
+                    const { data } = await sb.from('entities').select('*').eq('is_public', true).ilike('name', `%${q}%`).limit(1);
+                    setPathFrom(((data ?? [])[0] as Entity) ?? null);
+                  }}
+                  placeholder="From entity (type name)"
+                  className="input text-xs"
+                />
+              </div>
+              <div className="relative">
+                <input
+                  value={pathTo?.name ?? ''}
+                  onChange={async (e) => {
+                    const q = e.target.value;
+                    if (!q.trim()) { setPathTo(null); return; }
+                    const sb = createClient();
+                    const { data } = await sb.from('entities').select('*').eq('is_public', true).ilike('name', `%${q}%`).limit(1);
+                    setPathTo(((data ?? [])[0] as Entity) ?? null);
+                  }}
+                  placeholder="To entity (type name)"
+                  className="input text-xs"
+                />
+              </div>
+              <button
+                onClick={importPathBetweenEntities}
+                disabled={!pathFrom || !pathTo || pathLoading}
+                className="btn-primary w-full justify-center text-xs"
+              >
+                {pathLoading ? 'Importing…' : 'Import path'}
+              </button>
+            </div>
+
             {/* Undo + Filter buttons */}
             <div className="flex gap-2">
               <button
@@ -291,6 +478,14 @@ export function GraphView() {
                 style={{ background: showFilters ? 'var(--color-accent-dim)' : 'var(--color-bg-card)', border: `1px solid ${showFilters ? 'rgba(99,102,241,0.4)' : 'var(--color-bg-border)'}`, color: showFilters ? 'var(--color-accent)' : 'var(--color-text-secondary)' }}
               >
                 <Filter size={12} /> Filter
+              </button>
+              <button
+                onClick={importStarredEntities}
+                disabled={starLoading}
+                className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs transition-colors"
+                style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)', color: 'var(--color-text-secondary)' }}
+              >
+                <Plus size={12} /> {starLoading ? 'Loading…' : 'Import starred'}
               </button>
             </div>
 
@@ -338,6 +533,22 @@ export function GraphView() {
               <p className="text-sm" style={{ color: 'var(--color-text-muted)' }}>
                 Click any node to expand its connections
               </p>
+            </div>
+          </Panel>
+        )}
+
+        {showNumerology && numericCoincidences.length > 0 && (
+          <Panel position="top-right">
+            <div className="rounded-xl p-3 space-y-2 max-w-[320px]" style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)' }}>
+              <p className="text-[11px] uppercase tracking-wider font-semibold" style={{ color: 'var(--color-text-muted)' }}>
+                Numeric coincidences
+              </p>
+              {numericCoincidences.map((item) => (
+                <div key={item.value} className="rounded-lg px-2 py-1.5 text-xs" style={{ background: 'var(--color-bg-hover)' }}>
+                  <span style={{ color: 'var(--color-text-primary)' }}>#{item.value}</span>
+                  <span style={{ color: 'var(--color-text-muted)' }}> · {item.entities.join(', ')}</span>
+                </div>
+              ))}
             </div>
           </Panel>
         )}

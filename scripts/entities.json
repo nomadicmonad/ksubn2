@@ -1,0 +1,5233 @@
+[
+  {
+    "name": "Jeffrey Epstein",
+    "type": "person",
+    "description": "Jeffrey Epstein is a notable person in public discourse.",
+    "summary": "Jeffrey Epstein is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jeffrey_Epstein",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Bill Clinton",
+    "type": "person",
+    "description": "Bill Clinton is a notable person in public discourse.",
+    "summary": "Bill Clinton is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bill_Clinton",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Prince Andrew",
+    "type": "person",
+    "description": "Prince Andrew is a notable person in public discourse.",
+    "summary": "Prince Andrew is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Andrew",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Donald Trump",
+    "type": "person",
+    "description": "Donald Trump is a notable person in public discourse.",
+    "summary": "Donald Trump is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Donald_Trump",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Bill Gates",
+    "type": "person",
+    "description": "Bill Gates is a notable person in public discourse.",
+    "summary": "Bill Gates is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bill_Gates",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Alan Dershowitz",
+    "type": "person",
+    "description": "Alan Dershowitz is a notable person in public discourse.",
+    "summary": "Alan Dershowitz is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Alan_Dershowitz",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Ghislaine Maxwell",
+    "type": "person",
+    "description": "Ghislaine Maxwell is a notable person in public discourse.",
+    "summary": "Ghislaine Maxwell is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ghislaine_Maxwell",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "George Soros",
+    "type": "person",
+    "description": "George Soros is a notable person in public discourse.",
+    "summary": "George Soros is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/George_Soros",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Open Society Foundations",
+    "type": "organization",
+    "description": "Open Society Foundations is a notable organization in public discourse.",
+    "summary": "Open Society Foundations is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Open_Society_Foundations",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Klaus Schwab",
+    "type": "person",
+    "description": "Klaus Schwab is a notable person in public discourse.",
+    "summary": "Klaus Schwab is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Klaus_Schwab",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "World Economic Forum",
+    "type": "organization",
+    "description": "World Economic Forum is a notable organization in public discourse.",
+    "summary": "World Economic Forum is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/World_Economic_Forum",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Tony Blair",
+    "type": "person",
+    "description": "Tony Blair is a notable person in public discourse.",
+    "summary": "Tony Blair is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tony_Blair",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Angela Merkel",
+    "type": "person",
+    "description": "Angela Merkel is a notable person in public discourse.",
+    "summary": "Angela Merkel is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Angela_Merkel",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "World Health Organization",
+    "type": "organization",
+    "description": "World Health Organization is a notable organization in public discourse.",
+    "summary": "World Health Organization is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/World_Health_Organization",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Anthony Fauci",
+    "type": "person",
+    "description": "Anthony Fauci is a notable person in public discourse.",
+    "summary": "Anthony Fauci is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Anthony_Fauci",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Event 201",
+    "type": "person",
+    "description": "Event 201 is a notable person in public discourse.",
+    "summary": "Event 201 is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Event_201",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Johns Hopkins University",
+    "type": "organization",
+    "description": "Johns Hopkins University is a notable organization in public discourse.",
+    "summary": "Johns Hopkins University is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Johns_Hopkins_University",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Henry Kissinger",
+    "type": "person",
+    "description": "Henry Kissinger is a notable person in public discourse.",
+    "summary": "Henry Kissinger is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Henry_Kissinger",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "CIA",
+    "type": "organization",
+    "description": "CIA is a notable organization in public discourse.",
+    "summary": "CIA is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/CIA",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Augusto Pinochet",
+    "type": "person",
+    "description": "Augusto Pinochet is a notable person in public discourse.",
+    "summary": "Augusto Pinochet is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Augusto_Pinochet",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Bilderberg Group",
+    "type": "organization",
+    "description": "Bilderberg Group is a notable organization in public discourse.",
+    "summary": "Bilderberg Group is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bilderberg_Group",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Peter Thiel",
+    "type": "person",
+    "description": "Peter Thiel is a notable person in public discourse.",
+    "summary": "Peter Thiel is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Peter_Thiel",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Palantir",
+    "type": "person",
+    "description": "Palantir is a notable person in public discourse.",
+    "summary": "Palantir is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Palantir",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Rupert Murdoch",
+    "type": "person",
+    "description": "Rupert Murdoch is a notable person in public discourse.",
+    "summary": "Rupert Murdoch is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Rupert_Murdoch",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Roger Ailes",
+    "type": "person",
+    "description": "Roger Ailes is a notable person in public discourse.",
+    "summary": "Roger Ailes is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Roger_Ailes",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Fox News",
+    "type": "organization",
+    "description": "Fox News is a notable organization in public discourse.",
+    "summary": "Fox News is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fox_News",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Dick Cheney",
+    "type": "person",
+    "description": "Dick Cheney is a notable person in public discourse.",
+    "summary": "Dick Cheney is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dick_Cheney",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Project for the New American Century",
+    "type": "organization",
+    "description": "Project for the New American Century is a notable organization in public discourse.",
+    "summary": "Project for the New American Century is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Project_for_the_New_American_Century",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Paul Wolfowitz",
+    "type": "person",
+    "description": "Paul Wolfowitz is a notable person in public discourse.",
+    "summary": "Paul Wolfowitz is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Paul_Wolfowitz",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Donald Rumsfeld",
+    "type": "person",
+    "description": "Donald Rumsfeld is a notable person in public discourse.",
+    "summary": "Donald Rumsfeld is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Donald_Rumsfeld",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "George W. Bush",
+    "type": "person",
+    "description": "George W. Bush is a notable person in public discourse.",
+    "summary": "George W. Bush is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/George_W._Bush",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Bohemian Grove",
+    "type": "person",
+    "description": "Bohemian Grove is a notable person in public discourse.",
+    "summary": "Bohemian Grove is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bohemian_Grove",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Barack Obama",
+    "type": "person",
+    "description": "Barack Obama is a notable person in public discourse.",
+    "summary": "Barack Obama is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Barack_Obama",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Council on Foreign Relations",
+    "type": "organization",
+    "description": "Council on Foreign Relations is a notable organization in public discourse.",
+    "summary": "Council on Foreign Relations is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Council_on_Foreign_Relations",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Hillary Clinton",
+    "type": "person",
+    "description": "Hillary Clinton is a notable person in public discourse.",
+    "summary": "Hillary Clinton is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hillary_Clinton",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Elon Musk",
+    "type": "person",
+    "description": "Elon Musk is a notable person in public discourse.",
+    "summary": "Elon Musk is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Elon_Musk",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "DARPA",
+    "type": "person",
+    "description": "DARPA is a notable person in public discourse.",
+    "summary": "DARPA is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/DARPA",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Mark Zuckerberg",
+    "type": "person",
+    "description": "Mark Zuckerberg is a notable person in public discourse.",
+    "summary": "Mark Zuckerberg is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Operation Gladio",
+    "type": "person",
+    "description": "Operation Gladio is a notable person in public discourse.",
+    "summary": "Operation Gladio is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Operation_Gladio",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Operation Condor",
+    "type": "person",
+    "description": "Operation Condor is a notable person in public discourse.",
+    "summary": "Operation Condor is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Operation_Condor",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Iran-Contra affair",
+    "type": "event",
+    "description": "Iran-Contra affair is a notable event in public discourse.",
+    "summary": "Iran-Contra affair is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Iran-Contra_affair",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Ronald Reagan",
+    "type": "person",
+    "description": "Ronald Reagan is a notable person in public discourse.",
+    "summary": "Ronald Reagan is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Oliver North",
+    "type": "person",
+    "description": "Oliver North is a notable person in public discourse.",
+    "summary": "Oliver North is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Oliver_North",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Klaus Barbie",
+    "type": "person",
+    "description": "Klaus Barbie is a notable person in public discourse.",
+    "summary": "Klaus Barbie is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Klaus_Barbie",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Edward Snowden",
+    "type": "event",
+    "description": "Edward Snowden is a notable event in public discourse.",
+    "summary": "Edward Snowden is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Edward_Snowden",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "NSA",
+    "type": "person",
+    "description": "NSA is a notable person in public discourse.",
+    "summary": "NSA is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/NSA",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Glenn Greenwald",
+    "type": "person",
+    "description": "Glenn Greenwald is a notable person in public discourse.",
+    "summary": "Glenn Greenwald is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Glenn_Greenwald",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "WEF Young Global Leaders",
+    "type": "person",
+    "description": "WEF Young Global Leaders is a notable person in public discourse.",
+    "summary": "WEF Young Global Leaders is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/WEF_Young_Global_Leaders",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Emmanuel Macron",
+    "type": "person",
+    "description": "Emmanuel Macron is a notable person in public discourse.",
+    "summary": "Emmanuel Macron is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Emmanuel_Macron",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Justin Trudeau",
+    "type": "person",
+    "description": "Justin Trudeau is a notable person in public discourse.",
+    "summary": "Justin Trudeau is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Justin_Trudeau",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Harvey Weinstein",
+    "type": "person",
+    "description": "Harvey Weinstein is a notable person in public discourse.",
+    "summary": "Harvey Weinstein is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Harvey_Weinstein",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Democratic Party",
+    "type": "person",
+    "description": "Democratic Party is a notable person in public discourse.",
+    "summary": "Democratic Party is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Democratic_Party",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Prince Charles",
+    "type": "person",
+    "description": "Prince Charles is a notable person in public discourse.",
+    "summary": "Prince Charles is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Charles",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Jimmy Savile",
+    "type": "person",
+    "description": "Jimmy Savile is a notable person in public discourse.",
+    "summary": "Jimmy Savile is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jimmy_Savile",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "BBC",
+    "type": "organization",
+    "description": "BBC is a notable organization in public discourse.",
+    "summary": "BBC is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/BBC",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Richard Nixon",
+    "type": "person",
+    "description": "Richard Nixon is a notable person in public discourse.",
+    "summary": "Richard Nixon is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Richard_Nixon",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Propaganda Due",
+    "type": "person",
+    "description": "Propaganda Due is a notable person in public discourse.",
+    "summary": "Propaganda Due is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Propaganda_Due",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Silvio Berlusconi",
+    "type": "person",
+    "description": "Silvio Berlusconi is a notable person in public discourse.",
+    "summary": "Silvio Berlusconi is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Silvio_Berlusconi",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "AIPAC",
+    "type": "organization",
+    "description": "AIPAC is a notable organization in public discourse.",
+    "summary": "AIPAC is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/AIPAC",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "United States Congress",
+    "type": "person",
+    "description": "United States Congress is a notable person in public discourse.",
+    "summary": "United States Congress is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/United_States_Congress",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "PRISM",
+    "type": "person",
+    "description": "PRISM is a notable person in public discourse.",
+    "summary": "PRISM is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/PRISM",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Google",
+    "type": "person",
+    "description": "Google is a notable person in public discourse.",
+    "summary": "Google is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Google",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "New Mexico ranch",
+    "type": "person",
+    "description": "New Mexico ranch is a notable person in public discourse.",
+    "summary": "New Mexico ranch is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/New_Mexico_ranch",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Terramar Project",
+    "type": "organization",
+    "description": "Terramar Project is a notable organization in public discourse.",
+    "summary": "Terramar Project is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Terramar_Project",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Little Saint James",
+    "type": "person",
+    "description": "Little Saint James is a notable person in public discourse.",
+    "summary": "Little Saint James is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Little_Saint_James",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Philip Zelikow",
+    "type": "person",
+    "description": "Philip Zelikow is a notable person in public discourse.",
+    "summary": "Philip Zelikow is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Philip_Zelikow",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "September 11 Commission",
+    "type": "organization",
+    "description": "September 11 Commission is a notable organization in public discourse.",
+    "summary": "September 11 Commission is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/September_11_Commission",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Robert Mueller",
+    "type": "person",
+    "description": "Robert Mueller is a notable person in public discourse.",
+    "summary": "Robert Mueller is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Mueller",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Alex Acosta",
+    "type": "person",
+    "description": "Alex Acosta is a notable person in public discourse.",
+    "summary": "Alex Acosta is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Alex_Acosta",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Saddam Hussein",
+    "type": "person",
+    "description": "Saddam Hussein is a notable person in public discourse.",
+    "summary": "Saddam Hussein is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Saddam_Hussein",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Monsanto",
+    "type": "person",
+    "description": "Monsanto is a notable person in public discourse.",
+    "summary": "Monsanto is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Monsanto",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Ukraine",
+    "type": "person",
+    "description": "Ukraine is a notable person in public discourse.",
+    "summary": "Ukraine is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ukraine",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Victoria Nuland",
+    "type": "person",
+    "description": "Victoria Nuland is a notable person in public discourse.",
+    "summary": "Victoria Nuland is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Victoria_Nuland",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Halliburton",
+    "type": "person",
+    "description": "Halliburton is a notable person in public discourse.",
+    "summary": "Halliburton is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Halliburton",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Iraq War",
+    "type": "event",
+    "description": "Iraq War is a notable event in public discourse.",
+    "summary": "Iraq War is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Iraq_War",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Blackwater",
+    "type": "person",
+    "description": "Blackwater is a notable person in public discourse.",
+    "summary": "Blackwater is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Blackwater",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Erik Prince",
+    "type": "person",
+    "description": "Erik Prince is a notable person in public discourse.",
+    "summary": "Erik Prince is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Erik_Prince",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Cambridge Analytica",
+    "type": "person",
+    "description": "Cambridge Analytica is a notable person in public discourse.",
+    "summary": "Cambridge Analytica is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cambridge_Analytica",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Brexit",
+    "type": "person",
+    "description": "Brexit is a notable person in public discourse.",
+    "summary": "Brexit is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Brexit",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Acosta",
+    "type": "person",
+    "description": "Acosta is a notable person in public discourse.",
+    "summary": "Acosta is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Acosta",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Wall Street",
+    "type": "person",
+    "description": "Wall Street is a notable person in public discourse.",
+    "summary": "Wall Street is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wall_Street",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "FDA",
+    "type": "organization",
+    "description": "FDA is a notable organization in public discourse.",
+    "summary": "FDA is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/FDA",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Afghanistan",
+    "type": "person",
+    "description": "Afghanistan is a notable person in public discourse.",
+    "summary": "Afghanistan is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Afghanistan",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Osama bin Laden",
+    "type": "person",
+    "description": "Osama bin Laden is a notable person in public discourse.",
+    "summary": "Osama bin Laden is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Osama_bin_Laden",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Roger Stone",
+    "type": "person",
+    "description": "Roger Stone is a notable person in public discourse.",
+    "summary": "Roger Stone is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Roger_Stone",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Dershowitz",
+    "type": "person",
+    "description": "Dershowitz is a notable person in public discourse.",
+    "summary": "Dershowitz is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dershowitz",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Pfizer",
+    "type": "person",
+    "description": "Pfizer is a notable person in public discourse.",
+    "summary": "Pfizer is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pfizer",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Marc Rich",
+    "type": "person",
+    "description": "Marc Rich is a notable person in public discourse.",
+    "summary": "Marc Rich is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Marc_Rich",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "WHO",
+    "type": "organization",
+    "description": "WHO is a notable organization in public discourse.",
+    "summary": "WHO is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/WHO",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "X Corp",
+    "type": "person",
+    "description": "X Corp is a notable person in public discourse.",
+    "summary": "X Corp is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/X_Corp",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "WikiLeaks",
+    "type": "person",
+    "description": "WikiLeaks is a notable person in public discourse.",
+    "summary": "WikiLeaks is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/WikiLeaks",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Julian Assange",
+    "type": "person",
+    "description": "Julian Assange is a notable person in public discourse.",
+    "summary": "Julian Assange is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Julian_Assange",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Aspartame",
+    "type": "person",
+    "description": "Aspartame is a notable person in public discourse.",
+    "summary": "Aspartame is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Aspartame",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Digital ID",
+    "type": "person",
+    "description": "Digital ID is a notable person in public discourse.",
+    "summary": "Digital ID is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Digital_ID",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Neuralink",
+    "type": "person",
+    "description": "Neuralink is a notable person in public discourse.",
+    "summary": "Neuralink is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Neuralink",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Great Reset",
+    "type": "person",
+    "description": "Great Reset is a notable person in public discourse.",
+    "summary": "Great Reset is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Reset",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Hunter Biden",
+    "type": "person",
+    "description": "Hunter Biden is a notable person in public discourse.",
+    "summary": "Hunter Biden is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hunter_Biden",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Burisma",
+    "type": "person",
+    "description": "Burisma is a notable person in public discourse.",
+    "summary": "Burisma is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Burisma",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Joe Biden",
+    "type": "person",
+    "description": "Joe Biden is a notable person in public discourse.",
+    "summary": "Joe Biden is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Joe_Biden",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "BlackRock",
+    "type": "person",
+    "description": "BlackRock is a notable person in public discourse.",
+    "summary": "BlackRock is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/BlackRock",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Deutsche Bank",
+    "type": "organization",
+    "description": "Deutsche Bank is a notable organization in public discourse.",
+    "summary": "Deutsche Bank is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Deutsche_Bank",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Virginia Giuffre",
+    "type": "person",
+    "description": "Virginia Giuffre is a notable person in public discourse.",
+    "summary": "Virginia Giuffre is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Virginia_Giuffre",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "GCHQ",
+    "type": "person",
+    "description": "GCHQ is a notable person in public discourse.",
+    "summary": "GCHQ is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/GCHQ",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Jared Kushner",
+    "type": "person",
+    "description": "Jared Kushner is a notable person in public discourse.",
+    "summary": "Jared Kushner is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jared_Kushner",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Saudi Arabia",
+    "type": "person",
+    "description": "Saudi Arabia is a notable person in public discourse.",
+    "summary": "Saudi Arabia is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Saudi_Arabia",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "farmland",
+    "type": "person",
+    "description": "farmland is a notable person in public discourse.",
+    "summary": "farmland is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/farmland",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Media",
+    "type": "person",
+    "description": "Media is a notable person in public discourse.",
+    "summary": "Media is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Media",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Tavistock Institute",
+    "type": "organization",
+    "description": "Tavistock Institute is a notable organization in public discourse.",
+    "summary": "Tavistock Institute is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tavistock_Institute",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Lex Wexner",
+    "type": "person",
+    "description": "Lex Wexner is a notable person in public discourse.",
+    "summary": "Lex Wexner is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lex_Wexner",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Harvard University",
+    "type": "organization",
+    "description": "Harvard University is a notable organization in public discourse.",
+    "summary": "Harvard University is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Harvard_University",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "MIT",
+    "type": "person",
+    "description": "MIT is a notable person in public discourse.",
+    "summary": "MIT is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/MIT",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Robert Maxwell",
+    "type": "person",
+    "description": "Robert Maxwell is a notable person in public discourse.",
+    "summary": "Robert Maxwell is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Maxwell",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "MKULTRA",
+    "type": "person",
+    "description": "MKULTRA is a notable person in public discourse.",
+    "summary": "MKULTRA is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/MKULTRA",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Manuel Noriega",
+    "type": "person",
+    "description": "Manuel Noriega is a notable person in public discourse.",
+    "summary": "Manuel Noriega is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Manuel_Noriega",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Roy Cohn",
+    "type": "person",
+    "description": "Roy Cohn is a notable person in public discourse.",
+    "summary": "Roy Cohn is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Roy_Cohn",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "George H.W. Bush",
+    "type": "person",
+    "description": "George H.W. Bush is a notable person in public discourse.",
+    "summary": "George H.W. Bush is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/George_H.W._Bush",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "September 11 attacks",
+    "type": "event",
+    "description": "September 11 attacks is a notable event in public discourse.",
+    "summary": "September 11 attacks is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/September_11_attacks",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Jacinda Ardern",
+    "type": "person",
+    "description": "Jacinda Ardern is a notable person in public discourse.",
+    "summary": "Jacinda Ardern is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jacinda_Ardern",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Moderna",
+    "type": "person",
+    "description": "Moderna is a notable person in public discourse.",
+    "summary": "Moderna is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Moderna",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Steve Bannon",
+    "type": "person",
+    "description": "Steve Bannon is a notable person in public discourse.",
+    "summary": "Steve Bannon is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Steve_Bannon",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Jamal Khashoggi",
+    "type": "person",
+    "description": "Jamal Khashoggi is a notable person in public discourse.",
+    "summary": "Jamal Khashoggi is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jamal_Khashoggi",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Paul Manafort",
+    "type": "person",
+    "description": "Paul Manafort is a notable person in public discourse.",
+    "summary": "Paul Manafort is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Paul_Manafort",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Facebook",
+    "type": "person",
+    "description": "Facebook is a notable person in public discourse.",
+    "summary": "Facebook is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Facebook",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Leon Black",
+    "type": "person",
+    "description": "Leon Black is a notable person in public discourse.",
+    "summary": "Leon Black is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Leon_Black",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "AT&T",
+    "type": "person",
+    "description": "AT&T is a notable person in public discourse.",
+    "summary": "AT&T is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/AT&T",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Carlyle Group",
+    "type": "organization",
+    "description": "Carlyle Group is a notable organization in public discourse.",
+    "summary": "Carlyle Group is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Carlyle_Group",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "David Rockefeller",
+    "type": "person",
+    "description": "David Rockefeller is a notable person in public discourse.",
+    "summary": "David Rockefeller is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/David_Rockefeller",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Zbigniew Brzezinski",
+    "type": "person",
+    "description": "Zbigniew Brzezinski is a notable person in public discourse.",
+    "summary": "Zbigniew Brzezinski is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Zbigniew_Brzezinski",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Trilateral Commission",
+    "type": "organization",
+    "description": "Trilateral Commission is a notable organization in public discourse.",
+    "summary": "Trilateral Commission is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Trilateral_Commission",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Jimmy Carter",
+    "type": "person",
+    "description": "Jimmy Carter is a notable person in public discourse.",
+    "summary": "Jimmy Carter is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jimmy_Carter",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "SpaceX",
+    "type": "person",
+    "description": "SpaceX is a notable person in public discourse.",
+    "summary": "SpaceX is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/SpaceX",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Pentagon",
+    "type": "person",
+    "description": "Pentagon is a notable person in public discourse.",
+    "summary": "Pentagon is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pentagon",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Benjamin Netanyahu",
+    "type": "person",
+    "description": "Benjamin Netanyahu is a notable person in public discourse.",
+    "summary": "Benjamin Netanyahu is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Benjamin_Netanyahu",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Genie Energy",
+    "type": "person",
+    "description": "Genie Energy is a notable person in public discourse.",
+    "summary": "Genie Energy is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Genie_Energy",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Operation Mockingbird",
+    "type": "person",
+    "description": "Operation Mockingbird is a notable person in public discourse.",
+    "summary": "Operation Mockingbird is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Operation_Mockingbird",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Ehud Barak",
+    "type": "person",
+    "description": "Ehud Barak is a notable person in public discourse.",
+    "summary": "Ehud Barak is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ehud_Barak",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Wexford",
+    "type": "person",
+    "description": "Wexford is a notable person in public discourse.",
+    "summary": "Wexford is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wexford",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "GAVI",
+    "type": "person",
+    "description": "GAVI is a notable person in public discourse.",
+    "summary": "GAVI is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/GAVI",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "EcoHealth Alliance",
+    "type": "person",
+    "description": "EcoHealth Alliance is a notable person in public discourse.",
+    "summary": "EcoHealth Alliance is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/EcoHealth_Alliance",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Wuhan Institute of Virology",
+    "type": "organization",
+    "description": "Wuhan Institute of Virology is a notable organization in public discourse.",
+    "summary": "Wuhan Institute of Virology is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wuhan_Institute_of_Virology",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Black Wednesday",
+    "type": "person",
+    "description": "Black Wednesday is a notable person in public discourse.",
+    "summary": "Black Wednesday is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Wednesday",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Noam Chomsky",
+    "type": "person",
+    "description": "Noam Chomsky is a notable person in public discourse.",
+    "summary": "Noam Chomsky is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Noam_Chomsky",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Steven Pinker",
+    "type": "person",
+    "description": "Steven Pinker is a notable person in public discourse.",
+    "summary": "Steven Pinker is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Steven_Pinker",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "Zorro Ranch",
+    "type": "person",
+    "description": "Zorro Ranch is a notable person in public discourse.",
+    "summary": "Zorro Ranch is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Zorro_Ranch",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "ID2020",
+    "type": "person",
+    "description": "ID2020 is a notable person in public discourse.",
+    "summary": "ID2020 is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/ID2020",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "US Farmland",
+    "type": "person",
+    "description": "US Farmland is a notable person in public discourse.",
+    "summary": "US Farmland is included as a seed entity in the ksubn graph so users can map claims and sources. This profile can be enriched over time with stronger summaries, images, and additional validated links.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/US_Farmland",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": null,
+    "tags": [
+      "seed",
+      "bulkbot"
+    ],
+    "entity_type_tag": "claims-derived"
+  },
+  {
+    "name": "John Podesta",
+    "type": "person",
+    "description": "US political strategist and former White House chief of staff",
+    "summary": "John Podesta is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/John_Podesta",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "James Alefantis",
+    "type": "person",
+    "description": "Restaurateur known for Comet Ping Pong ownership",
+    "summary": "James Alefantis is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/James_Alefantis",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Comet Ping Pong",
+    "type": "organization",
+    "description": "Washington, D.C. pizzeria central to online conspiracy narratives",
+    "summary": "Comet Ping Pong is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Comet_Ping_Pong",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Central Intelligence Agency",
+    "type": "organization",
+    "description": "US foreign intelligence and covert operations agency",
+    "summary": "Central Intelligence Agency is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Central_Intelligence_Agency",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "William J. Burns",
+    "type": "person",
+    "description": "Current CIA Director appointed in 2021",
+    "summary": "William J. Burns is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/William_J._Burns",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Pope Francis",
+    "type": "person",
+    "description": "Head of the Catholic Church since 2013",
+    "summary": "Pope Francis is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pope_Francis",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "VA",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Pope Benedict XVI",
+    "type": "person",
+    "description": "Former pope of the Catholic Church from 2005 to 2013",
+    "summary": "Pope Benedict XVI is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pope_Benedict_XVI",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "VA",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Pope John Paul II",
+    "type": "person",
+    "description": "Catholic pope from 1978 until 2005",
+    "summary": "Pope John Paul II is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pope_John_Paul_II",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "VA",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Holy See",
+    "type": "organization",
+    "description": "Central governing authority of the Catholic Church",
+    "summary": "Holy See is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Holy_See",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "VA",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "European Union",
+    "type": "organization",
+    "description": "Political and economic union of European states",
+    "summary": "European Union is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/European_Union",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "EU",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "P2 Lodge",
+    "type": "organization",
+    "description": "Italian Masonic lodge involved in political scandals",
+    "summary": "P2 Lodge is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/P2_Lodge",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "IT",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Eton College",
+    "type": "organization",
+    "description": "Elite British boarding school founded in 1440",
+    "summary": "Eton College is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Eton_College",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "David Icke",
+    "type": "person",
+    "description": "British conspiracy author and former sports broadcaster",
+    "summary": "David Icke is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/David_Icke",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Meyer Lansky",
+    "type": "person",
+    "description": "Organized crime financier linked to US mob networks",
+    "summary": "Meyer Lansky is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Meyer_Lansky",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Disclosure movement",
+    "type": "organization",
+    "description": "UFO transparency advocacy ecosystem",
+    "summary": "Disclosure movement is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Disclosure_movement",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Extinction Rebellion",
+    "type": "organization",
+    "description": "Climate activist movement founded in the UK",
+    "summary": "Extinction Rebellion is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Extinction_Rebellion",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Roger Hallam",
+    "type": "person",
+    "description": "Environmental activist and Extinction Rebellion cofounder",
+    "summary": "Roger Hallam is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Roger_Hallam",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "MAGA movement",
+    "type": "organization",
+    "description": "US political movement aligned with Donald Trump",
+    "summary": "MAGA movement is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/MAGA_movement",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "UK Independence Party",
+    "type": "organization",
+    "description": "British political party advocating Euroscepticism",
+    "summary": "UK Independence Party is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/UK_Independence_Party",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Rothschild family",
+    "type": "organization",
+    "description": "European banking dynasty with historical global influence",
+    "summary": "Rothschild family is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Rothschild_family",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Mossad",
+    "type": "organization",
+    "description": "Israeli national intelligence agency",
+    "summary": "Mossad is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mossad",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "IL",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "9/11 attacks",
+    "type": "event",
+    "description": "Coordinated terrorist attacks in the United States on September 11, 2001",
+    "summary": "9/11 attacks is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/9/11_attacks",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Waco siege",
+    "type": "event",
+    "description": "Federal siege of Branch Davidian compound in 1993",
+    "summary": "Waco siege is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Waco_siege",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Bataclan attack",
+    "type": "event",
+    "description": "Mass shooting during Paris attacks in November 2015",
+    "summary": "Bataclan attack is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bataclan_attack",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "FR",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Panama Papers",
+    "type": "event",
+    "description": "Massive leak exposing offshore finance structures in 2016",
+    "summary": "Panama Papers is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Panama_Papers",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "PA",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "CNN",
+    "type": "organization",
+    "description": "US cable news network founded in 1980",
+    "summary": "CNN is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/CNN",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Michel Foucault",
+    "type": "person",
+    "description": "French philosopher known for power and discourse analysis",
+    "summary": "Michel Foucault is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Michel_Foucault",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "FR",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Roman Polanski",
+    "type": "person",
+    "description": "Film director whose career includes major legal controversy",
+    "summary": "Roman Polanski is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_Polanski",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "FR",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Citadel LLC",
+    "type": "organization",
+    "description": "Global hedge fund and market-making firm",
+    "summary": "Citadel LLC is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Citadel_LLC",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Ken Griffin",
+    "type": "person",
+    "description": "Founder and CEO of Citadel",
+    "summary": "Ken Griffin is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ken_Griffin",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Palantir Technologies",
+    "type": "organization",
+    "description": "US software company serving government and enterprise",
+    "summary": "Palantir Technologies is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Palantir_Technologies",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Satanic panic",
+    "type": "event",
+    "description": "Moral panic over alleged ritual abuse in 1980s and 1990s",
+    "summary": "Satanic panic is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Satanic_panic",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "John Wayne Gacy",
+    "type": "person",
+    "description": "American serial killer active in the 1970s",
+    "summary": "John Wayne Gacy is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/John_Wayne_Gacy",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Weather Underground",
+    "type": "organization",
+    "description": "Radical US left-wing militant group",
+    "summary": "Weather Underground is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Weather_Underground",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "HAARP",
+    "type": "organization",
+    "description": "Ionospheric research program often cited in conspiracy theories",
+    "summary": "HAARP is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/HAARP",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Charles Manson",
+    "type": "person",
+    "description": "Cult leader tied to 1969 Tate-LaBianca murders",
+    "summary": "Charles Manson is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_Manson",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Jim Jones",
+    "type": "person",
+    "description": "Cult leader responsible for Jonestown mass death event",
+    "summary": "Jim Jones is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jim_Jones",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Aleister Crowley",
+    "type": "person",
+    "description": "English occultist and founder of Thelema movement",
+    "summary": "Aleister Crowley is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Aleister_Crowley",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Gamergate controversy",
+    "type": "event",
+    "description": "Online harassment and ethics dispute in gaming culture",
+    "summary": "Gamergate controversy is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gamergate_controversy",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "COVID-19 pandemic",
+    "type": "event",
+    "description": "Global pandemic caused by SARS-CoV-2",
+    "summary": "COVID-19 pandemic is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/COVID-19_pandemic",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "CN",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "BioNTech",
+    "type": "organization",
+    "description": "German biotech company partnered on COVID vaccines",
+    "summary": "BioNTech is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/BioNTech",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "DE",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Ralph Baric",
+    "type": "person",
+    "description": "US virologist known for coronavirus research",
+    "summary": "Ralph Baric is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ralph_Baric",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Johns Hopkins Center for Health Security",
+    "type": "organization",
+    "description": "Public health security institute that co-led Event 201",
+    "summary": "Johns Hopkins Center for Health Security is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Johns_Hopkins_Center_for_Health_Security",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Brookings Institution",
+    "type": "organization",
+    "description": "US think tank on economics and governance",
+    "summary": "Brookings Institution is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Brookings_Institution",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "MI6",
+    "type": "organization",
+    "description": "UK foreign intelligence service",
+    "summary": "MI6 is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/MI6",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Federal Bureau of Investigation",
+    "type": "organization",
+    "description": "US domestic intelligence and law enforcement agency",
+    "summary": "Federal Bureau of Investigation is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Federal_Bureau_of_Investigation",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "National Security Agency",
+    "type": "organization",
+    "description": "US signals intelligence agency",
+    "summary": "National Security Agency is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/National_Security_Agency",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "In-Q-Tel",
+    "type": "organization",
+    "description": "US strategic investor supporting intelligence-community technology",
+    "summary": "In-Q-Tel is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/In-Q-Tel",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "NATO",
+    "type": "organization",
+    "description": "North Atlantic military alliance",
+    "summary": "NATO is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/NATO",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "BE",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "United Nations",
+    "type": "organization",
+    "description": "International organization founded in 1945",
+    "summary": "United Nations is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/United_Nations",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "International Monetary Fund",
+    "type": "organization",
+    "description": "Global lender and financial stabilization institution",
+    "summary": "International Monetary Fund is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/International_Monetary_Fund",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "World Bank",
+    "type": "organization",
+    "description": "Global development finance institution",
+    "summary": "World Bank is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/World_Bank",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Bank for International Settlements",
+    "type": "organization",
+    "description": "International financial institution for central banks",
+    "summary": "Bank for International Settlements is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bank_for_International_Settlements",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "CH",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Federal Reserve",
+    "type": "organization",
+    "description": "US central banking system",
+    "summary": "Federal Reserve is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Federal_Reserve",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Bank of England",
+    "type": "organization",
+    "description": "Central bank of the United Kingdom",
+    "summary": "Bank of England is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bank_of_England",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "European Central Bank",
+    "type": "organization",
+    "description": "Central bank for euro area monetary policy",
+    "summary": "European Central Bank is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/European_Central_Bank",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "DE",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Vanguard Group",
+    "type": "organization",
+    "description": "Global investment manager known for index funds",
+    "summary": "Vanguard Group is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vanguard_Group",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "State Street",
+    "type": "organization",
+    "description": "Global financial services and custody bank",
+    "summary": "State Street is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/State_Street",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Goldman Sachs",
+    "type": "organization",
+    "description": "Global investment bank and financial services firm",
+    "summary": "Goldman Sachs is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Goldman_Sachs",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "JPMorgan Chase",
+    "type": "organization",
+    "description": "US multinational bank and financial services company",
+    "summary": "JPMorgan Chase is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/JPMorgan_Chase",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Morgan Stanley",
+    "type": "organization",
+    "description": "US investment bank and wealth management company",
+    "summary": "Morgan Stanley is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Morgan_Stanley",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "HSBC",
+    "type": "organization",
+    "description": "Global bank headquartered in London",
+    "summary": "HSBC is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/HSBC",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Credit Suisse",
+    "type": "organization",
+    "description": "Swiss bank acquired by UBS after crisis",
+    "summary": "Credit Suisse is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Credit_Suisse",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "CH",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "UBS",
+    "type": "organization",
+    "description": "Swiss multinational investment and wealth management bank",
+    "summary": "UBS is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/UBS",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "CH",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Saudi Aramco",
+    "type": "organization",
+    "description": "Saudi national petroleum and natural gas company",
+    "summary": "Saudi Aramco is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Saudi_Aramco",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "SA",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Tencent",
+    "type": "organization",
+    "description": "Chinese technology and media conglomerate",
+    "summary": "Tencent is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tencent",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "CN",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Alibaba Group",
+    "type": "organization",
+    "description": "Chinese technology and e-commerce company",
+    "summary": "Alibaba Group is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Alibaba_Group",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "CN",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "ByteDance",
+    "type": "organization",
+    "description": "Chinese technology company behind TikTok",
+    "summary": "ByteDance is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/ByteDance",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "CN",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "TikTok",
+    "type": "organization",
+    "description": "Short-form video social platform",
+    "summary": "TikTok is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/TikTok",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "CN",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Meta Platforms",
+    "type": "organization",
+    "description": "US technology company operating Facebook and Instagram",
+    "summary": "Meta Platforms is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Meta_Platforms",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Amazon",
+    "type": "organization",
+    "description": "US e-commerce and cloud computing giant",
+    "summary": "Amazon is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Amazon",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Apple Inc.",
+    "type": "organization",
+    "description": "US technology company behind iPhone and Mac",
+    "summary": "Apple Inc. is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Apple_Inc.",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Microsoft",
+    "type": "organization",
+    "description": "US software and cloud computing company",
+    "summary": "Microsoft is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Microsoft",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Tesla Inc.",
+    "type": "organization",
+    "description": "US electric vehicle and clean energy company",
+    "summary": "Tesla Inc. is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tesla_Inc.",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "X Corp.",
+    "type": "organization",
+    "description": "Social media company operating X platform",
+    "summary": "X Corp. is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/X_Corp.",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "The New York Times",
+    "type": "organization",
+    "description": "US newspaper with global investigative reporting",
+    "summary": "The New York Times is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_New_York_Times",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Reuters",
+    "type": "organization",
+    "description": "International news agency headquartered in London",
+    "summary": "Reuters is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Reuters",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Associated Press",
+    "type": "organization",
+    "description": "US nonprofit news cooperative",
+    "summary": "Associated Press is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Associated_Press",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "The Wall Street Journal",
+    "type": "organization",
+    "description": "US financial newspaper published by Dow Jones",
+    "summary": "The Wall Street Journal is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Wall_Street_Journal",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "The Washington Post",
+    "type": "organization",
+    "description": "US newspaper based in Washington, D.C.",
+    "summary": "The Washington Post is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Washington_Post",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "The Guardian",
+    "type": "organization",
+    "description": "British newspaper known for investigative reporting",
+    "summary": "The Guardian is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Guardian",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Le Monde",
+    "type": "organization",
+    "description": "French daily newspaper headquartered in Paris",
+    "summary": "Le Monde is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Le_Monde",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "FR",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Der Spiegel",
+    "type": "organization",
+    "description": "German weekly news magazine",
+    "summary": "Der Spiegel is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Spiegel",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "DE",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Al Jazeera",
+    "type": "organization",
+    "description": "Qatari state-funded international news organization",
+    "summary": "Al Jazeera is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Jazeera",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "QA",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Bellingcat",
+    "type": "organization",
+    "description": "Open-source investigative journalism collective",
+    "summary": "Bellingcat is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bellingcat",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "NL",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Interpol",
+    "type": "organization",
+    "description": "International criminal police organization",
+    "summary": "Interpol is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Interpol",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "FR",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Europol",
+    "type": "organization",
+    "description": "EU law enforcement cooperation agency",
+    "summary": "Europol is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Europol",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "NL",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "NYPD",
+    "type": "organization",
+    "description": "Police department serving New York City",
+    "summary": "NYPD is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/NYPD",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Scotland Yard",
+    "type": "organization",
+    "description": "Headquarters and operations of London Metropolitan Police",
+    "summary": "Scotland Yard is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Scotland_Yard",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "House of Commons",
+    "type": "organization",
+    "description": "Lower house of the UK Parliament",
+    "summary": "House of Commons is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/House_of_Commons",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "US Congress",
+    "type": "organization",
+    "description": "US federal legislature of Senate and House",
+    "summary": "US Congress is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/US_Congress",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "US Senate",
+    "type": "organization",
+    "description": "Upper chamber of the US Congress",
+    "summary": "US Senate is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/US_Senate",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "US House of Representatives",
+    "type": "organization",
+    "description": "Lower chamber of the US Congress",
+    "summary": "US House of Representatives is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/US_House_of_Representatives",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "European Parliament",
+    "type": "organization",
+    "description": "Directly elected parliamentary institution of the EU",
+    "summary": "European Parliament is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/European_Parliament",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "EU",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Australian Parliament",
+    "type": "organization",
+    "description": "Federal bicameral legislature of Australia",
+    "summary": "Australian Parliament is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Australian_Parliament",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "AU",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Canadian Parliament",
+    "type": "organization",
+    "description": "Federal legislature of Canada",
+    "summary": "Canadian Parliament is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Canadian_Parliament",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "CA",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "NHS",
+    "type": "organization",
+    "description": "Publicly funded healthcare system of the UK",
+    "summary": "NHS is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/NHS",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "CDC",
+    "type": "organization",
+    "description": "US public health agency for disease control",
+    "summary": "CDC is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/CDC",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "NIAID",
+    "type": "organization",
+    "description": "US institute for allergy and infectious disease research",
+    "summary": "NIAID is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/NIAID",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Department of Defense",
+    "type": "organization",
+    "description": "US executive department overseeing armed forces",
+    "summary": "Department of Defense is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Department_of_Defense",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Royal Family",
+    "type": "organization",
+    "description": "British monarchy and associated institutions",
+    "summary": "Royal Family is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Royal_Family",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "House of Windsor",
+    "type": "organization",
+    "description": "Reigning royal house of the United Kingdom",
+    "summary": "House of Windsor is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/House_of_Windsor",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "GB",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "House of Saud",
+    "type": "organization",
+    "description": "Ruling royal family of Saudi Arabia",
+    "summary": "House of Saud is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/House_of_Saud",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "SA",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "House of Orange-Nassau",
+    "type": "organization",
+    "description": "Dutch royal house of the Netherlands",
+    "summary": "House of Orange-Nassau is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/House_of_Orange-Nassau",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "NL",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "House of Bernadotte",
+    "type": "organization",
+    "description": "Swedish royal house since 1818",
+    "summary": "House of Bernadotte is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/House_of_Bernadotte",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "SE",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "House of Grimaldi",
+    "type": "organization",
+    "description": "Ruling family of Monaco",
+    "summary": "House of Grimaldi is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/House_of_Grimaldi",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "MC",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "House of Bourbon",
+    "type": "organization",
+    "description": "Spanish royal house and historical dynasty",
+    "summary": "House of Bourbon is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/House_of_Bourbon",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "ES",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "House of Liechtenstein",
+    "type": "organization",
+    "description": "Ruling family of Liechtenstein",
+    "summary": "House of Liechtenstein is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/House_of_Liechtenstein",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "LI",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "House of Al Thani",
+    "type": "organization",
+    "description": "Ruling family of Qatar",
+    "summary": "House of Al Thani is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/House_of_Al_Thani",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "QA",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "House of Khalifa",
+    "type": "organization",
+    "description": "Ruling family of Bahrain",
+    "summary": "House of Khalifa is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/House_of_Khalifa",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "BH",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "House of Nahyan",
+    "type": "organization",
+    "description": "Ruling family of Abu Dhabi",
+    "summary": "House of Nahyan is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/House_of_Nahyan",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "AE",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "House of Maktoum",
+    "type": "organization",
+    "description": "Ruling family of Dubai",
+    "summary": "House of Maktoum is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/House_of_Maktoum",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "AE",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Forbes",
+    "type": "organization",
+    "description": "Business media company known for billionaire rankings",
+    "summary": "Forbes is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Forbes",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Forbes Billionaires List",
+    "type": "event",
+    "description": "Annual ranking of the world richest individuals",
+    "summary": "Forbes Billionaires List is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Forbes_Billionaires_List",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Davos Forum",
+    "type": "event",
+    "description": "Annual World Economic Forum meeting in Davos",
+    "summary": "Davos Forum is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Davos_Forum",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "CH",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Munich Security Conference",
+    "type": "event",
+    "description": "Annual international security policy conference",
+    "summary": "Munich Security Conference is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Security_Conference",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "DE",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "G7 summit",
+    "type": "event",
+    "description": "Summit of leaders from major advanced economies",
+    "summary": "G7 summit is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/G7_summit",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "DE",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "G20 summit",
+    "type": "event",
+    "description": "Summit of major developed and emerging economies",
+    "summary": "G20 summit is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/G20_summit",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "IN",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "COP climate summit",
+    "type": "event",
+    "description": "UN climate conference of parties",
+    "summary": "COP climate summit is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/COP_climate_summit",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "AE",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Paris Agreement",
+    "type": "event",
+    "description": "2015 international climate accord under UNFCCC",
+    "summary": "Paris Agreement is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Paris_Agreement",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "FR",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "MKUltra",
+    "type": "event",
+    "description": "CIA mind-control and behavior-modification research program",
+    "summary": "MKUltra is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/MKUltra",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Church Committee",
+    "type": "event",
+    "description": "US Senate investigation into intelligence abuses in 1975",
+    "summary": "Church Committee is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Church_Committee",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Pentagon Papers",
+    "type": "event",
+    "description": "Leaked documents on US Vietnam War decision-making",
+    "summary": "Pentagon Papers is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pentagon_Papers",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Watergate scandal",
+    "type": "event",
+    "description": "US political scandal leading to Nixon resignation",
+    "summary": "Watergate scandal is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Watergate_scandal",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Chelsea Manning",
+    "type": "person",
+    "description": "US whistleblower who leaked military documents",
+    "summary": "Chelsea Manning is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chelsea_Manning",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Laura Poitras",
+    "type": "person",
+    "description": "Documentarian and journalist in Snowden reporting",
+    "summary": "Laura Poitras is modeled as a person seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Laura_Poitras",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "person"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Snowden revelations",
+    "type": "event",
+    "description": "2013 publication of classified NSA surveillance documents",
+    "summary": "Snowden revelations is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Snowden_revelations",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Paradise Papers",
+    "type": "event",
+    "description": "Leak exposing offshore finance in 2017",
+    "summary": "Paradise Papers is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Paradise_Papers",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "BM",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Pandora Papers",
+    "type": "event",
+    "description": "Global leak of offshore financial records in 2021",
+    "summary": "Pandora Papers is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pandora_Papers",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "International Consortium of Investigative Journalists",
+    "type": "organization",
+    "description": "Collaborative global investigative journalism network",
+    "summary": "International Consortium of Investigative Journalists is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/International_Consortium_of_Investigative_Journalists",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "TerraMar Foundation",
+    "type": "organization",
+    "description": "Former nonprofit founded by Ghislaine Maxwell",
+    "summary": "TerraMar Foundation is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/TerraMar_Foundation",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Operation Paperclip",
+    "type": "event",
+    "description": "US program recruiting German scientists after World War II",
+    "summary": "Operation Paperclip is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Operation_Paperclip",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Manhattan Project",
+    "type": "event",
+    "description": "US-led World War II atomic bomb development project",
+    "summary": "Manhattan Project is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Manhattan_Project",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Apollo program",
+    "type": "event",
+    "description": "NASA human spaceflight program to the Moon",
+    "summary": "Apollo program is modeled as a event seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Apollo_program",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "event"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "CERN",
+    "type": "organization",
+    "description": "European particle physics laboratory near Geneva",
+    "summary": "CERN is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/CERN",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "CH",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Brookhaven National Laboratory",
+    "type": "organization",
+    "description": "US multidisciplinary scientific research center",
+    "summary": "Brookhaven National Laboratory is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Brookhaven_National_Laboratory",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  },
+  {
+    "name": "Los Alamos National Laboratory",
+    "type": "organization",
+    "description": "US national laboratory focused on national security science",
+    "summary": "Los Alamos National Laboratory is modeled as a organization seed in ksubn for exploring sourced relationship claims. The profile links public references and can be expanded by queued enrichment workers.",
+    "wikidata_id": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Alamos_National_Laboratory",
+    "birth_date": null,
+    "death_date": null,
+    "founded_date": null,
+    "ended_date": null,
+    "country": "US",
+    "tags": [
+      "seed",
+      "bulkbot",
+      "organization"
+    ],
+    "entity_type_tag": "conspiracy.txt"
+  }
+]

@@ -22,7 +22,7 @@ export async function GET(request: Request) {
           .from('profiles')
           .select('onboarding_completed, display_name')
           .eq('id', user.id)
-          .maybeSingle();
+          .single();
         const profileRow = profile as { onboarding_completed?: boolean; display_name?: string | null } | null;
         const onboardingDone = profileError
           ? Boolean(profileRow?.display_name)

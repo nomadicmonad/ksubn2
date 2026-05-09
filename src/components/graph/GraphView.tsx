@@ -180,6 +180,7 @@ export function GraphView({
   const [pathLoading, setPathLoading] = useState(false);
   const [starLoading, setStarLoading] = useState(false);
   const [selectedClaim, setSelectedClaim] = useState<ClaimEdgeData | null>(null);
+  const [showPathPanel, setShowPathPanel] = useState(false);
   const [showNumerology, setShowNumerology] = useState(true);
   const [initialised, setInitialised] = useState(false);
   const history = useRef<{ nodes: Node[]; edges: Edge[] }[]>([]);
@@ -508,13 +509,15 @@ export function GraphView({
       >
         <Background variant={BackgroundVariant.Dots} gap={24} size={1} color="#2a2a40" />
         <Controls showInteractive={false} />
-        <MiniMap
-          nodeColor={(n) => {
-            const type = (n.data?.entity as Entity)?.type;
-            return type === 'person' ? '#6366f1' : type === 'organization' ? '#a855f7' : '#f59e0b';
-          }}
-          maskColor="rgba(8,8,14,0.7)"
-        />
+        <div className="hidden sm:block">
+          <MiniMap
+            nodeColor={(n) => {
+              const type = (n.data?.entity as Entity)?.type;
+              return type === 'person' ? '#6366f1' : type === 'organization' ? '#a855f7' : '#f59e0b';
+            }}
+            maskColor="rgba(8,8,14,0.7)"
+          />
+        </div>
 
         {/* Top panel: search + undo + filter */}
         <Panel position="top-left">
@@ -523,7 +526,7 @@ export function GraphView({
             <div className="relative">
               <div
                 className="flex items-center gap-2 px-3 py-2 rounded-xl"
-                style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)', minWidth: '260px' }}
+                style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)', width: 'min(260px, calc(100vw - 32px))' }}
               >
                 <Search size={14} style={{ color: 'var(--color-text-muted)', flexShrink: 0 }} />
                 <input
@@ -557,10 +560,16 @@ export function GraphView({
             </div>
 
             {/* Source -> target path import */}
-            <div className="rounded-xl p-2 space-y-2" style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)', minWidth: '260px' }}>
-              <p className="text-[11px] uppercase tracking-wider font-semibold" style={{ color: 'var(--color-text-muted)' }}>
-                Import graph between two entities
-              </p>
+            <div className="rounded-xl overflow-hidden" style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)', width: 'min(260px, calc(100vw - 32px))' }}>
+              <button
+                onClick={() => setShowPathPanel(v => !v)}
+                className="w-full flex items-center justify-between px-3 py-2 text-[11px] uppercase tracking-wider font-semibold"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                Import path between two entities
+                <span style={{ fontSize: 10 }}>{showPathPanel ? '▲' : '▼'}</span>
+              </button>
+            <div className={`space-y-2 px-2 pb-2 ${showPathPanel ? '' : 'hidden'}`}>
               <div className="relative">
                 <input
                   value={pathFrom ? pathFrom.name : pathFromQuery}
@@ -617,9 +626,10 @@ export function GraphView({
                 {pathLoading ? 'Importing…' : 'Import path'}
               </button>
             </div>
+            </div>
 
             {/* Undo + Filter buttons */}
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2" style={{ maxWidth: 'min(400px, calc(100vw - 32px))' }}>
               <button
                 onClick={undo}
                 disabled={history.current.length === 0}
@@ -657,7 +667,7 @@ export function GraphView({
             {showFilters && (
               <div
                 className="rounded-xl p-3 space-y-1.5"
-                style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)', minWidth: '220px' }}
+                style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)', width: 'min(280px, calc(100vw - 32px))' }}
               >
                 <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: 'var(--color-text-muted)' }}>
                   Relation type
@@ -725,7 +735,7 @@ export function GraphView({
           <div
             style={{
               position: 'absolute', top: 0, right: 0, bottom: 0,
-              width: '280px', zIndex: 20,
+              width: 'min(280px, 100vw)', zIndex: 20,
               background: 'var(--color-bg-card)',
               borderLeft: '1px solid var(--color-bg-border)',
               display: 'flex', flexDirection: 'column',

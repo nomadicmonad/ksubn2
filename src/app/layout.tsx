@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { AuthCodeInterceptor } from '@/components/AuthCodeInterceptor';
 
 export const metadata: Metadata = {
   title: { default: 'ksubn — The Knowledge Graph', template: '%s | ksubn' },
@@ -15,10 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="min-h-full">
-        <AuthCodeInterceptor />
-        {children}
-      </body>
+      <body className="min-h-full">{children}</body>
     </html>
   );
 }

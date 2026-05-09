@@ -16,6 +16,7 @@ export async function GET(request: Request) {
     const supabase = await createClient();
     const { error } = await supabase.auth.exchangeCodeForSession(code);
     if (!error) {
+      // Check if profile needs display name setup
       const { data: { user } } = await supabase.auth.getUser();
       if (user) {
         const { data: profile, error: profileError } = await supabase

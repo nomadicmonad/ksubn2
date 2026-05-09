@@ -8,6 +8,7 @@ import {
 import { createClient } from '@/lib/supabase/server';
 import { ClaimRow } from '@/components/entity/ClaimRow';
 import { EntityCard } from '@/components/entity/EntityCard';
+import { StarButton } from '@/components/entity/StarButton';
 import { RELATION_META, ENTITY_TYPE_LABELS } from '@/types';
 import type { Entity, ClaimWithEntity, RelationType } from '@/types';
 import { formatDate } from '@/lib/utils';
@@ -153,8 +154,9 @@ export default async function EntityPage({ params }: Props) {
               </span>
             </div>
 
-            {/* External links */}
+            {/* Actions row: star + external links */}
             <div className="flex flex-wrap gap-2 mt-4">
+              <StarButton entityId={entity.id} initialStarred={starred} />
               {entity.wikipedia_url && (
                 <a
                   href={entity.wikipedia_url}

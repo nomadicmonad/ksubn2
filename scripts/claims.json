@@ -1,0 +1,1542 @@
+[
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Bill Clinton",
+    "relation_type": "personal_friendship",
+    "description": "Clinton flew on Epstein's private jet 'Lolita Express' at least 26 times according to flight logs obtained by Fox News, traveling to Africa, Europe, and Asia between 2002 and 2003",
+    "source_url": "https://www.foxnews.com/us/flight-logs-show-bill-clinton-flew-on-sex-offenders-jet-much-more-than-previously-known",
+    "source_domain": "foxnews.com",
+    "date_start": "2002-01-01",
+    "date_end": "2003-12-31"
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Prince Andrew",
+    "relation_type": "personal_friendship",
+    "description": "Prince Andrew stayed at Epstein's Manhattan mansion in 2010 after Epstein's sex-offender conviction, photographed walking in Central Park together; Duke later settled a civil lawsuit for an undisclosed sum",
+    "source_url": "https://www.bbc.com/news/uk-57905169",
+    "source_domain": "bbc.com",
+    "date_start": "2000-01-01",
+    "date_end": "2019-01-01"
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Donald Trump",
+    "relation_type": "personal_friendship",
+    "description": "Trump told New York Magazine in 2002 that Epstein was a 'terrific guy' and that he had known him for 15 years; flight logs and Mar-a-Lago records show repeated socializing",
+    "source_url": "https://nymag.com/nymetro/news/people/n_7912/",
+    "source_domain": "nymag.com",
+    "date_start": "1987-01-01",
+    "date_end": "2002-01-01"
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Bill Gates",
+    "relation_type": "personal_friendship",
+    "description": "Bill Gates met Epstein multiple times after Epstein's 2008 conviction, including at Epstein's Manhattan mansion in 2011; Gates Foundation staff also had dealings with Epstein, as reported by the New York Times",
+    "source_url": "https://www.nytimes.com/2019/10/12/business/bill-gates-jeffrey-epstein.html",
+    "source_domain": "nytimes.com",
+    "date_start": "2011-01-01",
+    "date_end": "2014-01-01"
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Alan Dershowitz",
+    "relation_type": "personal_friendship",
+    "description": "Harvard law professor Alan Dershowitz was part of Epstein's legal defense team for the 2008 non-prosecution agreement and flew on Epstein's jet; he has faced civil accusations from Epstein victims",
+    "source_url": "https://www.theguardian.com/us-news/2019/jul/10/jeffrey-epstein-alan-dershowitz-florida-deal",
+    "source_domain": "theguardian.com",
+    "date_start": "2006-01-01",
+    "date_end": "2008-12-31"
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Ghislaine Maxwell",
+    "relation_type": "personal_romance",
+    "description": "Maxwell was Epstein's longtime girlfriend and alleged madam; she was convicted in December 2021 on five counts of sex trafficking and conspiracy for recruiting and grooming underage girls for Epstein",
+    "source_url": "https://www.bbc.com/news/world-us-canada-59817050",
+    "source_domain": "bbc.com",
+    "date_start": "1994-01-01",
+    "date_end": "2019-01-01"
+  },
+  {
+    "from_entity_name": "George Soros",
+    "to_entity_name": "Open Society Foundations",
+    "relation_type": "financial",
+    "description": "George Soros founded the Open Society Foundations in 1979 and has donated more than $32 billion of his personal fortune to the network, making it one of the largest private philanthropic organizations in the world",
+    "source_url": "https://www.opensocietyfoundations.org/who-we-are/our-story",
+    "source_domain": "opensocietyfoundations.org",
+    "date_start": "1979-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Klaus Schwab",
+    "to_entity_name": "World Economic Forum",
+    "relation_type": "employment",
+    "description": "Klaus Schwab founded the World Economic Forum in 1971 and has served as its Executive Chairman ever since, personally shaping its 'Great Reset' and 'stakeholder capitalism' agendas",
+    "source_url": "https://www.weforum.org/people/klaus-schwab",
+    "source_domain": "weforum.org",
+    "date_start": "1971-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Klaus Schwab",
+    "to_entity_name": "Tony Blair",
+    "relation_type": "same_org_event",
+    "description": "Tony Blair was inducted as a WEF Young Global Leader in its inaugural 1993 class, a program personally championed by Schwab; Blair has spoken at Davos multiple times",
+    "source_url": "https://www.weforum.org/agenda/2021/02/young-global-leaders-alumni-world-leaders/",
+    "source_domain": "weforum.org",
+    "date_start": "1993-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Klaus Schwab",
+    "to_entity_name": "Angela Merkel",
+    "relation_type": "same_org_event",
+    "description": "Angela Merkel was a WEF Young Global Leader in the 1993 inaugural class along with Tony Blair; she subsequently gave keynote addresses at Davos and co-chaired WEF sessions",
+    "source_url": "https://www.weforum.org/agenda/2021/02/young-global-leaders-alumni-world-leaders/",
+    "source_domain": "weforum.org",
+    "date_start": "1993-01-01",
+    "date_end": "2021-01-01"
+  },
+  {
+    "from_entity_name": "Bill Gates",
+    "to_entity_name": "World Health Organization",
+    "relation_type": "financial",
+    "description": "The Bill & Melinda Gates Foundation is the second-largest donor to the WHO, contributing over $830 million in 2020\u20132021, making Gates effectively the largest individual funder of global health policy",
+    "source_url": "https://www.politico.eu/article/bill-gates-who-most-powerful-doctor/",
+    "source_domain": "politico.eu",
+    "date_start": "2000-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Bill Gates",
+    "to_entity_name": "Anthony Fauci",
+    "relation_type": "personal_friendship",
+    "description": "Gates and Fauci have collaborated for over two decades on vaccine initiatives; Fauci praised Gates's pandemic leadership and both appeared jointly on pandemic response panels",
+    "source_url": "https://www.cnbc.com/2020/04/02/bill-gates-and-fauci-team-up-to-push-vaccines-as-the-answer-to-coronavirus.html",
+    "source_domain": "cnbc.com",
+    "date_start": "2000-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Bill Gates",
+    "to_entity_name": "Event 201",
+    "relation_type": "financial",
+    "description": "The Bill & Melinda Gates Foundation co-sponsored Event 201, a pandemic simulation exercise held in October 2019 that modeled a coronavirus outbreak killing 65 million people",
+    "source_url": "https://www.centerforhealthsecurity.org/event201/",
+    "source_domain": "centerforhealthsecurity.org",
+    "date_start": "2019-10-18",
+    "date_end": "2019-10-18"
+  },
+  {
+    "from_entity_name": "Event 201",
+    "to_entity_name": "Johns Hopkins University",
+    "relation_type": "same_org_event",
+    "description": "Johns Hopkins Center for Health Security hosted and co-organized Event 201, the October 2019 pandemic tabletop exercise, alongside the Gates Foundation and WEF",
+    "source_url": "https://www.centerforhealthsecurity.org/event201/",
+    "source_domain": "centerforhealthsecurity.org",
+    "date_start": "2019-10-18",
+    "date_end": "2019-10-18"
+  },
+  {
+    "from_entity_name": "Event 201",
+    "to_entity_name": "World Economic Forum",
+    "relation_type": "same_org_event",
+    "description": "The World Economic Forum co-sponsored Event 201 alongside the Gates Foundation and Johns Hopkins, a pandemic simulation that projected 65 million deaths from a novel coronavirus",
+    "source_url": "https://www.centerforhealthsecurity.org/event201/",
+    "source_domain": "centerforhealthsecurity.org",
+    "date_start": "2019-10-18",
+    "date_end": "2019-10-18"
+  },
+  {
+    "from_entity_name": "Henry Kissinger",
+    "to_entity_name": "CIA",
+    "relation_type": "employment",
+    "description": "As National Security Advisor and Secretary of State, Kissinger directed CIA covert operations including the 1973 coup in Chile and Operation Condor; declassified documents show he personally authorized assassinations",
+    "source_url": "https://nsarchive.gwu.edu/briefing-book/chile/2020-09-10/kissinger-pinochet-coup",
+    "source_domain": "nsarchive.gwu.edu",
+    "date_start": "1969-01-01",
+    "date_end": "1977-01-01"
+  },
+  {
+    "from_entity_name": "Henry Kissinger",
+    "to_entity_name": "Augusto Pinochet",
+    "relation_type": "other",
+    "description": "Declassified State Department cables show Kissinger told Pinochet in 1976 that the US supported his government and to 'move quickly' on political repression before international pressure mounted",
+    "source_url": "https://nsarchive.gwu.edu/briefing-book/chile/2020-09-10/kissinger-pinochet-coup",
+    "source_domain": "nsarchive.gwu.edu",
+    "date_start": "1973-09-11",
+    "date_end": "1977-01-01"
+  },
+  {
+    "from_entity_name": "Henry Kissinger",
+    "to_entity_name": "Bilderberg Group",
+    "relation_type": "same_org_event",
+    "description": "Kissinger attended the Bilderberg Group meetings repeatedly from the 1960s onward and served as a key American liaison; he gave private briefings to European elites at the secretive annual conference",
+    "source_url": "https://en.wikipedia.org/wiki/Bilderberg_meeting",
+    "source_domain": "wikipedia.org",
+    "date_start": "1964-01-01",
+    "date_end": "2023-01-01"
+  },
+  {
+    "from_entity_name": "Peter Thiel",
+    "to_entity_name": "Palantir",
+    "relation_type": "financial",
+    "description": "Peter Thiel co-founded Palantir Technologies in 2003 and served as its chairman; the company was seeded with CIA venture capital through In-Q-Tel and built surveillance software used by US intelligence agencies",
+    "source_url": "https://www.wsj.com/articles/palantir-co-founder-peter-thiel-steps-back-from-company-11661798016",
+    "source_domain": "wsj.com",
+    "date_start": "2003-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Peter Thiel",
+    "to_entity_name": "CIA",
+    "relation_type": "financial",
+    "description": "In-Q-Tel, the CIA's venture capital arm, provided early funding to Palantir Technologies; Thiel's company has since received hundreds of millions in intelligence and defense contracts",
+    "source_url": "https://theintercept.com/2017/02/22/how-peter-thiels-palantir-helped-the-nsa-spy-on-the-whole-world/",
+    "source_domain": "theintercept.com",
+    "date_start": "2003-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Rupert Murdoch",
+    "to_entity_name": "Roger Ailes",
+    "relation_type": "employment",
+    "description": "Rupert Murdoch hired Roger Ailes in 1996 to launch Fox News Channel; the two built the network together for two decades until Ailes was ousted in 2016 over serial sexual harassment",
+    "source_url": "https://www.nytimes.com/2016/07/20/business/media/roger-ailes-fox-news.html",
+    "source_domain": "nytimes.com",
+    "date_start": "1996-01-01",
+    "date_end": "2016-07-21"
+  },
+  {
+    "from_entity_name": "Roger Ailes",
+    "to_entity_name": "Fox News",
+    "relation_type": "employment",
+    "description": "Roger Ailes served as founding CEO and Chairman of Fox News from its 1996 launch until his forced resignation in July 2016 after multiple women accused him of decades of sexual harassment",
+    "source_url": "https://www.nytimes.com/2016/07/20/business/media/roger-ailes-fox-news.html",
+    "source_domain": "nytimes.com",
+    "date_start": "1996-10-07",
+    "date_end": "2016-07-21"
+  },
+  {
+    "from_entity_name": "Dick Cheney",
+    "to_entity_name": "Project for the New American Century",
+    "relation_type": "ideology",
+    "description": "Dick Cheney was a signatory to the founding Statement of Principles of the Project for the New American Century (PNAC) in 1997, which called for regime change in Iraq and expanded American military dominance",
+    "source_url": "https://web.archive.org/web/20130802125552/http://www.newamericancentury.org/statementofprinciples.htm",
+    "source_domain": "web.archive.org",
+    "date_start": "1997-06-03",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Paul Wolfowitz",
+    "to_entity_name": "Project for the New American Century",
+    "relation_type": "ideology",
+    "description": "Paul Wolfowitz was a founding signatory of PNAC's 1997 Statement of Principles and co-authored the 1992 Defense Planning Guidance that presaged PNAC's agenda of US global military primacy",
+    "source_url": "https://web.archive.org/web/20130802125552/http://www.newamericancentury.org/statementofprinciples.htm",
+    "source_domain": "web.archive.org",
+    "date_start": "1997-06-03",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Donald Rumsfeld",
+    "to_entity_name": "Project for the New American Century",
+    "relation_type": "ideology",
+    "description": "Donald Rumsfeld signed the PNAC Statement of Principles in 1997 alongside Cheney and Wolfowitz; as Defense Secretary he implemented PNAC's agenda with the 2003 invasion of Iraq",
+    "source_url": "https://web.archive.org/web/20130802125552/http://www.newamericancentury.org/statementofprinciples.htm",
+    "source_domain": "web.archive.org",
+    "date_start": "1997-06-03",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "George W. Bush",
+    "to_entity_name": "Bohemian Grove",
+    "relation_type": "same_org_event",
+    "description": "George W. Bush attended the Bohemian Grove encampment in northern California, a secretive annual gathering of political and corporate elites; his father George H.W. Bush was a longtime member",
+    "source_url": "https://en.wikipedia.org/wiki/Bohemian_Grove",
+    "source_domain": "wikipedia.org",
+    "date_start": "1995-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Barack Obama",
+    "to_entity_name": "Council on Foreign Relations",
+    "relation_type": "same_org_event",
+    "description": "Obama addressed the Council on Foreign Relations and stacked his administration with CFR members including Hillary Clinton, Robert Gates, and Timothy Geithner; CFR has published analyses supportive of his foreign policy",
+    "source_url": "https://www.cfr.org/president/barack-obama",
+    "source_domain": "cfr.org",
+    "date_start": "2009-01-01",
+    "date_end": "2017-01-01"
+  },
+  {
+    "from_entity_name": "Hillary Clinton",
+    "to_entity_name": "Council on Foreign Relations",
+    "relation_type": "same_org_event",
+    "description": "Clinton told a CFR audience in 2009 'We get a lot of advice from the Council, so this will mean I won't have as far to go to be told what we should be doing'; she was a regular CFR speaker as Secretary of State",
+    "source_url": "https://www.cfr.org/event/secretary-state-hillary-rodham-clinton",
+    "source_domain": "cfr.org",
+    "date_start": "2009-01-01",
+    "date_end": "2013-01-01"
+  },
+  {
+    "from_entity_name": "Elon Musk",
+    "to_entity_name": "DARPA",
+    "relation_type": "financial",
+    "description": "SpaceX has received hundreds of millions in DARPA contracts for launch vehicles and satellite programs; DARPA also co-funded Neuralink research adjacent to Musk's brain-computer interface company",
+    "source_url": "https://www.reuters.com/technology/space/spacex-wins-darpa-contract-rocket-cargo-program-2022-03-14/",
+    "source_domain": "reuters.com",
+    "date_start": "2006-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Mark Zuckerberg",
+    "to_entity_name": "CIA",
+    "relation_type": "financial",
+    "description": "In-Q-Tel, the CIA's venture capital arm, reportedly had connections to early Facebook investors; former CIA analyst and In-Q-Tel board member Jim Breyer (Accel Partners) led Facebook's 2005 Series A funding round",
+    "source_url": "https://en.wikipedia.org/wiki/In-Q-Tel",
+    "source_domain": "wikipedia.org",
+    "date_start": "2005-01-01",
+    "date_end": "2006-01-01"
+  },
+  {
+    "from_entity_name": "Operation Gladio",
+    "to_entity_name": "CIA",
+    "relation_type": "other",
+    "description": "Operation Gladio was a NATO/CIA-coordinated 'stay-behind' network in Western Europe exposed in 1990; it involved secret arms caches and was linked to false-flag terrorist attacks including Italy's 'Years of Lead'",
+    "source_url": "https://en.wikipedia.org/wiki/Operation_Gladio",
+    "source_domain": "wikipedia.org",
+    "date_start": "1956-01-01",
+    "date_end": "1990-01-01"
+  },
+  {
+    "from_entity_name": "Operation Condor",
+    "to_entity_name": "CIA",
+    "relation_type": "other",
+    "description": "Declassified documents confirm the CIA provided logistical support and training for Operation Condor, a coordinated campaign of political repression and assassination by South American dictatorships that killed tens of thousands",
+    "source_url": "https://nsarchive.gwu.edu/briefing-book/southern-cone/2020-05-26/operation-condor-declassified",
+    "source_domain": "nsarchive.gwu.edu",
+    "date_start": "1975-01-01",
+    "date_end": "1989-01-01"
+  },
+  {
+    "from_entity_name": "Iran-Contra affair",
+    "to_entity_name": "Ronald Reagan",
+    "relation_type": "other",
+    "description": "The Tower Commission found that Reagan administration officials secretly sold arms to Iran and diverted profits to Nicaraguan Contra rebels in violation of the Boland Amendment; Reagan claimed ignorance but the scandal nearly ended his presidency",
+    "source_url": "https://en.wikipedia.org/wiki/Iran%E2%80%93Contra_affair",
+    "source_domain": "wikipedia.org",
+    "date_start": "1986-01-01",
+    "date_end": "1987-01-01"
+  },
+  {
+    "from_entity_name": "Iran-Contra affair",
+    "to_entity_name": "Oliver North",
+    "relation_type": "other",
+    "description": "Marine Lt. Col. Oliver North was the NSC staffer who secretly coordinated arms sales to Iran and funneled $48 million in proceeds to the Nicaraguan Contras; he was convicted on three felony counts in 1989",
+    "source_url": "https://en.wikipedia.org/wiki/Oliver_North",
+    "source_domain": "wikipedia.org",
+    "date_start": "1986-01-01",
+    "date_end": "1987-01-01"
+  },
+  {
+    "from_entity_name": "Klaus Barbie",
+    "to_entity_name": "CIA",
+    "relation_type": "employment",
+    "description": "The US Army and CIA recruited Klaus Barbie, the 'Butcher of Lyon' Nazi war criminal, as an intelligence asset in 1947; the Justice Department confirmed in 1983 that the US helped him escape to Bolivia to evade justice",
+    "source_url": "https://en.wikipedia.org/wiki/Klaus_Barbie",
+    "source_domain": "wikipedia.org",
+    "date_start": "1947-01-01",
+    "date_end": "1951-01-01"
+  },
+  {
+    "from_entity_name": "Edward Snowden",
+    "to_entity_name": "NSA",
+    "relation_type": "employment",
+    "description": "Edward Snowden worked as an NSA contractor via Booz Allen Hamilton; in 2013 he leaked classified documents revealing the agency's global surveillance programs PRISM and XKeyscore to journalists",
+    "source_url": "https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance",
+    "source_domain": "theguardian.com",
+    "date_start": "2013-06-05",
+    "date_end": "2013-06-05"
+  },
+  {
+    "from_entity_name": "Edward Snowden",
+    "to_entity_name": "Glenn Greenwald",
+    "relation_type": "other",
+    "description": "Snowden chose Glenn Greenwald of The Guardian as one of his primary journalists to receive and publish NSA documents; Greenwald's reporting won the Pulitzer Prize in 2014",
+    "source_url": "https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance",
+    "source_domain": "theguardian.com",
+    "date_start": "2013-06-01",
+    "date_end": "2013-06-01"
+  },
+  {
+    "from_entity_name": "WEF Young Global Leaders",
+    "to_entity_name": "Emmanuel Macron",
+    "relation_type": "same_org_event",
+    "description": "Emmanuel Macron was selected as a WEF Young Global Leader in 2016; Klaus Schwab has publicly stated that the WEF 'penetrated' Macron's government with YGL alumni",
+    "source_url": "https://www.weforum.org/young-global-leaders/",
+    "source_domain": "weforum.org",
+    "date_start": "2016-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "WEF Young Global Leaders",
+    "to_entity_name": "Justin Trudeau",
+    "relation_type": "same_org_event",
+    "description": "Justin Trudeau was named a WEF Young Global Leader; Klaus Schwab boasted in a 2017 McGill University address that the WEF 'penetrated' the Canadian cabinet with YGL graduates",
+    "source_url": "https://www.weforum.org/young-global-leaders/",
+    "source_domain": "weforum.org",
+    "date_start": "2016-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Harvey Weinstein",
+    "to_entity_name": "Hillary Clinton",
+    "relation_type": "financial",
+    "description": "Harvey Weinstein donated more than $1.4 million to Democratic candidates and causes over the years, including to Hillary Clinton's campaigns; Clinton waited five days after the Times expos\u00e9 before condemning him",
+    "source_url": "https://www.nytimes.com/2017/10/12/us/politics/harvey-weinstein-democrats.html",
+    "source_domain": "nytimes.com",
+    "date_start": "1992-01-01",
+    "date_end": "2017-01-01"
+  },
+  {
+    "from_entity_name": "Harvey Weinstein",
+    "to_entity_name": "Democratic Party",
+    "relation_type": "financial",
+    "description": "Weinstein was one of the Democratic Party's most prolific bundlers, raising millions for Obama, Clinton, and other candidates; he co-hosted fundraisers at his home and attended White House events",
+    "source_url": "https://www.nytimes.com/2017/10/12/us/politics/harvey-weinstein-democrats.html",
+    "source_domain": "nytimes.com",
+    "date_start": "1992-01-01",
+    "date_end": "2017-01-01"
+  },
+  {
+    "from_entity_name": "Prince Charles",
+    "to_entity_name": "Jimmy Savile",
+    "relation_type": "personal_friendship",
+    "description": "Prince Charles and Jimmy Savile were close personal friends for over 25 years; Savile was a regular guest at Balmoral and Highgrove, and Charles publicly praised Savile after his 2011 death before the abuse scandal broke",
+    "source_url": "https://www.bbc.com/news/uk-19984684",
+    "source_domain": "bbc.com",
+    "date_start": "1986-01-01",
+    "date_end": "2011-01-01"
+  },
+  {
+    "from_entity_name": "Jimmy Savile",
+    "to_entity_name": "BBC",
+    "relation_type": "employment",
+    "description": "Jimmy Savile was a BBC employee and presenter for over four decades; a 2012 investigation found the BBC had received complaints about his abuse of children on BBC premises as early as the 1960s but took no action",
+    "source_url": "https://www.bbc.co.uk/news/entertainment-arts-19984682",
+    "source_domain": "bbc.co.uk",
+    "date_start": "1964-01-01",
+    "date_end": "2006-01-01"
+  },
+  {
+    "from_entity_name": "Bohemian Grove",
+    "to_entity_name": "Richard Nixon",
+    "relation_type": "same_org_event",
+    "description": "Richard Nixon was a Bohemian Club member who attended the Grove for decades; a 1971 Nixon White House tape records him calling the Grove 'the most faggy goddamn thing you could ever imagine'",
+    "source_url": "https://en.wikipedia.org/wiki/Bohemian_Grove",
+    "source_domain": "wikipedia.org",
+    "date_start": "1950-01-01",
+    "date_end": "1994-01-01"
+  },
+  {
+    "from_entity_name": "Bohemian Grove",
+    "to_entity_name": "Ronald Reagan",
+    "relation_type": "same_org_event",
+    "description": "Ronald Reagan was a Bohemian Club member; he and Richard Nixon reportedly negotiated at Bohemian Grove in 1967 that Nixon would run for president and Reagan would wait, according to historian Bryan Burrough",
+    "source_url": "https://en.wikipedia.org/wiki/Bohemian_Grove",
+    "source_domain": "wikipedia.org",
+    "date_start": "1967-01-01",
+    "date_end": "2004-01-01"
+  },
+  {
+    "from_entity_name": "Propaganda Due",
+    "to_entity_name": "Silvio Berlusconi",
+    "relation_type": "same_org_event",
+    "description": "Silvio Berlusconi's name appeared on the list of P2 Masonic Lodge members seized by police in 1981; P2, led by Licio Gelli, was a secret criminal network involved in political blackmail and financial fraud",
+    "source_url": "https://en.wikipedia.org/wiki/Propaganda_Due",
+    "source_domain": "wikipedia.org",
+    "date_start": "1978-01-01",
+    "date_end": "1981-01-01"
+  },
+  {
+    "from_entity_name": "Bilderberg Group",
+    "to_entity_name": "Henry Kissinger",
+    "relation_type": "same_org_event",
+    "description": "Henry Kissinger was one of the most frequent American attendees of Bilderberg conferences, participating for decades as both a government official and private citizen; he served on the Bilderberg Steering Committee",
+    "source_url": "https://en.wikipedia.org/wiki/Henry_Kissinger",
+    "source_domain": "wikipedia.org",
+    "date_start": "1964-01-01",
+    "date_end": "2023-01-01"
+  },
+  {
+    "from_entity_name": "AIPAC",
+    "to_entity_name": "United States Congress",
+    "relation_type": "financial",
+    "description": "AIPAC and its affiliated PACs have contributed tens of millions of dollars to congressional candidates; OpenSecrets data shows AIPAC-linked donors gave over $20 million in the 2022 election cycle alone",
+    "source_url": "https://www.opensecrets.org/industries/indus.php?ind=Q05",
+    "source_domain": "opensecrets.org",
+    "date_start": "1954-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Mark Zuckerberg",
+    "to_entity_name": "PRISM",
+    "relation_type": "other",
+    "description": "NSA PRISM documents leaked by Snowden in 2013 listed Facebook as a participating company giving the NSA direct access to user data since 2009; Zuckerberg denied knowing of the program",
+    "source_url": "https://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data",
+    "source_domain": "theguardian.com",
+    "date_start": "2009-01-01",
+    "date_end": "2013-06-06"
+  },
+  {
+    "from_entity_name": "Google",
+    "to_entity_name": "PRISM",
+    "relation_type": "other",
+    "description": "Google was listed as a PRISM participant in NSA documents leaked by Snowden, providing the NSA access to user emails, documents, and search queries; Google denied knowingly participating",
+    "source_url": "https://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data",
+    "source_domain": "theguardian.com",
+    "date_start": "2009-01-01",
+    "date_end": "2013-06-06"
+  },
+  {
+    "from_entity_name": "WEF Young Global Leaders",
+    "to_entity_name": "Mark Zuckerberg",
+    "relation_type": "same_org_event",
+    "description": "Mark Zuckerberg was named a World Economic Forum Young Global Leader in 2009; he has been a regular Davos attendee and hosted WEF sessions on technology and connectivity",
+    "source_url": "https://www.weforum.org/young-global-leaders/",
+    "source_domain": "weforum.org",
+    "date_start": "2009-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "New Mexico ranch",
+    "relation_type": "other",
+    "description": "Epstein owned Zorro Ranch, a 10,000-acre compound in New Mexico where multiple victims say they were abused; the FBI investigated the property in 2019 and court documents allege sex trafficking occurred there",
+    "source_url": "https://www.nytimes.com/2019/08/09/nyregion/jeffrey-epstein-zorro-ranch-new-mexico.html",
+    "source_domain": "nytimes.com",
+    "date_start": "1993-01-01",
+    "date_end": "2019-01-01"
+  },
+  {
+    "from_entity_name": "Ghislaine Maxwell",
+    "to_entity_name": "Terramar Project",
+    "relation_type": "other",
+    "description": "Maxwell founded the Terramar Project, a nonprofit ostensibly protecting oceans; critics and prosecutors have alleged it was used to facilitate international travel and provided a cover story for activities on Epstein's private island",
+    "source_url": "https://www.dailybeast.com/ghislaine-maxwell-charity-terramar-project-folded-days-after-epstein-arrest",
+    "source_domain": "dailybeast.com",
+    "date_start": "2012-01-01",
+    "date_end": "2019-01-01"
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Little Saint James",
+    "relation_type": "other",
+    "description": "Epstein owned Little Saint James, a private island in the US Virgin Islands where victims say he ran a sex-trafficking operation; the island was raided by the FBI after Epstein's 2019 arrest",
+    "source_url": "https://www.nytimes.com/2019/07/09/us/jeffrey-epstein-island.html",
+    "source_domain": "nytimes.com",
+    "date_start": "1998-01-01",
+    "date_end": "2019-01-01"
+  },
+  {
+    "from_entity_name": "Oliver North",
+    "to_entity_name": "CIA",
+    "relation_type": "other",
+    "description": "The CIA Inspector General's 1998 report confirmed Oliver North's NSC operation coordinated with CIA officers to funnel arms and money to the Contras, bypassing Congress through a secret funding network",
+    "source_url": "https://en.wikipedia.org/wiki/Iran%E2%80%93Contra_affair",
+    "source_domain": "wikipedia.org",
+    "date_start": "1984-01-01",
+    "date_end": "1987-01-01"
+  },
+  {
+    "from_entity_name": "Philip Zelikow",
+    "to_entity_name": "September 11 Commission",
+    "relation_type": "employment",
+    "description": "Philip Zelikow served as Executive Director of the 9/11 Commission despite having co-authored a book with Condoleezza Rice and serving on the Bush transition team \u2014 a conflict of interest that critics say shaped the final report",
+    "source_url": "https://en.wikipedia.org/wiki/Philip_Zelikow",
+    "source_domain": "wikipedia.org",
+    "date_start": "2002-01-01",
+    "date_end": "2004-01-01"
+  },
+  {
+    "from_entity_name": "Robert Mueller",
+    "to_entity_name": "Jeffrey Epstein",
+    "relation_type": "other",
+    "description": "As FBI Director, Robert Mueller signed off on the 2008 non-prosecution agreement with Epstein; the sweetheart deal, brokered by Alex Acosta, gave Epstein immunity for federal crimes and was later ruled illegal",
+    "source_url": "https://www.miamiherald.com/news/local/article220097825.html",
+    "source_domain": "miamiherald.com",
+    "date_start": "2008-06-30",
+    "date_end": "2008-06-30"
+  },
+  {
+    "from_entity_name": "Alex Acosta",
+    "to_entity_name": "Jeffrey Epstein",
+    "relation_type": "other",
+    "description": "Alex Acosta, as US Attorney for South Florida, secretly negotiated a 2008 non-prosecution agreement with Epstein's lawyers giving him only 13 months in a work-release program; Acosta later resigned as Trump's Labor Secretary over the deal",
+    "source_url": "https://www.miamiherald.com/news/local/article220097825.html",
+    "source_domain": "miamiherald.com",
+    "date_start": "2007-01-01",
+    "date_end": "2008-06-30"
+  },
+  {
+    "from_entity_name": "CIA",
+    "to_entity_name": "Saddam Hussein",
+    "relation_type": "financial",
+    "description": "Declassified documents confirm the CIA provided Saddam Hussein with intelligence on Iranian troop positions in the 1980s, knowing he was using chemical weapons against them; the US supported Iraq throughout the Iran-Iraq War",
+    "source_url": "https://nsarchive.gwu.edu/briefing-book/iraq/2013-08-25/cia-was-no-stranger-iraqs-chemical-weapons",
+    "source_domain": "nsarchive.gwu.edu",
+    "date_start": "1983-01-01",
+    "date_end": "1988-01-01"
+  },
+  {
+    "from_entity_name": "Monsanto",
+    "to_entity_name": "CIA",
+    "relation_type": "other",
+    "description": "Wikileaks cables revealed the US State Department and CIA worked as 'de facto global ambassadors' for Monsanto, pressuring foreign governments to accept GMO crops and drop restrictions on Monsanto products",
+    "source_url": "https://www.theguardian.com/environment/2011/jan/03/wikileaks-us-embassy-cables-gm-crops",
+    "source_domain": "theguardian.com",
+    "date_start": "2007-01-01",
+    "date_end": "2010-01-01"
+  },
+  {
+    "from_entity_name": "George Soros",
+    "to_entity_name": "Ukraine",
+    "relation_type": "financial",
+    "description": "Soros's Open Society Foundations spent over $100 million in Ukraine since 1990 funding civil society groups; he backed the 2014 Maidan uprising and his foundation has co-financed Ukrainian government reform programs",
+    "source_url": "https://www.opensocietyfoundations.org/newsroom/open-society-foundations-ukraine",
+    "source_domain": "opensocietyfoundations.org",
+    "date_start": "1990-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Victoria Nuland",
+    "to_entity_name": "Ukraine",
+    "relation_type": "other",
+    "description": "A leaked phone call revealed US Assistant Secretary of State Victoria Nuland saying 'Fuck the EU' while discussing who should lead Ukraine's post-Maidan government in 2014, confirming US involvement in the political transition",
+    "source_url": "https://www.bbc.com/news/world-europe-26079957",
+    "source_domain": "bbc.com",
+    "date_start": "2014-02-06",
+    "date_end": "2014-02-06"
+  },
+  {
+    "from_entity_name": "Halliburton",
+    "to_entity_name": "Iraq War",
+    "relation_type": "financial",
+    "description": "Halliburton subsidiary KBR received no-bid contracts worth $39.5 billion in the Iraq War reconstruction effort; the company was awarded contracts before the invasion had even begun, by the Pentagon under Cheney",
+    "source_url": "https://en.wikipedia.org/wiki/Halliburton",
+    "source_domain": "wikipedia.org",
+    "date_start": "2003-03-01",
+    "date_end": "2011-01-01"
+  },
+  {
+    "from_entity_name": "Blackwater",
+    "to_entity_name": "CIA",
+    "relation_type": "other",
+    "description": "The CIA hired Blackwater (later Academi) for covert assassination missions and targeted killing programs in Pakistan and Afghanistan; CIA director Leon Panetta terminated one such program in 2009",
+    "source_url": "https://www.nytimes.com/2009/08/20/us/20intel.html",
+    "source_domain": "nytimes.com",
+    "date_start": "2004-01-01",
+    "date_end": "2009-01-01"
+  },
+  {
+    "from_entity_name": "Erik Prince",
+    "to_entity_name": "CIA",
+    "relation_type": "other",
+    "description": "Erik Prince, founder of Blackwater, ran a CIA-authorized assassination program and served as the CIA's 'asset' in Afghanistan and Pakistan according to the New York Times and Intercept; he later pitched a CIA-run private spy service",
+    "source_url": "https://theintercept.com/2017/01/17/notorious-mercenary-erik-prince-is-advising-trump-from-the-shadows/",
+    "source_domain": "theintercept.com",
+    "date_start": "2004-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Peter Thiel",
+    "to_entity_name": "Donald Trump",
+    "relation_type": "financial",
+    "description": "Peter Thiel donated $1.25 million to Trump's 2016 campaign and was the only major Silicon Valley figure to speak at the Republican National Convention; Thiel received a presidential pardon for a Palantir associate after the election",
+    "source_url": "https://www.wsj.com/articles/peter-thiel-backs-trump-with-1-25-million-1476198001",
+    "source_domain": "wsj.com",
+    "date_start": "2016-01-01",
+    "date_end": "2016-11-08"
+  },
+  {
+    "from_entity_name": "Cambridge Analytica",
+    "to_entity_name": "Brexit",
+    "relation_type": "other",
+    "description": "Cambridge Analytica, through its UK affiliate AggregateIQ, provided data-targeting services to the official Vote Leave campaign; the UK's Information Commissioner found the campaigns violated data protection laws",
+    "source_url": "https://en.wikipedia.org/wiki/Cambridge_Analytica",
+    "source_domain": "wikipedia.org",
+    "date_start": "2016-01-01",
+    "date_end": "2016-06-23"
+  },
+  {
+    "from_entity_name": "Bilderberg Group",
+    "to_entity_name": "World Economic Forum",
+    "relation_type": "same_org_event",
+    "description": "Many of the same individuals attend both Bilderberg and Davos, including Kissinger, David Rockefeller, and various heads of state; both forums exclude press and operate under Chatham House rules or total secrecy",
+    "source_url": "https://en.wikipedia.org/wiki/Bilderberg_meeting",
+    "source_domain": "wikipedia.org",
+    "date_start": "1971-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Acosta",
+    "relation_type": "other",
+    "description": "Epstein's 2008 deal allowed him to secretly sign a non-prosecution agreement with US Attorney Alex Acosta that granted immunity not only to Epstein but also to any 'potential co-conspirators'",
+    "source_url": "https://www.miamiherald.com/news/local/article220097825.html",
+    "source_domain": "miamiherald.com",
+    "date_start": "2007-06-30",
+    "date_end": "2008-06-30"
+  },
+  {
+    "from_entity_name": "Barack Obama",
+    "to_entity_name": "Wall Street",
+    "relation_type": "financial",
+    "description": "Obama received more money from Wall Street during the 2008 election than any previous presidential candidate \u2014 over $15 million from the financial sector \u2014 and then filled his administration with Goldman Sachs and Citigroup alumni",
+    "source_url": "https://www.opensecrets.org/pres08/contrib.php?cid=N00009638",
+    "source_domain": "opensecrets.org",
+    "date_start": "2008-01-01",
+    "date_end": "2008-11-04"
+  },
+  {
+    "from_entity_name": "Monsanto",
+    "to_entity_name": "FDA",
+    "relation_type": "employment",
+    "description": "Multiple former Monsanto executives and lawyers have cycled through the FDA in senior regulatory roles \u2014 a 'revolving door' pattern including Michael Taylor, who drafted FDA's GMO policy and later returned to Monsanto as VP",
+    "source_url": "https://en.wikipedia.org/wiki/Michael_R._Taylor",
+    "source_domain": "wikipedia.org",
+    "date_start": "1991-01-01",
+    "date_end": "2016-01-01"
+  },
+  {
+    "from_entity_name": "CIA",
+    "to_entity_name": "Afghanistan",
+    "relation_type": "other",
+    "description": "The CIA oversaw the largest covert operation in its history by arming Mujahideen fighters in Afghanistan through Operation Cyclone; a 1989 report by the CIA's own inspector general admitted the program helped create the conditions for the Taliban",
+    "source_url": "https://en.wikipedia.org/wiki/Operation_Cyclone",
+    "source_domain": "wikipedia.org",
+    "date_start": "1979-01-01",
+    "date_end": "1989-01-01"
+  },
+  {
+    "from_entity_name": "Osama bin Laden",
+    "to_entity_name": "CIA",
+    "relation_type": "other",
+    "description": "Bin Laden, working through Pakistan's ISI, received CIA-funneled weapons and funding as a Mujahideen commander during the Soviet-Afghan War; the CIA's connection was documented in the 9/11 Commission Report",
+    "source_url": "https://en.wikipedia.org/wiki/Osama_bin_Laden",
+    "source_domain": "wikipedia.org",
+    "date_start": "1979-01-01",
+    "date_end": "1989-01-01"
+  },
+  {
+    "from_entity_name": "Donald Trump",
+    "to_entity_name": "Roger Stone",
+    "relation_type": "personal_friendship",
+    "description": "Roger Stone has been Trump's political adviser and friend since the 1980s; Stone was convicted of seven felony counts including witness tampering and lying to Congress and was pardoned by Trump in December 2020",
+    "source_url": "https://en.wikipedia.org/wiki/Roger_Stone",
+    "source_domain": "wikipedia.org",
+    "date_start": "1980-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Dershowitz",
+    "relation_type": "other",
+    "description": "Virginia Giuffre accused Alan Dershowitz of sexually abusing her when she was underage while she was trafficked by Epstein; Dershowitz has vigorously denied the allegations and sued the lawyers who published them",
+    "source_url": "https://www.theguardian.com/us-news/2019/jul/10/jeffrey-epstein-alan-dershowitz-florida-deal",
+    "source_domain": "theguardian.com",
+    "date_start": "2000-01-01",
+    "date_end": "2005-01-01"
+  },
+  {
+    "from_entity_name": "Pfizer",
+    "to_entity_name": "FDA",
+    "relation_type": "financial",
+    "description": "The FDA receives 65% of its drug review budget from 'user fees' paid by pharmaceutical companies including Pfizer; critics argue this creates a structural conflict of interest in drug approval decisions",
+    "source_url": "https://en.wikipedia.org/wiki/Prescription_Drug_User_Fee_Act",
+    "source_domain": "wikipedia.org",
+    "date_start": "1992-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Bill Clinton",
+    "to_entity_name": "Marc Rich",
+    "relation_type": "other",
+    "description": "On his last day in office, Clinton pardoned fugitive financier Marc Rich, who had fled the US to avoid prosecution for tax evasion and illegal oil deals with Iran; Rich's ex-wife Denise had donated $450,000 to the Clinton Library",
+    "source_url": "https://en.wikipedia.org/wiki/Marc_Rich",
+    "source_domain": "wikipedia.org",
+    "date_start": "2001-01-20",
+    "date_end": "2001-01-20"
+  },
+  {
+    "from_entity_name": "Anthony Fauci",
+    "to_entity_name": "WHO",
+    "relation_type": "same_org_event",
+    "description": "Fauci served as a key US representative to the WHO for decades, coordinating pandemic responses; he was among the WHO advisers who in January 2020 praised China's transparency on COVID-19, which critics said delayed the global response",
+    "source_url": "https://www.bmj.com/content/372/bmj.n627",
+    "source_domain": "bmj.com",
+    "date_start": "1984-01-01",
+    "date_end": "2022-01-01"
+  },
+  {
+    "from_entity_name": "Elon Musk",
+    "to_entity_name": "X Corp",
+    "relation_type": "financial",
+    "description": "Musk acquired Twitter for $44 billion in 2022, renaming it X; he used $13 billion in debt financing from Morgan Stanley and others while cutting 80% of staff, dramatically reshaping global information flows",
+    "source_url": "https://en.wikipedia.org/wiki/Acquisition_of_Twitter_by_Elon_Musk",
+    "source_domain": "wikipedia.org",
+    "date_start": "2022-10-27",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "WikiLeaks",
+    "to_entity_name": "Julian Assange",
+    "relation_type": "employment",
+    "description": "Julian Assange founded WikiLeaks in 2006 and served as its editor-in-chief; the site published millions of classified US military and diplomatic documents including the 'Collateral Murder' video of a 2007 Baghdad airstrike",
+    "source_url": "https://en.wikipedia.org/wiki/Julian_Assange",
+    "source_domain": "wikipedia.org",
+    "date_start": "2006-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Julian Assange",
+    "to_entity_name": "CIA",
+    "relation_type": "other",
+    "description": "The CIA under Mike Pompeo designated WikiLeaks a 'non-state hostile intelligence service' in 2017 and drew up plans to kidnap or assassinate Assange in the Ecuadorian Embassy; Yahoo News reported this in 2021",
+    "source_url": "https://news.yahoo.com/kidnapping-assassination-and-a-london-shoot-out-inside-the-ci-as-secret-war-against-wiki-leaks-090057786.html",
+    "source_domain": "news.yahoo.com",
+    "date_start": "2017-01-01",
+    "date_end": "2019-01-01"
+  },
+  {
+    "from_entity_name": "Donald Rumsfeld",
+    "to_entity_name": "Aspartame",
+    "relation_type": "other",
+    "description": "Rumsfeld was CEO of G.D. Searle when it developed aspartame; after FDA reviewers rejected it, Rumsfeld joined the Reagan transition team and the next day Reagan appointed an FDA commissioner who approved aspartame in 1981",
+    "source_url": "https://en.wikipedia.org/wiki/Aspartame_controversy",
+    "source_domain": "wikipedia.org",
+    "date_start": "1977-01-01",
+    "date_end": "1981-01-01"
+  },
+  {
+    "from_entity_name": "Bill Gates",
+    "to_entity_name": "Digital ID",
+    "relation_type": "financial",
+    "description": "The Gates Foundation has funded the ID2020 Alliance and similar digital identity programs in developing nations, raising concerns from civil libertarians about biometric surveillance infrastructure in aid-dependent countries",
+    "source_url": "https://id2020.org/alliance",
+    "source_domain": "id2020.org",
+    "date_start": "2016-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Elon Musk",
+    "to_entity_name": "Neuralink",
+    "relation_type": "financial",
+    "description": "Musk co-founded Neuralink in 2016 to develop brain-computer implants; the company received DARPA-adjacent funding and is developing technology that would allow direct neural interfaces with AI systems",
+    "source_url": "https://en.wikipedia.org/wiki/Neuralink",
+    "source_domain": "wikipedia.org",
+    "date_start": "2016-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Klaus Schwab",
+    "to_entity_name": "Great Reset",
+    "relation_type": "other",
+    "description": "Klaus Schwab co-authored 'COVID-19: The Great Reset' in July 2020, calling for governments to use the pandemic to 'revamp all aspects of our societies and economies'; the book became central to conspiracy theories about elite pandemic exploitation",
+    "source_url": "https://www.weforum.org/great-reset/",
+    "source_domain": "weforum.org",
+    "date_start": "2020-07-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Hunter Biden",
+    "to_entity_name": "Burisma",
+    "relation_type": "financial",
+    "description": "Hunter Biden was paid up to $83,333 per month to sit on the board of Ukrainian gas company Burisma Holdings between 2014 and 2019, while his father Joe Biden was VP and the lead US official on Ukraine policy",
+    "source_url": "https://www.nytimes.com/2019/09/27/us/politics/hunter-biden-ukraine.html",
+    "source_domain": "nytimes.com",
+    "date_start": "2014-04-01",
+    "date_end": "2019-04-01"
+  },
+  {
+    "from_entity_name": "Joe Biden",
+    "to_entity_name": "Ukraine",
+    "relation_type": "other",
+    "description": "Biden, as VP, boasted in a 2018 Council on Foreign Relations speech that he threatened to withhold $1 billion in US loan guarantees unless Ukraine fired prosecutor Viktor Shokin \u2014 who was investigating Burisma while Hunter was on its board",
+    "source_url": "https://www.cfr.org/event/foreign-affairs-issue-launch-former-vice-president-joe-biden",
+    "source_domain": "cfr.org",
+    "date_start": "2016-03-01",
+    "date_end": "2016-03-01"
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "BlackRock",
+    "relation_type": "financial",
+    "description": "Epstein's associate and Virgin Islands financial contacts overlapped with sovereign wealth and asset management networks; Epstein's estate held accounts at Deutsche Bank, which was later fined $150 million for processing his transactions",
+    "source_url": "https://www.nytimes.com/2020/07/07/business/deutsche-bank-jeffrey-epstein.html",
+    "source_domain": "nytimes.com",
+    "date_start": "2013-01-01",
+    "date_end": "2019-01-01"
+  },
+  {
+    "from_entity_name": "Deutsche Bank",
+    "to_entity_name": "Jeffrey Epstein",
+    "relation_type": "financial",
+    "description": "Deutsche Bank was fined $150 million by New York State regulators in 2020 for processing $120 million in suspicious transactions for Jeffrey Epstein between 2013 and 2019, despite his sex-offender status being public",
+    "source_url": "https://www.nytimes.com/2020/07/07/business/deutsche-bank-jeffrey-epstein.html",
+    "source_domain": "nytimes.com",
+    "date_start": "2013-01-01",
+    "date_end": "2019-01-01"
+  },
+  {
+    "from_entity_name": "Council on Foreign Relations",
+    "to_entity_name": "CIA",
+    "relation_type": "other",
+    "description": "The CIA's founding director Allen Dulles and key figures including Zbigniew Brzezinski and George H.W. Bush held senior CFR positions; historians document a decades-long overlap between CFR membership and senior CIA leadership",
+    "source_url": "https://en.wikipedia.org/wiki/Council_on_Foreign_Relations",
+    "source_domain": "wikipedia.org",
+    "date_start": "1947-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Virginia Giuffre",
+    "relation_type": "other",
+    "description": "Virginia Giuffre has testified under oath that Epstein and Maxwell trafficked her to powerful men beginning when she was 17; she named Prince Andrew, Alan Dershowitz, and others in legal proceedings",
+    "source_url": "https://www.bbc.com/news/uk-57905169",
+    "source_domain": "bbc.com",
+    "date_start": "1999-01-01",
+    "date_end": "2002-01-01"
+  },
+  {
+    "from_entity_name": "NSA",
+    "to_entity_name": "GCHQ",
+    "relation_type": "other",
+    "description": "Snowden documents revealed that the NSA and Britain's GCHQ jointly ran mass surveillance programs including MUSCULAR, tapping fiber-optic cables to intercept data from Google and Yahoo data centers without warrants",
+    "source_url": "https://www.theguardian.com/world/2013/oct/30/nsa-google-yahoo-cloud-data-documents",
+    "source_domain": "theguardian.com",
+    "date_start": "2007-01-01",
+    "date_end": "2013-06-06"
+  },
+  {
+    "from_entity_name": "Bilderberg Group",
+    "to_entity_name": "Bill Clinton",
+    "relation_type": "same_org_event",
+    "description": "Bill Clinton attended the 1991 Bilderberg meeting in Baden-Baden, Germany while still Arkansas Governor; the following year he won the Democratic nomination and the presidency \u2014 mirroring the pattern of earlier Bilderberg-endorsed candidates",
+    "source_url": "https://en.wikipedia.org/wiki/Bilderberg_meeting",
+    "source_domain": "wikipedia.org",
+    "date_start": "1991-06-06",
+    "date_end": "1991-06-09"
+  },
+  {
+    "from_entity_name": "World Economic Forum",
+    "to_entity_name": "Great Reset",
+    "relation_type": "other",
+    "description": "The WEF launched the 'Great Reset' initiative in June 2020, with Schwab and Prince Charles as co-chairs; it called for a fundamental transformation of capitalism using COVID-19 as an opportunity to rebuild economies sustainably",
+    "source_url": "https://www.weforum.org/great-reset/",
+    "source_domain": "weforum.org",
+    "date_start": "2020-06-03",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Jared Kushner",
+    "to_entity_name": "Saudi Arabia",
+    "relation_type": "financial",
+    "description": "Saudi Arabia's Public Investment Fund invested $2 billion in Kushner's private equity firm Affinity Partners in 2022, just 6 months after Kushner left his White House role where he had been the lead on Saudi relations",
+    "source_url": "https://www.nytimes.com/2022/05/17/us/jared-kushner-saudi-investment.html",
+    "source_domain": "nytimes.com",
+    "date_start": "2022-01-01",
+    "date_end": "2022-01-01"
+  },
+  {
+    "from_entity_name": "Jared Kushner",
+    "to_entity_name": "Donald Trump",
+    "relation_type": "personal_family",
+    "description": "Jared Kushner is the son-in-law of Donald Trump, having married Trump's daughter Ivanka in 2009; Kushner served as Senior Adviser to the President with an expansive portfolio covering Middle East policy and federal reform",
+    "source_url": "https://en.wikipedia.org/wiki/Jared_Kushner",
+    "source_domain": "wikipedia.org",
+    "date_start": "2009-10-25",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Bill Gates",
+    "to_entity_name": "farmland",
+    "relation_type": "financial",
+    "description": "Bill Gates became the largest private owner of US farmland by 2021, with over 269,000 acres across 18 states; this concentration of agricultural land ownership has raised concerns about food system control",
+    "source_url": "https://www.theguardian.com/commentisfree/2021/apr/05/bill-gates-climate-crisis-farmland",
+    "source_domain": "theguardian.com",
+    "date_start": "2012-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "George Soros",
+    "to_entity_name": "Media",
+    "relation_type": "financial",
+    "description": "Soros has donated over $131 million to media organizations since 2003, including NPR, ProPublica, the Guardian, and hundreds of local newspapers, according to a Media Research Center analysis of Open Society grants",
+    "source_url": "https://www.mrc.org/articles/george-soros-has-ties-more-50-major-news-organizations",
+    "source_domain": "mrc.org",
+    "date_start": "2003-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Tavistock Institute",
+    "to_entity_name": "CIA",
+    "relation_type": "other",
+    "description": "Declassified documents confirm the Tavistock Institute of Human Relations received CIA funding through front foundations in the 1950s; Tavistock researchers developed psychological influence and mind-control frameworks later adopted by intelligence agencies",
+    "source_url": "https://en.wikipedia.org/wiki/Tavistock_Institute",
+    "source_domain": "wikipedia.org",
+    "date_start": "1947-01-01",
+    "date_end": "1975-01-01"
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Lex Wexner",
+    "relation_type": "financial",
+    "description": "L Brands billionaire Les Wexner gave Epstein sweeping power of attorney over his finances in 1991; Epstein managed Wexner's money for years and the two shared properties before an unexplained falling-out around 2007",
+    "source_url": "https://www.nytimes.com/2019/07/25/business/jeffrey-epstein-les-wexner.html",
+    "source_domain": "nytimes.com",
+    "date_start": "1987-01-01",
+    "date_end": "2007-01-01"
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Harvard University",
+    "relation_type": "financial",
+    "description": "Epstein donated at least $9 million to Harvard University, funding a research program in mathematical biology; Harvard kept the money even after Epstein's 2008 conviction, returning it only under pressure in 2019",
+    "source_url": "https://www.thecrimson.com/article/2019/7/12/epstein-harvard-donation/",
+    "source_domain": "thecrimson.com",
+    "date_start": "2003-01-01",
+    "date_end": "2019-01-01"
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "MIT",
+    "relation_type": "financial",
+    "description": "Epstein donated at least $850,000 to MIT directly and influenced millions more in donations through intermediaries; MIT Media Lab director Joi Ito resigned in 2019 after the extent of Epstein's funding was revealed",
+    "source_url": "https://www.newyorker.com/news/news-desk/how-an-elite-university-research-center-concealed-its-links-to-jeffrey-epstein",
+    "source_domain": "newyorker.com",
+    "date_start": "2013-01-01",
+    "date_end": "2017-01-01"
+  },
+  {
+    "from_entity_name": "Ghislaine Maxwell",
+    "to_entity_name": "Robert Maxwell",
+    "relation_type": "personal_family",
+    "description": "Ghislaine Maxwell is the daughter of Robert Maxwell, the British media mogul and alleged Mossad asset who died in mysterious circumstances falling from his yacht in 1991",
+    "source_url": "https://en.wikipedia.org/wiki/Ghislaine_Maxwell",
+    "source_domain": "wikipedia.org",
+    "date_start": "1961-12-25",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "CIA",
+    "to_entity_name": "MKULTRA",
+    "relation_type": "other",
+    "description": "The CIA ran Project MKULTRA from 1953 to 1973, conducting illegal human experiments with LSD, hypnosis, and psychological torture on thousands of unwitting American and Canadian citizens",
+    "source_url": "https://en.wikipedia.org/wiki/Project_MKUltra",
+    "source_domain": "wikipedia.org",
+    "date_start": "1953-01-01",
+    "date_end": "1973-01-01"
+  },
+  {
+    "from_entity_name": "CIA",
+    "to_entity_name": "Manuel Noriega",
+    "relation_type": "financial",
+    "description": "Manuel Noriega was a paid CIA informant from the 1950s through 1988, receiving intelligence payments while simultaneously trafficking cocaine into the United States; the US invaded Panama in 1989 to capture him",
+    "source_url": "https://en.wikipedia.org/wiki/Manuel_Noriega",
+    "source_domain": "wikipedia.org",
+    "date_start": "1967-01-01",
+    "date_end": "1988-01-01"
+  },
+  {
+    "from_entity_name": "Donald Trump",
+    "to_entity_name": "Roy Cohn",
+    "relation_type": "personal_friendship",
+    "description": "Roy Cohn, Joseph McCarthy's chief counsel and alleged mob lawyer, was Trump's personal attorney and mentor for 13 years; Trump called Cohn his 'greatest friend' and Cohn introduced Trump to New York's political elite",
+    "source_url": "https://www.nytimes.com/2016/06/21/us/politics/donald-trump-roy-cohn.html",
+    "source_domain": "nytimes.com",
+    "date_start": "1973-01-01",
+    "date_end": "1986-01-01"
+  },
+  {
+    "from_entity_name": "Ronald Reagan",
+    "to_entity_name": "CIA",
+    "relation_type": "other",
+    "description": "Reagan authorized the CIA to arm and train the Afghan Mujahideen through Operation Cyclone, funneling $20 billion through Pakistan's ISI; some of these fighters later formed al-Qaeda",
+    "source_url": "https://en.wikipedia.org/wiki/Operation_Cyclone",
+    "source_domain": "wikipedia.org",
+    "date_start": "1981-01-01",
+    "date_end": "1989-01-01"
+  },
+  {
+    "from_entity_name": "George H.W. Bush",
+    "to_entity_name": "CIA",
+    "relation_type": "employment",
+    "description": "George H.W. Bush served as CIA Director from 1976 to 1977; declassified documents also suggest he had earlier CIA connections during his time in the oil business in the late 1950s and 1960s",
+    "source_url": "https://en.wikipedia.org/wiki/George_H._W._Bush",
+    "source_domain": "wikipedia.org",
+    "date_start": "1976-01-01",
+    "date_end": "1977-01-01"
+  },
+  {
+    "from_entity_name": "Saudi Arabia",
+    "to_entity_name": "September 11 attacks",
+    "relation_type": "other",
+    "description": "The declassified '28 pages' of the 9/11 Commission report revealed that Saudi government officials had direct contact with at least two of the hijackers in the US; 15 of the 19 hijackers were Saudi nationals",
+    "source_url": "https://www.theguardian.com/us-news/2016/jul/15/september-11-28-pages-saudi-arabia-fbi",
+    "source_domain": "theguardian.com",
+    "date_start": "2001-09-11",
+    "date_end": "2001-09-11"
+  },
+  {
+    "from_entity_name": "WEF Young Global Leaders",
+    "to_entity_name": "Jacinda Ardern",
+    "relation_type": "same_org_event",
+    "description": "Jacinda Ardern was named a WEF Young Global Leader; Klaus Schwab cited her as an example of YGL alumni who 'penetrated' national governments, in a widely circulated 2017 speech",
+    "source_url": "https://www.weforum.org/young-global-leaders/",
+    "source_domain": "weforum.org",
+    "date_start": "2014-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "WEF Young Global Leaders",
+    "to_entity_name": "Bill Gates",
+    "relation_type": "same_org_event",
+    "description": "Bill Gates was among the earliest participants in the WEF Global Leaders for Tomorrow program (the precursor to Young Global Leaders) and has been a mainstay Davos attendee for 30 years",
+    "source_url": "https://www.weforum.org/agenda/2022/01/bill-gates-davos-agenda/",
+    "source_domain": "weforum.org",
+    "date_start": "1993-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Bill Gates",
+    "to_entity_name": "Moderna",
+    "relation_type": "financial",
+    "description": "The Bill & Melinda Gates Foundation invested $55 million in Moderna in 2016 and the Gates Foundation's GAVI alliance helped fund Moderna's COVID-19 vaccine rollout globally",
+    "source_url": "https://www.cnbc.com/2020/11/09/bill-gates-moderna-covid-vaccine-investment.html",
+    "source_domain": "cnbc.com",
+    "date_start": "2016-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "George Soros",
+    "to_entity_name": "Democratic Party",
+    "relation_type": "financial",
+    "description": "George Soros has contributed over $400 million to US political causes since 2001 through his Open Society network and direct contributions; he is the single largest individual donor to Democrat-aligned super PACs",
+    "source_url": "https://www.opensecrets.org/donor-lookup/results?name=Soros",
+    "source_domain": "opensecrets.org",
+    "date_start": "2001-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Elon Musk",
+    "to_entity_name": "Peter Thiel",
+    "relation_type": "partnership",
+    "description": "Musk and Thiel co-founded PayPal together (as part of the 'PayPal Mafia') in the late 1990s; Thiel was PayPal's first CEO and Musk was CEO of X.com which merged with PayPal, and the two have remained close",
+    "source_url": "https://en.wikipedia.org/wiki/PayPal_Mafia",
+    "source_domain": "wikipedia.org",
+    "date_start": "1999-01-01",
+    "date_end": "2002-01-01"
+  },
+  {
+    "from_entity_name": "Dick Cheney",
+    "to_entity_name": "Halliburton",
+    "relation_type": "employment",
+    "description": "Dick Cheney served as Halliburton CEO from 1995 to 2000; after becoming VP he awarded Halliburton subsidiary KBR no-bid contracts worth $39.5 billion in Iraq, generating conflict-of-interest investigations",
+    "source_url": "https://en.wikipedia.org/wiki/Dick_Cheney",
+    "source_domain": "wikipedia.org",
+    "date_start": "1995-01-01",
+    "date_end": "2000-01-01"
+  },
+  {
+    "from_entity_name": "Henry Kissinger",
+    "to_entity_name": "Saudi Arabia",
+    "relation_type": "other",
+    "description": "Kissinger brokered the 1974 petrodollar agreement ensuring Saudi Arabia would price oil exclusively in dollars in exchange for US military protection, creating a system that has underpinned US dollar hegemony ever since",
+    "source_url": "https://www.bloomberg.com/features/2016-petrodollar-deal/",
+    "source_domain": "bloomberg.com",
+    "date_start": "1974-01-01",
+    "date_end": "1974-12-31"
+  },
+  {
+    "from_entity_name": "Cambridge Analytica",
+    "to_entity_name": "Steve Bannon",
+    "relation_type": "employment",
+    "description": "Steve Bannon was a founding board member and vice president of Cambridge Analytica, the data firm that harvested 87 million Facebook profiles without consent to micro-target voters for Trump's 2016 campaign",
+    "source_url": "https://en.wikipedia.org/wiki/Cambridge_Analytica",
+    "source_domain": "wikipedia.org",
+    "date_start": "2014-01-01",
+    "date_end": "2018-01-01"
+  },
+  {
+    "from_entity_name": "Cambridge Analytica",
+    "to_entity_name": "Donald Trump",
+    "relation_type": "other",
+    "description": "Cambridge Analytica was hired by the Trump 2016 presidential campaign to harvest and exploit data on 87 million Facebook users; CEO Alexander Nix boasted of his team's role in Trump's victory",
+    "source_url": "https://www.nytimes.com/2018/03/17/us/politics/cambridge-analytica-trump-campaign.html",
+    "source_domain": "nytimes.com",
+    "date_start": "2016-01-01",
+    "date_end": "2016-11-08"
+  },
+  {
+    "from_entity_name": "Saudi Arabia",
+    "to_entity_name": "Jamal Khashoggi",
+    "relation_type": "other",
+    "description": "The CIA concluded with high confidence that Saudi Crown Prince MBS ordered the October 2018 murder of Washington Post journalist Jamal Khashoggi inside the Saudi consulate in Istanbul",
+    "source_url": "https://www.washingtonpost.com/national-security/cia-concludes-saudi-crown-prince-ordered-journalists-killing/2018/11/16/",
+    "source_domain": "washingtonpost.com",
+    "date_start": "2018-10-02",
+    "date_end": "2018-10-02"
+  },
+  {
+    "from_entity_name": "Donald Trump",
+    "to_entity_name": "Paul Manafort",
+    "relation_type": "employment",
+    "description": "Paul Manafort served as Trump's campaign chairman in 2016 while having undisclosed lobbying ties to pro-Russian Ukrainian oligarchs; he was convicted of tax fraud and bank fraud and later pardoned by Trump",
+    "source_url": "https://www.nytimes.com/2018/08/21/us/politics/paul-manafort-verdict.html",
+    "source_domain": "nytimes.com",
+    "date_start": "2016-03-01",
+    "date_end": "2016-08-19"
+  },
+  {
+    "from_entity_name": "Facebook",
+    "to_entity_name": "DARPA",
+    "relation_type": "financial",
+    "description": "DARPA's LifeLog project, canceled in 2004 on the same day Facebook launched, aimed to build an omnibus personal data archive; multiple researchers have noted structural similarities between the two programs",
+    "source_url": "https://www.wired.com/2004/02/pentagon-kills-lifelog-project/",
+    "source_domain": "wired.com",
+    "date_start": "2004-02-04",
+    "date_end": "2004-02-04"
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Leon Black",
+    "relation_type": "financial",
+    "description": "Apollo Global Management CEO Leon Black paid Epstein $158 million in fees for tax and estate advice between 2012 and 2017, even after Epstein's 2008 conviction; Black resigned as Apollo CEO in 2021 after the payments were disclosed",
+    "source_url": "https://www.nytimes.com/2021/01/24/business/leon-black-apollo-epstein.html",
+    "source_domain": "nytimes.com",
+    "date_start": "2012-01-01",
+    "date_end": "2017-01-01"
+  },
+  {
+    "from_entity_name": "NSA",
+    "to_entity_name": "AT&T",
+    "relation_type": "other",
+    "description": "Snowden documents and a 2022 lawsuit revealed NSA's Room 641A at AT&T's San Francisco office, where the NSA secretly installed fiber-optic splitters to copy all internet traffic flowing through the building",
+    "source_url": "https://en.wikipedia.org/wiki/Room_641A",
+    "source_domain": "wikipedia.org",
+    "date_start": "2003-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "CIA",
+    "to_entity_name": "Google",
+    "relation_type": "financial",
+    "description": "In-Q-Tel, the CIA's venture capital arm, made early investments in Google's geospatial predecessor Keyhole Inc., which Google acquired in 2004 and turned into Google Earth",
+    "source_url": "https://en.wikipedia.org/wiki/Keyhole_Inc.",
+    "source_domain": "wikipedia.org",
+    "date_start": "2003-01-01",
+    "date_end": "2004-01-01"
+  },
+  {
+    "from_entity_name": "Rupert Murdoch",
+    "to_entity_name": "Tony Blair",
+    "relation_type": "personal_friendship",
+    "description": "Blair flew to Australia before the 1997 election to court Murdoch's endorsement; Murdoch's tabloids backed Blair and News Corp papers gave him supportive coverage for years, while Blair attended Murdoch's conferences",
+    "source_url": "https://www.theguardian.com/media/2012/may/10/tony-blair-rupert-murdoch-relationship",
+    "source_domain": "theguardian.com",
+    "date_start": "1994-01-01",
+    "date_end": "2010-01-01"
+  },
+  {
+    "from_entity_name": "Rupert Murdoch",
+    "to_entity_name": "Saudi Arabia",
+    "relation_type": "financial",
+    "description": "Saudi Prince Alwaleed bin Talal held a 7% stake in News Corp (Murdoch's company) worth over $2 billion, making him one of the largest shareholders; this relationship raised editorial independence concerns",
+    "source_url": "https://en.wikipedia.org/wiki/News_Corp",
+    "source_domain": "wikipedia.org",
+    "date_start": "2005-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "George W. Bush",
+    "to_entity_name": "Saudi Arabia",
+    "relation_type": "financial",
+    "description": "The bin Laden family's construction conglomerate invested in Arbusto Energy, Bush's first oil company, in the early 1980s; Bush's family had multi-decade financial ties to the Saudi royal family through the Carlyle Group",
+    "source_url": "https://en.wikipedia.org/wiki/Carlyle_Group",
+    "source_domain": "wikipedia.org",
+    "date_start": "1978-01-01",
+    "date_end": "2001-01-01"
+  },
+  {
+    "from_entity_name": "George H.W. Bush",
+    "to_entity_name": "Carlyle Group",
+    "relation_type": "financial",
+    "description": "George H.W. Bush was a senior adviser to the Carlyle Group from 1998 to 2003, giving speeches for the defense-focused private equity firm that had the Bin Laden family as investors; he resigned shortly after 9/11",
+    "source_url": "https://en.wikipedia.org/wiki/Carlyle_Group",
+    "source_domain": "wikipedia.org",
+    "date_start": "1998-01-01",
+    "date_end": "2003-01-01"
+  },
+  {
+    "from_entity_name": "Bilderberg Group",
+    "to_entity_name": "David Rockefeller",
+    "relation_type": "same_org_event",
+    "description": "David Rockefeller was a founding Bilderberg member and longtime Steering Committee member who attended dozens of meetings; he also co-founded the Trilateral Commission with Zbigniew Brzezinski in 1973",
+    "source_url": "https://en.wikipedia.org/wiki/Bilderberg_meeting",
+    "source_domain": "wikipedia.org",
+    "date_start": "1954-01-01",
+    "date_end": "2017-01-01"
+  },
+  {
+    "from_entity_name": "David Rockefeller",
+    "to_entity_name": "Council on Foreign Relations",
+    "relation_type": "same_org_event",
+    "description": "David Rockefeller served as Chairman of the Council on Foreign Relations from 1970 to 1985 and remained an honorary Chairman until his death; he openly wrote in his 2002 memoir about working for a 'one world government'",
+    "source_url": "https://en.wikipedia.org/wiki/David_Rockefeller",
+    "source_domain": "wikipedia.org",
+    "date_start": "1970-01-01",
+    "date_end": "2017-01-01"
+  },
+  {
+    "from_entity_name": "Zbigniew Brzezinski",
+    "to_entity_name": "Trilateral Commission",
+    "relation_type": "same_org_event",
+    "description": "Brzezinski co-founded the Trilateral Commission with David Rockefeller in 1973 and served as its first director; he recruited Jimmy Carter as a member before Carter became president",
+    "source_url": "https://en.wikipedia.org/wiki/Trilateral_Commission",
+    "source_domain": "wikipedia.org",
+    "date_start": "1973-01-01",
+    "date_end": "2017-01-01"
+  },
+  {
+    "from_entity_name": "Jimmy Carter",
+    "to_entity_name": "Trilateral Commission",
+    "relation_type": "same_org_event",
+    "description": "Jimmy Carter was a member of the Trilateral Commission before being elected president; he then appointed Trilateral Commission members to at least 17 senior positions in his administration including Brzezinski as National Security Advisor",
+    "source_url": "https://en.wikipedia.org/wiki/Trilateral_Commission",
+    "source_domain": "wikipedia.org",
+    "date_start": "1973-01-01",
+    "date_end": "1981-01-01"
+  },
+  {
+    "from_entity_name": "Propaganda Due",
+    "to_entity_name": "CIA",
+    "relation_type": "other",
+    "description": "Italian parliamentary investigations found that the P2 Masonic Lodge, whose 962-member list included cabinet ministers, judges, and military chiefs, had ties to the CIA and was connected to Operation Gladio's stay-behind networks",
+    "source_url": "https://en.wikipedia.org/wiki/Propaganda_Due",
+    "source_domain": "wikipedia.org",
+    "date_start": "1956-01-01",
+    "date_end": "1981-01-01"
+  },
+  {
+    "from_entity_name": "Elon Musk",
+    "to_entity_name": "SpaceX",
+    "relation_type": "financial",
+    "description": "Musk founded SpaceX in 2002 with $100 million of his PayPal windfall; the company has since received over $15 billion in NASA and Pentagon contracts, with Musk serving as CEO and chief engineer",
+    "source_url": "https://en.wikipedia.org/wiki/SpaceX",
+    "source_domain": "wikipedia.org",
+    "date_start": "2002-03-14",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Elon Musk",
+    "to_entity_name": "Pentagon",
+    "relation_type": "financial",
+    "description": "Musk's companies \u2014 SpaceX, Starlink, and Tesla \u2014 hold billions in Pentagon and intelligence contracts; Musk simultaneously controls Starlink infrastructure that Ukraine's military depends on for communications in the war with Russia",
+    "source_url": "https://www.reuters.com/business/aerospace-defense/pentagon-awards-spacex-500-million-starshield-contract-2023-01-01/",
+    "source_domain": "reuters.com",
+    "date_start": "2008-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Rupert Murdoch",
+    "to_entity_name": "Benjamin Netanyahu",
+    "relation_type": "personal_friendship",
+    "description": "Murdoch is a longtime personal friend and supporter of Netanyahu; he co-founded the Genie Energy advisory board with Dick Cheney, which holds oil rights in the Israeli-occupied Golan Heights",
+    "source_url": "https://en.wikipedia.org/wiki/Genie_Energy",
+    "source_domain": "wikipedia.org",
+    "date_start": "2010-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Dick Cheney",
+    "to_entity_name": "Genie Energy",
+    "relation_type": "financial",
+    "description": "Dick Cheney sits on the strategic advisory board of Genie Energy, the company that received controversial drilling rights in the Israeli-occupied Golan Heights; other board members include Rupert Murdoch and Jacob Rothschild",
+    "source_url": "https://en.wikipedia.org/wiki/Genie_Energy",
+    "source_domain": "wikipedia.org",
+    "date_start": "2011-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "CIA",
+    "to_entity_name": "Operation Mockingbird",
+    "relation_type": "other",
+    "description": "Church Committee hearings in 1975 confirmed the CIA's Operation Mockingbird recruited journalists at major US outlets including the Washington Post, Time, and CBS to plant propaganda stories and shape domestic opinion",
+    "source_url": "https://en.wikipedia.org/wiki/Operation_Mockingbird",
+    "source_domain": "wikipedia.org",
+    "date_start": "1950-01-01",
+    "date_end": "1975-01-01"
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Ehud Barak",
+    "relation_type": "financial",
+    "description": "Former Israeli Prime Minister Ehud Barak received at least $2.5 million from companies linked to Epstein and was photographed entering Epstein's Manhattan townhouse in 2016",
+    "source_url": "https://www.haaretz.com/israel-news/2019-07-19/ty-article/.premium/revealed-barak-received-2-5-million-from-epstein-controlled-company/",
+    "source_domain": "haaretz.com",
+    "date_start": "2004-01-01",
+    "date_end": "2016-01-01"
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Wexford",
+    "relation_type": "financial",
+    "description": "Epstein claimed for years to manage money only for billionaires with over $1 billion in assets, yet no credible Wall Street record of his money management business exists; prosecutors alleged his wealth derived from blackmail and financial fraud",
+    "source_url": "https://www.nytimes.com/2019/07/09/business/jeffrey-epstein-financial-crimes.html",
+    "source_domain": "nytimes.com",
+    "date_start": "1990-01-01",
+    "date_end": "2019-01-01"
+  },
+  {
+    "from_entity_name": "Bill Gates",
+    "to_entity_name": "GAVI",
+    "relation_type": "financial",
+    "description": "The Bill & Melinda Gates Foundation is the largest private donor to Gavi, the Vaccine Alliance, having donated over $4.1 billion since 2000; this gives Gates unprecedented influence over global vaccine procurement policy",
+    "source_url": "https://www.gavi.org/news/media-room/bill-melinda-gates-foundation-commits-us-16-billion",
+    "source_domain": "gavi.org",
+    "date_start": "2000-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Anthony Fauci",
+    "to_entity_name": "EcoHealth Alliance",
+    "relation_type": "financial",
+    "description": "Fauci's NIAID awarded EcoHealth Alliance grants totaling over $3.1 million, including funds that EcoHealth subgranted to the Wuhan Institute of Virology for coronavirus gain-of-function research",
+    "source_url": "https://theintercept.com/2021/09/09/covid-origins-gain-of-function-research/",
+    "source_domain": "theintercept.com",
+    "date_start": "2014-01-01",
+    "date_end": "2020-01-01"
+  },
+  {
+    "from_entity_name": "Wuhan Institute of Virology",
+    "to_entity_name": "EcoHealth Alliance",
+    "relation_type": "financial",
+    "description": "EcoHealth Alliance, led by Peter Daszak, channeled US NIH grant money to the Wuhan Institute of Virology for bat coronavirus research; the research involved manipulating viral spike proteins",
+    "source_url": "https://theintercept.com/2021/09/09/covid-origins-gain-of-function-research/",
+    "source_domain": "theintercept.com",
+    "date_start": "2014-01-01",
+    "date_end": "2019-01-01"
+  },
+  {
+    "from_entity_name": "Klaus Schwab",
+    "to_entity_name": "Henry Kissinger",
+    "relation_type": "education",
+    "description": "Schwab studied under Henry Kissinger at Harvard during Kissinger's International Seminar program in the 1960s; Schwab has cited Kissinger as a key intellectual influence on the WEF's geopolitical worldview",
+    "source_url": "https://en.wikipedia.org/wiki/Klaus_Schwab",
+    "source_domain": "wikipedia.org",
+    "date_start": "1965-01-01",
+    "date_end": "1967-01-01"
+  },
+  {
+    "from_entity_name": "George Soros",
+    "to_entity_name": "Black Wednesday",
+    "relation_type": "financial",
+    "description": "On September 16, 1992 (Black Wednesday), Soros shorted \u00a310 billion worth of sterling, forcing the UK to withdraw from the European Exchange Rate Mechanism and netting Soros over $1 billion in profit",
+    "source_url": "https://en.wikipedia.org/wiki/Black_Wednesday",
+    "source_domain": "wikipedia.org",
+    "date_start": "1992-09-16",
+    "date_end": "1992-09-16"
+  },
+  {
+    "from_entity_name": "Monsanto",
+    "to_entity_name": "Bill Gates",
+    "relation_type": "financial",
+    "description": "The Bill & Melinda Gates Foundation bought $23.1 million worth of Monsanto shares in 2010; Gates has also funded pro-GMO advocacy aligned with Monsanto's agricultural technology agenda",
+    "source_url": "https://www.reuters.com/article/us-gates-foundation-monsanto/gates-foundation-buys-23-million-monsanto-stake-idUSTRE67O1P020100825",
+    "source_domain": "reuters.com",
+    "date_start": "2010-08-25",
+    "date_end": "2010-08-25"
+  },
+  {
+    "from_entity_name": "Pfizer",
+    "to_entity_name": "Bill Gates",
+    "relation_type": "financial",
+    "description": "The Gates Foundation has held equity stakes in Pfizer and is linked to Pfizer through COVAX and GAVI arrangements; Gates publicly advocated for Pfizer vaccines while having undisclosed financial interests",
+    "source_url": "https://www.cnbc.com/2020/12/08/bill-gates-pfizer-covid-vaccine.html",
+    "source_domain": "cnbc.com",
+    "date_start": "2019-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Noam Chomsky",
+    "relation_type": "personal_friendship",
+    "description": "Noam Chomsky met privately with Jeffrey Epstein in 2015 \u2014 after Epstein's sex-offender conviction \u2014 at his New York townhouse, as confirmed by Chomsky himself to the New York Times",
+    "source_url": "https://www.nytimes.com/2022/08/19/us/noam-chomsky-jeffrey-epstein.html",
+    "source_domain": "nytimes.com",
+    "date_start": "2015-01-01",
+    "date_end": "2015-12-31"
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Steven Pinker",
+    "relation_type": "personal_friendship",
+    "description": "Harvard professor Steven Pinker attended at least one dinner at Epstein's New York mansion in 2014 and was reportedly listed as a potential defense witness in legal proceedings involving Epstein",
+    "source_url": "https://www.nytimes.com/2019/07/25/science/jeffrey-epstein-scientists.html",
+    "source_domain": "nytimes.com",
+    "date_start": "2014-01-01",
+    "date_end": "2014-12-31"
+  },
+  {
+    "from_entity_name": "Elon Musk",
+    "to_entity_name": "Pentagon",
+    "relation_type": "financial",
+    "description": "Musk's companies -- SpaceX, Starlink, and Tesla -- hold billions in Pentagon and intelligence contracts; Musk simultaneously controls Starlink infrastructure that Ukraine's military depends on for communications in the war with Russia",
+    "source_url": "https://www.reuters.com/business/aerospace-defense/pentagon-awards-spacex-500-million-starshield-contract-2023-01-01/",
+    "source_domain": "reuters.com",
+    "date_start": "2008-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Jeffrey Epstein",
+    "to_entity_name": "Zorro Ranch",
+    "relation_type": "other",
+    "description": "Epstein owned Zorro Ranch, a 10,000-acre compound in New Mexico where multiple victims say they were abused; the FBI investigated the property in 2019 and court documents allege sex trafficking occurred there",
+    "source_url": "https://www.nytimes.com/2019/08/09/nyregion/jeffrey-epstein-zorro-ranch-new-mexico.html",
+    "source_domain": "nytimes.com",
+    "date_start": "1993-01-01",
+    "date_end": "2019-01-01"
+  },
+  {
+    "from_entity_name": "Anthony Fauci",
+    "to_entity_name": "World Health Organization",
+    "relation_type": "same_org_event",
+    "description": "Fauci served as a key US representative to the WHO for decades, coordinating pandemic responses; he was among the WHO advisers who in January 2020 praised China's transparency on COVID-19, which critics said delayed the global response",
+    "source_url": "https://www.bmj.com/content/372/bmj.n627",
+    "source_domain": "bmj.com",
+    "date_start": "1984-01-01",
+    "date_end": "2022-01-01"
+  },
+  {
+    "from_entity_name": "Bill Gates",
+    "to_entity_name": "ID2020",
+    "relation_type": "financial",
+    "description": "The Gates Foundation has funded the ID2020 Alliance and similar digital identity programs in developing nations, raising concerns from civil libertarians about biometric surveillance infrastructure in aid-dependent countries",
+    "source_url": "https://id2020.org/alliance",
+    "source_domain": "id2020.org",
+    "date_start": "2016-01-01",
+    "date_end": null
+  },
+  {
+    "from_entity_name": "Bill Gates",
+    "to_entity_name": "US Farmland",
+    "relation_type": "financial",
+    "description": "Bill Gates became the largest private owner of US farmland by 2021, with over 269,000 acres across 18 states; this concentration of agricultural land ownership has raised concerns about food system control",
+    "source_url": "https://www.theguardian.com/commentisfree/2021/apr/05/bill-gates-climate-crisis-farmland",
+    "source_domain": "theguardian.com",
+    "date_start": "2012-01-01",
+    "date_end": null
+  }
+]

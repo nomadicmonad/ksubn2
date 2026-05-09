@@ -568,3 +568,35 @@ $$ LANGUAGE plpgsql SECURITY DEFINER;
 -- ============================================================
 -- Run in Supabase dashboard: Storage > New bucket > "entity-images" (public)
 -- INSERT INTO storage.buckets (id, name, public) VALUES ('entity-images', 'entity-images', true);
+
+-- ============================================================
+-- RATE LIMIT HELPER (called from submit page)
+-- ============================================================
+
+CREATE OR REPLACE FUNCTION public.increment_submission_count(user_uuid UUID)
+RETURNS VOID AS $$
+DECLARE
+  today DATE := CURRENT_DATE;
+BEGIN
+  UPDATE public.profiles
+  SET
+    submissions_today = CASE WHEN last_reset_date = today THEN submissions_today + 1 ELSE 1 END,
+    claims_total      = claims_total + 1,
+    last_reset_date   = today
+  WHERE id = user_uuid;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+CREATE OR REPLACE FUNCTION public.increment_entity_count(user_uuid UUID)
+RETURNS VOID AS $$
+DECLARE
+  today DATE := CURRENT_DATE;
+BEGIN
+  UPDATE public.profiles
+  SET
+    entities_today = CASE WHEN last_reset_date = today THEN entities_today + 1 ELSE 1 END,
+    entities_total = entities_total + 1,
+    last_reset_date = today
+  WHERE id = user_uuid;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;

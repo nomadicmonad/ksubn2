@@ -104,6 +104,14 @@ export default function TopicPage() {
     setNewTabTitle('');
   }
 
+  async function deleteTopic() {
+    if (accountRestricted || !topic) return;
+    if (!confirm(`Delete "${topic.title}"? This cannot be undone.`)) return;
+    const sb = createClient();
+    await sb.from('topics').delete().eq('id', topic.id);
+    router.push('/topics');
+  }
+
   async function togglePublic() {
     if (accountRestricted) return;
     if (!topic) return;
@@ -259,12 +267,6 @@ export default function TopicPage() {
     setTimeout(() => setCopied(false), 1500);
   }
 
-  if (loading) return <div className="h-48 flex items-center justify-center" style={{ color: 'var(--color-text-muted)' }}>Loading…</div>;
-  if (!topic) return null;
-
-  const currentTab = tabs[activeTab];
-  const activeConfigPretty = currentTab ? JSON.stringify(currentTab.config ?? {}, null, 2) : '{}';
-
   useEffect(() => {
     if (!editingTab) return;
     clearTimeout(entitySearchTimer.current);
@@ -294,6 +296,12 @@ export default function TopicPage() {
     })();
   }, [editingTab, selectedEntityIds, selectedEntities]);
 
+  if (loading) return <div className="h-48 flex items-center justify-center" style={{ color: 'var(--color-text-muted)' }}>Loading…</div>;
+  if (!topic) return null;
+
+  const currentTab = tabs[activeTab];
+  const activeConfigPretty = currentTab ? JSON.stringify(currentTab.config ?? {}, null, 2) : '{}';
+
   return (
     <div className="space-y-4">
       {/* Header */}
@@ -318,6 +326,14 @@ export default function TopicPage() {
                 <Share2 size={13} /> {copied ? 'Copied!' : 'Share'}
               </button>
             )}
+            <button
+              onClick={deleteTopic}
+              className="btn-ghost text-xs py-1.5 px-3"
+              style={{ color: 'var(--color-danger)' }}
+              title="Delete topic"
+            >
+              <Trash2 size={13} />
+            </button>
           </div>
         )}
       </div>

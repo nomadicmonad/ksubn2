@@ -90,7 +90,12 @@ export function EmbedClient({ topic, tabs, showNumerology }: Props) {
             No content in this topic yet.
           </div>
         )}
-        {currentTab?.view_type === 'graph' && <GraphView showNumerologyOverride={showNumerology} />}
+        {currentTab?.view_type === 'graph' && (
+          <GraphView
+            showNumerologyOverride={showNumerology}
+            initialEntityIds={Array.isArray(currentTab.config?.entity_ids) ? currentTab.config.entity_ids as string[] : []}
+          />
+        )}
         {currentTab?.view_type === 'timeline' && <EmbedTimelineTab tab={currentTab} showNumerology={showNumerology} />}
         {currentTab?.view_type === 'connections' && <EmbedConnectionsTab tab={currentTab} showNumerology={showNumerology} />}
         {currentTab?.view_type === 'profile' && <EmbedProfileTab tab={currentTab} showNumerology={showNumerology} />}

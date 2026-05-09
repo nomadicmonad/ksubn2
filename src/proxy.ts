@@ -67,17 +67,17 @@ export async function proxy(request: NextRequest) {
       return NextResponse.redirect(url);
     }
 
-    if (!onboardingDone && !isOnboardingPath && !isCallbackPath && !isApiPath) {
+    if (!onboardingDone && isProtected(pathname) && !isCallbackPath && !isApiPath) {
       const url = request.nextUrl.clone();
       url.pathname = '/onboarding';
       url.searchParams.set('next', `${pathname}${request.nextUrl.search}`);
       return NextResponse.redirect(url);
     }
 
-    if (onboardingDone && isLoginPath && !banned) {
+    if (onboardingDone && (isLoginPath || isOnboardingPath) && !banned) {
       const redirectPath = safeNextPath(request.nextUrl.searchParams.get('next'));
       const url = request.nextUrl.clone();
-      url.pathname = redirectPath;
+      url.pathname = redirectPath === '/login' || redirectPath === '/onboarding' ? '/' : redirectPath;
       url.search = '';
       return NextResponse.redirect(url);
     }

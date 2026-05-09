@@ -1,7 +1,8 @@
 import Link from 'next/link';
-import { Search, Network, GitBranch, ArrowRight } from 'lucide-react';
+import { Network, GitBranch, ArrowRight } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
 import { EntityCard } from '@/components/entity/EntityCard';
+import { SearchBar } from '@/components/SearchBar';
 import type { Entity } from '@/types';
 
 async function getStats() {
@@ -51,39 +52,7 @@ export default async function HomePage() {
         </p>
 
         {/* Search bar */}
-        <form action="/search" className="relative max-w-xl mx-auto">
-          <Search
-            size={18}
-            className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none"
-            style={{ color: 'var(--color-text-muted)' }}
-          />
-          <input
-            name="q"
-            type="text"
-            placeholder="Search people, organizations, events…"
-            className="w-full pl-11 pr-4 py-3.5 rounded-xl text-sm focus:outline-none transition-all"
-            style={{
-              background: 'var(--color-bg-card)',
-              border: '1px solid var(--color-bg-border)',
-              color: 'var(--color-text-primary)',
-            }}
-            onFocus={(e) => {
-              e.currentTarget.style.borderColor = 'rgba(99,102,241,0.6)';
-              e.currentTarget.style.boxShadow = '0 0 0 3px rgba(99,102,241,0.1)';
-            }}
-            onBlur={(e) => {
-              e.currentTarget.style.borderColor = 'var(--color-bg-border)';
-              e.currentTarget.style.boxShadow = 'none';
-            }}
-          />
-          <button
-            type="submit"
-            className="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-2 rounded-lg text-sm font-medium text-white transition-colors"
-            style={{ background: 'var(--color-accent)' }}
-          >
-            Search
-          </button>
-        </form>
+        <SearchBar />
 
         {/* Stats */}
         <div className="flex items-center justify-center gap-8">

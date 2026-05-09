@@ -9,6 +9,8 @@ import ReactFlow, {
   addEdge,
   useNodesState,
   useEdgesState,
+  Handle,
+  Position,
   type Connection,
   type Node,
   type Edge,
@@ -16,48 +18,68 @@ import ReactFlow, {
   Panel,
 } from 'reactflow';
 import 'reactflow/dist/style.css';
-import { Search, Undo2, Filter, ZoomIn, X, Plus } from 'lucide-react';
+import { Search, Undo2, Filter, ZoomIn, X, Plus, ExternalLink } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
 import type { Entity, ClaimWithEntity, PathStep, RelationType } from '@/types';
 import { RELATION_META } from '@/types';
 import { gematria } from '@/lib/numerology';
+import { ClaimEdge, type ClaimEdgeData } from './ClaimEdge';
 
 // ── Custom node ──────────────────────────────────────────────
-function EntityNode({ data }: { data: { entity: Entity; onExpand: (id: string) => void } }) {
-  const { entity, onExpand } = data;
+function EntityNode({ data }: { data: { entity: Entity; onExpand: (id: string) => void; onDelete?: (id: string) => void } }) {
+  const { entity, onExpand, onDelete } = data;
   const typeColor = entity.type === 'person' ? '#6366f1' : entity.type === 'organization' ? '#a855f7' : '#f59e0b';
 
   return (
-    <div
-      onClick={() => onExpand(entity.id)}
-      className="cursor-pointer transition-all hover:scale-105"
-      style={{
-        background: '#16162a',
-        border: `2px solid ${typeColor}40`,
-        borderRadius: '12px',
-        padding: '10px 14px',
-        minWidth: '140px',
-        maxWidth: '180px',
-        boxShadow: `0 0 16px ${typeColor}20`,
-      }}
-    >
-      <div className="flex items-center gap-2">
-        <div
+    <div style={{ position: 'relative' }}>
+      <Handle type="target" position={Position.Left} style={{ background: typeColor, border: 'none', width: 8, height: 8 }} />
+      <Handle type="source" position={Position.Right} style={{ background: typeColor, border: 'none', width: 8, height: 8 }} />
+      <div
+        className="transition-all hover:scale-105"
+        style={{
+          background: '#16162a',
+          border: `2px solid ${typeColor}40`,
+          borderRadius: '12px',
+          padding: '10px 14px',
+          minWidth: '140px',
+          maxWidth: '180px',
+          boxShadow: `0 0 16px ${typeColor}20`,
+          cursor: 'pointer',
+        }}
+      >
+        {/* Delete button */}
+        <button
+          onClick={e => { e.stopPropagation(); onDelete?.(entity.id); }}
+          className="nodrag"
           style={{
-            width: 28, height: 28, borderRadius: '50%',
-            background: `${typeColor}25`,
-            border: `1px solid ${typeColor}40`,
+            position: 'absolute', top: -8, right: -8,
+            width: 18, height: 18, borderRadius: '50%',
+            background: '#ef4444', border: '2px solid #16162a',
+            color: '#fff', fontSize: 10, fontWeight: 700,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: '11px', color: typeColor, fontWeight: 700,
+            cursor: 'pointer', zIndex: 10, lineHeight: 1,
           }}
-        >
-          {entity.name[0]}
-        </div>
-        <div style={{ minWidth: 0 }}>
-          <p style={{ color: '#e8e8f4', fontSize: '12px', fontWeight: 600, lineHeight: 1.2 }} className="truncate">
-            {entity.name}
-          </p>
-          <p style={{ color: typeColor, fontSize: '10px', textTransform: 'capitalize' }}>{entity.type}</p>
+          title="Remove from view"
+        >×</button>
+
+        <div className="flex items-center gap-2" onClick={() => onExpand(entity.id)}>
+          <div
+            style={{
+              width: 28, height: 28, borderRadius: '50%',
+              background: `${typeColor}25`,
+              border: `1px solid ${typeColor}40`,
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: '11px', color: typeColor, fontWeight: 700, flexShrink: 0,
+            }}
+          >
+            {entity.name[0]}
+          </div>
+          <div style={{ minWidth: 0 }}>
+            <p style={{ color: '#e8e8f4', fontSize: '12px', fontWeight: 600, lineHeight: 1.2 }} className="truncate">
+              {entity.name}
+            </p>
+            <p style={{ color: typeColor, fontSize: '10px', textTransform: 'capitalize' }}>{entity.type}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -65,6 +87,7 @@ function EntityNode({ data }: { data: { entity: Entity; onExpand: (id: string) =
 }
 
 const nodeTypes = { entity: EntityNode };
+const edgeTypes = { claim: ClaimEdge };
 
 // ── Graph layout: simple radial ───────────────────────────────
 function layoutNodes(center: Entity, connections: ClaimWithEntity[], existingNodes: Node[]): { nodes: Node[]; edges: Edge[] } {
@@ -94,7 +117,7 @@ function layoutNodes(center: Entity, connections: ClaimWithEntity[], existingNod
             id: eid, slug: conn.other_entity_slug, name: conn.other_entity_name,
             type: conn.other_entity_type, image_url: conn.other_entity_image,
           } as Entity,
-          onExpand: () => {},
+          onExpand: () => {}, onDelete: () => {},
         },
       });
       existing.add(eid);
@@ -105,13 +128,16 @@ function layoutNodes(center: Entity, connections: ClaimWithEntity[], existingNod
       id: edgeId,
       source: center.id,
       target: eid,
-      type: 'smoothstep',
-      animated: false,
-      label: meta.icon,
-      labelStyle: { fontSize: 14 },
-      style: { stroke: meta.color, strokeWidth: 1.5, opacity: 0.7 },
+      type: 'claim',
+      style: { stroke: meta.color, strokeWidth: 1.5, opacity: 0.8 },
       markerEnd: { type: MarkerType.ArrowClosed, color: meta.color, width: 12, height: 12 },
-      data: { relation_type: conn.relation_type, claim_id: conn.claim_id },
+      data: {
+        relation_type: conn.relation_type,
+        claim_id: conn.claim_id,
+        description: conn.description,
+        source_url: conn.source_url,
+        source_domain: conn.source_domain ?? undefined,
+      } satisfies ClaimEdgeData,
     });
   });
 
@@ -145,8 +171,15 @@ export function GraphView({
   const [showFilters, setShowFilters] = useState(false);
   const [pathFrom, setPathFrom] = useState<Entity | null>(null);
   const [pathTo, setPathTo] = useState<Entity | null>(null);
+  const [pathFromQuery, setPathFromQuery] = useState('');
+  const [pathToQuery, setPathToQuery] = useState('');
+  const [pathFromResults, setPathFromResults] = useState<Entity[]>([]);
+  const [pathToResults, setPathToResults] = useState<Entity[]>([]);
+  const pathFromTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const pathToTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const [pathLoading, setPathLoading] = useState(false);
   const [starLoading, setStarLoading] = useState(false);
+  const [selectedClaim, setSelectedClaim] = useState<ClaimEdgeData | null>(null);
   const [showNumerology, setShowNumerology] = useState(true);
   const [initialised, setInitialised] = useState(false);
   const history = useRef<{ nodes: Node[]; edges: Edge[] }[]>([]);
@@ -176,6 +209,17 @@ export function GraphView({
     if (prev) { setNodes(prev.nodes); setEdges(prev.edges); }
   }, [setNodes, setEdges]);
 
+  const deleteNode = useCallback((nodeId: string) => {
+    saveHistory();
+    setNodes(prev => prev.filter(n => n.id !== nodeId));
+    setEdges(prev => prev.filter(e => e.source !== nodeId && e.target !== nodeId));
+  }, [saveHistory, setNodes, setEdges]);
+
+  const deleteEdge = useCallback((edgeId: string) => {
+    saveHistory();
+    setEdges(prev => prev.filter(e => e.id !== edgeId));
+  }, [saveHistory, setEdges]);
+
   const expandEntity = useCallback(async (entityId: string) => {
     if (loadingId) return;
     setLoadingId(entityId);
@@ -197,10 +241,10 @@ export function GraphView({
 
       const { nodes: newNodes, edges: newEdges } = layoutNodes(entity, filtered, nodes);
 
-      // Inject onExpand into all new nodes
+      // Inject onExpand + onDelete into all new nodes
       const withExpand = newNodes.map(n => ({
         ...n,
-        data: { ...n.data, onExpand: expandEntity },
+        data: { ...n.data, onExpand: expandEntity, onDelete: deleteNode },
       }));
 
       setNodes(prev => {
@@ -209,12 +253,15 @@ export function GraphView({
       });
       setEdges(prev => {
         const existing = new Set(prev.map(e => e.id));
-        return [...prev, ...newEdges.filter(e => !existing.has(e.id))];
+        const withSelect = newEdges
+          .filter(e => !existing.has(e.id))
+          .map(e => ({ ...e, data: { ...e.data, onSelect: setSelectedClaim } }));
+        return [...prev, ...withSelect];
       });
     } finally {
       setLoadingId(null);
     }
-  }, [nodes, edges, filterType, loadingId, saveHistory, setNodes, setEdges]);
+  }, [nodes, edges, filterType, loadingId, saveHistory, setNodes, setEdges, deleteNode]);
 
   // Load initial entities from props (topic tab config or URL slugs)
   useEffect(() => {
@@ -264,6 +311,28 @@ export function GraphView({
     }, 250);
   }, [search]);
 
+  // Path-from search
+  useEffect(() => {
+    if (!pathFromQuery.trim()) { setPathFromResults([]); return; }
+    clearTimeout(pathFromTimer.current);
+    pathFromTimer.current = setTimeout(async () => {
+      const sb = createClient();
+      const { data } = await sb.from('entities').select('*').eq('is_public', true).ilike('name', `%${pathFromQuery}%`).limit(6);
+      setPathFromResults((data ?? []) as Entity[]);
+    }, 250);
+  }, [pathFromQuery]);
+
+  // Path-to search
+  useEffect(() => {
+    if (!pathToQuery.trim()) { setPathToResults([]); return; }
+    clearTimeout(pathToTimer.current);
+    pathToTimer.current = setTimeout(async () => {
+      const sb = createClient();
+      const { data } = await sb.from('entities').select('*').eq('is_public', true).ilike('name', `%${pathToQuery}%`).limit(6);
+      setPathToResults((data ?? []) as Entity[]);
+    }, 250);
+  }, [pathToQuery]);
+
   async function addEntityToGraph(entity: Entity) {
     setSearch('');
     setSearchResults([]);
@@ -276,7 +345,7 @@ export function GraphView({
         id: entity.id,
         type: 'entity',
         position: { x: Math.random() * 400 - 200, y: Math.random() * 400 - 200 },
-        data: { entity, onExpand: expandEntity },
+        data: { entity, onExpand: expandEntity, onDelete: deleteNode },
       }];
     });
     await expandEntity(entity.id);
@@ -302,7 +371,7 @@ export function GraphView({
             id: entity.id,
             type: 'entity',
             position: { x: Math.random() * 500 - 250, y: Math.random() * 400 - 200 },
-            data: { entity, onExpand: expandEntity },
+            data: { entity, onExpand: expandEntity, onDelete: deleteNode },
           }];
         });
       }
@@ -325,57 +394,69 @@ export function GraphView({
         body: JSON.stringify({ from_entity: pathFrom.id, to_entity: pathTo.id, max_hops: 4 }),
       });
       const json = await res.json();
-      if (!json.path?.path) return;
-      const pathSteps = json.path.path as PathStep[];
-      const entityIds = [...new Set(pathSteps.map(s => s.entity_id))];
-      const claimIds = [...new Set(pathSteps.map(s => s.claim_id).filter(Boolean))];
+      const allPaths: PathStep[][] = json.paths ?? (json.path?.path ? [json.path.path] : []);
+      if (allPaths.length === 0) return;
+      const claimMap: Record<string, { id: string; relation_type: RelationType; description: string; source_url: string; source_domain: string | null }> = json.claimMap ?? {};
+
+      const allEntityIds = [...new Set(allPaths.flat().map(s => s.entity_id))];
       const sb = createClient();
-      const [{ data: entitiesData }, { data: claimsData }] = await Promise.all([
-        sb.from('entities').select('*').in('id', entityIds),
-        sb.from('claims').select('id, relation_type, description').in('id', claimIds),
-      ]);
+      const { data: entitiesData } = await sb.from('entities').select('*').in('id', allEntityIds);
       const entityMap = Object.fromEntries((entitiesData ?? []).map(e => [e.id, e as Entity]));
-      const claimMap = Object.fromEntries((claimsData ?? []).map(c => [c.id, c]));
 
-      const pathEntityOrder = pathSteps.map(step => step.entity_id);
-      const uniqueInOrder = pathEntityOrder.filter((id, idx) => pathEntityOrder.indexOf(id) === idx);
-
-      const newNodes: Node[] = uniqueInOrder
-        .map((id, i) => {
+      // Lay out all unique entities in a grid (rows = paths, cols = steps)
+      const newNodes: Node[] = [];
+      const seenNodes = new Set<string>();
+      allPaths.forEach((pathSteps, pathIdx) => {
+        const unique = [...new Set(pathSteps.map(s => s.entity_id))];
+        unique.forEach((id, stepIdx) => {
+          if (seenNodes.has(id)) return;
+          seenNodes.add(id);
           const entity = entityMap[id];
-          if (!entity) return null;
-          return {
-            id,
-            type: 'entity',
-            position: { x: i * 220, y: 0 },
-            data: { entity, onExpand: expandEntity },
-          } as Node;
-        })
-        .filter(Boolean) as Node[];
+          if (!entity) return;
+          newNodes.push({
+            id, type: 'entity',
+            position: { x: stepIdx * 260, y: pathIdx * 180 },
+            data: { entity, onExpand: expandEntity, onDelete: deleteNode },
+          } as Node);
+        });
+      });
 
       const newEdges: Edge[] = [];
-      for (let i = 0; i < pathSteps.length - 1; i++) {
-        const sourceId = pathSteps[i].entity_id;
-        const targetId = pathSteps[i + 1].entity_id;
-        const claim = claimMap[pathSteps[i].claim_id];
-        if (!claim) continue;
-        const meta = RELATION_META[claim.relation_type as RelationType];
-        newEdges.push({
-          id: `${sourceId}-${targetId}-${pathSteps[i].claim_id}`,
-          source: sourceId,
-          target: targetId,
-          type: 'smoothstep',
-          label: meta.icon,
-          labelStyle: { fontSize: 14 },
-          style: { stroke: meta.color, strokeWidth: 2, opacity: 0.8 },
-          markerEnd: { type: MarkerType.ArrowClosed, color: meta.color, width: 12, height: 12 },
-          data: { relation_type: claim.relation_type, claim_id: pathSteps[i].claim_id },
-        });
-      }
+      const seenEdges = new Set<string>();
+      allPaths.forEach((pathSteps, pathIdx) => {
+        for (let i = 0; i < pathSteps.length - 1; i++) {
+          const sourceId = pathSteps[i].entity_id;
+          const targetId = pathSteps[i + 1].entity_id;
+          const claim = claimMap[pathSteps[i].claim_id];
+          const relType = (claim?.relation_type ?? 'other') as RelationType;
+          const meta = RELATION_META[relType];
+          const edgeId = pathSteps[i].claim_id
+            ? `claim-${pathSteps[i].claim_id}`
+            : `path${pathIdx}-${sourceId}-${targetId}-${i}`;
+          if (seenEdges.has(edgeId)) continue;
+          seenEdges.add(edgeId);
+          newEdges.push({
+            id: edgeId,
+            source: sourceId,
+            target: targetId,
+            type: 'claim',
+            style: { stroke: meta.color, strokeWidth: 2, opacity: 0.9 },
+            markerEnd: { type: MarkerType.ArrowClosed, color: meta.color, width: 12, height: 12 },
+            data: {
+              relation_type: relType,
+              claim_id: pathSteps[i].claim_id,
+              description: claim?.description,
+              source_url: claim?.source_url,
+              source_domain: claim?.source_domain ?? undefined,
+              onSelect: setSelectedClaim,
+            } satisfies ClaimEdgeData,
+          });
+        }
+      });
 
       setNodes(prev => {
         const map = new Map(prev.map(n => [n.id, n]));
-        for (const n of newNodes) map.set(n.id, map.has(n.id) ? map.get(n.id)! : n);
+        for (const n of newNodes) if (!map.has(n.id)) map.set(n.id, n);
         return [...map.values()];
       });
       setEdges(prev => {
@@ -419,6 +500,8 @@ export function GraphView({
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
         nodeTypes={nodeTypes}
+        edgeTypes={edgeTypes}
+        onEdgeDoubleClick={(_evt, edge) => deleteEdge(edge.id)}
         fitView
         minZoom={0.2}
         maxZoom={3}
@@ -480,31 +563,51 @@ export function GraphView({
               </p>
               <div className="relative">
                 <input
-                  value={pathFrom?.name ?? ''}
-                  onChange={async (e) => {
-                    const q = e.target.value;
-                    if (!q.trim()) { setPathFrom(null); return; }
-                    const sb = createClient();
-                    const { data } = await sb.from('entities').select('*').eq('is_public', true).ilike('name', `%${q}%`).limit(1);
-                    setPathFrom(((data ?? [])[0] as Entity) ?? null);
+                  value={pathFrom ? pathFrom.name : pathFromQuery}
+                  onChange={(e) => {
+                    setPathFrom(null);
+                    setPathFromQuery(e.target.value);
                   }}
-                  placeholder="From entity (type name)"
+                  placeholder="From entity…"
                   className="input text-xs"
                 />
+                {pathFromResults.length > 0 && !pathFrom && (
+                  <div className="absolute z-50 top-full left-0 right-0 mt-1 rounded-lg overflow-hidden shadow-lg"
+                    style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)' }}>
+                    {pathFromResults.map(e => (
+                      <button key={e.id} className="w-full text-left px-3 py-2 text-xs hover:bg-[var(--color-bg-hover)] transition-colors"
+                        style={{ color: 'var(--color-text-primary)' }}
+                        onMouseDown={() => { setPathFrom(e); setPathFromQuery(''); setPathFromResults([]); }}>
+                        {e.name}
+                        <span className="ml-1.5 text-[10px]" style={{ color: 'var(--color-text-muted)' }}>{e.type}</span>
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
               <div className="relative">
                 <input
-                  value={pathTo?.name ?? ''}
-                  onChange={async (e) => {
-                    const q = e.target.value;
-                    if (!q.trim()) { setPathTo(null); return; }
-                    const sb = createClient();
-                    const { data } = await sb.from('entities').select('*').eq('is_public', true).ilike('name', `%${q}%`).limit(1);
-                    setPathTo(((data ?? [])[0] as Entity) ?? null);
+                  value={pathTo ? pathTo.name : pathToQuery}
+                  onChange={(e) => {
+                    setPathTo(null);
+                    setPathToQuery(e.target.value);
                   }}
-                  placeholder="To entity (type name)"
+                  placeholder="To entity…"
                   className="input text-xs"
                 />
+                {pathToResults.length > 0 && !pathTo && (
+                  <div className="absolute z-50 top-full left-0 right-0 mt-1 rounded-lg overflow-hidden shadow-lg"
+                    style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)' }}>
+                    {pathToResults.map(e => (
+                      <button key={e.id} className="w-full text-left px-3 py-2 text-xs hover:bg-[var(--color-bg-hover)] transition-colors"
+                        style={{ color: 'var(--color-text-primary)' }}
+                        onMouseDown={() => { setPathTo(e); setPathToQuery(''); setPathToResults([]); }}>
+                        {e.name}
+                        <span className="ml-1.5 text-[10px]" style={{ color: 'var(--color-text-muted)' }}>{e.type}</span>
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
               <button
                 onClick={importPathBetweenEntities}
@@ -539,6 +642,14 @@ export function GraphView({
                 style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)', color: 'var(--color-text-secondary)' }}
               >
                 <Plus size={12} /> {starLoading ? 'Loading…' : 'Import starred'}
+              </button>
+              <button
+                onClick={() => { saveHistory(); setNodes([]); setEdges([]); }}
+                disabled={nodes.length === 0}
+                className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs transition-colors"
+                style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-border)', color: 'var(--color-danger)', opacity: nodes.length === 0 ? 0.4 : 1 }}
+              >
+                <X size={12} /> Clear all
               </button>
             </div>
 
@@ -606,6 +717,55 @@ export function GraphView({
           </Panel>
         )}
       </ReactFlow>
+
+      {/* Claim detail sidebar */}
+      {selectedClaim && (() => {
+        const meta = RELATION_META[selectedClaim.relation_type];
+        return (
+          <div
+            style={{
+              position: 'absolute', top: 0, right: 0, bottom: 0,
+              width: '280px', zIndex: 20,
+              background: 'var(--color-bg-card)',
+              borderLeft: '1px solid var(--color-bg-border)',
+              display: 'flex', flexDirection: 'column',
+            }}
+          >
+            <div className="flex items-center justify-between p-4" style={{ borderBottom: '1px solid var(--color-bg-border)' }}>
+              <div className="flex items-center gap-2">
+                <span>{meta.icon}</span>
+                <span className="text-sm font-semibold" style={{ color: meta.color }}>{meta.label}</span>
+              </div>
+              <button onClick={() => setSelectedClaim(null)} style={{ color: 'var(--color-text-muted)' }} className="hover:text-[var(--color-text-primary)]">
+                <X size={16} />
+              </button>
+            </div>
+            <div className="p-4 flex-1 overflow-y-auto space-y-4">
+              {selectedClaim.description && (
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: 'var(--color-text-muted)' }}>Description</p>
+                  <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text-primary)' }}>{selectedClaim.description}</p>
+                </div>
+              )}
+              {selectedClaim.source_url && (
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: 'var(--color-text-muted)' }}>Source</p>
+                  <a
+                    href={selectedClaim.source_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 text-sm hover:underline"
+                    style={{ color: 'var(--color-accent)' }}
+                  >
+                    <ExternalLink size={12} />
+                    {selectedClaim.source_domain ?? selectedClaim.source_url}
+                  </a>
+                </div>
+              )}
+            </div>
+          </div>
+        );
+      })()}
     </div>
   );
 }

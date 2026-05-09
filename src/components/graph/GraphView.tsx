@@ -697,15 +697,12 @@ export function GraphView({
           </div>
         </Panel>
 
-        {/* Empty state */}
+        {/* Empty state — bottom-center so it never overlaps the search panel */}
         {nodes.length === 0 && (
-          <Panel position="top-center">
-            <div className="text-center mt-20 space-y-2">
-              <p className="text-lg font-semibold" style={{ color: 'var(--color-text-secondary)' }}>
-                Search for an entity to start exploring
-              </p>
-              <p className="text-sm" style={{ color: 'var(--color-text-muted)' }}>
-                Click any node to expand its connections
+          <Panel position="bottom-center">
+            <div className="text-center mb-8 space-y-1 pointer-events-none">
+              <p className="text-sm font-medium" style={{ color: 'var(--color-text-muted)' }}>
+                Search above to add entities · click a node to expand connections
               </p>
             </div>
           </Panel>

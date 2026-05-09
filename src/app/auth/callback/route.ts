@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createServerClient } from '@supabase/ssr';
+import { cookies } from 'next/headers';
 
 function safeNextPath(input: string | null | undefined) {
   if (!input || !input.startsWith('/')) return '/';
@@ -7,35 +8,39 @@ function safeNextPath(input: string | null | undefined) {
   return input;
 }
 
+function getOrigin(request: Request): string {
+  // On Vercel, request.url origin may be HTTP — use forwarded headers instead
+  const host =
+    request.headers.get('x-forwarded-host') ??
+    request.headers.get('host') ??
+    new URL(request.url).host;
+  const proto =
+    request.headers.get('x-forwarded-proto')?.split(',')[0] ??
+    (host.startsWith('localhost') ? 'http' : 'https');
+  return `${proto}://${host}`;
+}
+
 export async function GET(request: Request) {
-  const { searchParams, origin } = new URL(request.url);
+  const { searchParams } = new URL(request.url);
   const code = searchParams.get('code');
   const next = safeNextPath(searchParams.get('next'));
+  const origin = getOrigin(request);
 
   if (!code) {
     return NextResponse.redirect(`${origin}/login?error=auth_failed`);
   }
 
-  // Build the redirect response first so we can attach cookies to it
-  const redirectTo = NextResponse.redirect(`${origin}${next}`);
+  const cookieStore = await cookies();
 
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
       cookies: {
-        getAll() {
-          return request.headers.get('cookie')
-            ? request.headers.get('cookie')!.split('; ').map(c => {
-                const [name, ...rest] = c.split('=');
-                return { name, value: rest.join('=') };
-              })
-            : [];
-        },
+        getAll() { return cookieStore.getAll(); },
         setAll(cookiesToSet) {
-          // Write session cookies directly onto the redirect response
           cookiesToSet.forEach(({ name, value, options }) =>
-            redirectTo.cookies.set(name, value, options)
+            cookieStore.set(name, value, options)
           );
         },
       },
@@ -47,7 +52,6 @@ export async function GET(request: Request) {
     return NextResponse.redirect(`${origin}/login?error=auth_failed`);
   }
 
-  // Check onboarding
   const { data: { user } } = await supabase.auth.getUser();
   if (user) {
     const { data: profile, error: profileError } = await supabase
@@ -60,11 +64,9 @@ export async function GET(request: Request) {
       ? Boolean(profileRow?.display_name)
       : (profileRow?.onboarding_completed ?? Boolean(profileRow?.display_name));
     if (!onboardingDone) {
-      const r = NextResponse.redirect(`${origin}/onboarding?next=${encodeURIComponent(next)}`);
-      redirectTo.cookies.getAll().forEach(c => r.cookies.set(c.name, c.value));
-      return r;
+      return NextResponse.redirect(`${origin}/onboarding?next=${encodeURIComponent(next)}`);
     }
   }
 
-  return redirectTo;
+  return NextResponse.redirect(`${origin}${next}`);
 }
